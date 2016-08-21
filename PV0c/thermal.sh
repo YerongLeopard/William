@@ -1,0 +1,12 @@
+phonopy -t ./a/mesh.f > ./a/thermal.txt
+phonopy -t ./b/mesh.f > ./b/thermal.txt
+phonopy -t ./c/mesh.f > ./c/thermal.txt
+phonopy -t ./z01/mesh.f > ./z01/thermal.txt
+phonopy -t ./z02/mesh.f > ./z02/thermal.txt
+phonopy -t ./z03/mesh.f > ./z03/thermal.txt
+phonopy -t ./z04/mesh.f > ./z04/thermal.txt
+phonopy -t ./z05/mesh.f > ./z05/thermal.txt
+phonopy -t ./z06/mesh.f > ./z06/thermal.txt
+phonopy -t ./z07/mesh.f > ./z07/thermal.txt
+phonopy -t ./z08/mesh.f > ./z08/thermal.txt
+phonopy -t ./z09/mesh.f > ./z09/thermal.txt
