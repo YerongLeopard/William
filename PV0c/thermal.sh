@@ -22,3 +22,11 @@ cd ../z08
 phonopy -t mesh.conf > thermal.txt
 cd ../z09
 phonopy -t mesh.conf > thermal.txt
+cd ../z10
+phonopy -t mesh.conf > thermal.txt
+cd ../z11
+phonopy -t mesh.conf > thermal.txt
+cd ../z12
+phonopy -t mesh.conf > thermal.txt
+cd ../z13
+phonopy -t mesh.conf > thermal.txt
