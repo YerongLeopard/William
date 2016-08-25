@@ -1,8 +1,14 @@
 DATA = dlmread('data.txt', ' ', 1, 0);
+%DATA = importdata('data.txt', ' ', 1);
+%DATA = dlmread('data.txt');
+dim = size(DATA);
+DATA = DATA(2:13, 1:dim(2))
 A = 2.4671554423831878;
 LatticeC = DATA(:,1);
 Volume = LatticeC.*A*A*sqrt(3)/8;
-F300 = DATA(:,3);
+F0 = DATA(:,3);
+
+%% test
 
 
 BMfitF = @(FBV, V)( ...
@@ -14,13 +20,13 @@ BMfitF = @(FBV, V)( ...
     );
 
 figure; hold on;
-plot(LatticeC, F300, '*');
-xx = 4:0.05:8.;
+plot(LatticeC, F0, '*');
+xx = 2.5:0.05:8.;
 xxvol = xx*A*A*sqrt(3)/8;
 beta0 = [-9.3062    0.2469   10.9828    9.0445 ];
 % opts = statset('MaxIter',9000, 'TolFun', 1e-30);
 opts = statset('TolFun', 1e-100);
-beta = nlinfit(Volume, F300, BMfitF,beta0, opts);
+beta = nlinfit(Volume, F0, BMfitF,beta0, opts);
 optC = beta(4)/A/A/sqrt(3)*8.;
 disp(sprintf('Optimal Lattice Constant C : %.4f', optC));
 % BMfitF(beta0, Volume);
