@@ -1,0 +1,33 @@
+ running on    6 total cores
+ distrk:  each k-point on    6 cores,    1 groups
+ distr:  one band on    3 cores,    2 groups
+ using from now: INCAR     
+ vasp.5.3.5 31Mar14 (build Nov 02 2014 15:17:37) complex                        
+  
+ POSCAR found type information on POSCAR  C 
+ POSCAR found :  1 types and       4 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: small aliasing (wrap around) errors must be expected
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.539421046361E+02    0.53942E+02   -0.90701E+03 10936   0.138E+03
+DAV:   2    -0.351014804607E+02   -0.89044E+02   -0.81925E+02 15264   0.241E+02
+DAV:   3    -0.390732920931E+02   -0.39718E+01   -0.39391E+01 14060   0.512E+01
+DAV:   4    -0.391214184596E+02   -0.48126E-01   -0.48051E-01 13504   0.653E+00
+DAV:   5    -0.391224194653E+02   -0.10010E-02   -0.10003E-02 13496   0.911E-01    0.779E+00
+DAV:   6    -0.373468086699E+02    0.17756E+01   -0.17600E+00 12536   0.931E+00    0.408E+00
+DAV:   7    -0.367890961208E+02    0.55771E+00   -0.17956E+00 13000   0.953E+00    0.676E-01
+DAV:   8    -0.367963305175E+02   -0.72344E-02   -0.45645E-02 12696   0.147E+00    0.846E-02
+DAV:   9    -0.367965118970E+02   -0.18138E-03   -0.10460E-03 13716   0.278E-01    0.376E-02
+DAV:  10    -0.367966184219E+02   -0.10652E-03   -0.11587E-04 13424   0.972E-02    0.534E-03
+DAV:  11    -0.367966193058E+02   -0.88390E-06   -0.29810E-06 13452   0.148E-02
+   1 F= -.37199727E+02 E0= -.37199727E+02  d E =-.371997E+02
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.369E-05 g(S)=  0.000E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.369E-05
+ reached required accuracy - stopping structural energy minimisation
