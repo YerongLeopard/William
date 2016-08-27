@@ -1,5 +1,7 @@
 DATA11 = xlsread('data.xlsx','data11');
+DATA11
 dim = size(DATA11);
+dim
 %DATA11 = DATA11(2:13, 1:dim(2));
 A = 2.4671554423831878;
 LatticeC = DATA11(:,1);
@@ -19,7 +21,7 @@ BMfitF = @(FBV, V)( ...
 
 figure; hold on;
 plot(LatticeC, F0, '*');
-title('Grimme');
+title('Grimme D3 correction');
 xx = 2.5:0.05:8.;
 xxvol = xx*A*A*sqrt(3)/8;
 beta0 = [-9.3062    0.2469   10.9828    9.0445 ];
@@ -35,7 +37,7 @@ ylim
 plot(xx, BMfitF(beta, xxvol),'-');
 h = xlabel('Lattice constant c/ $\AA$');
 set(h,'interpreter','latex');
-h = ylabel('Energy/ $eV$ per atom');
+h = xlabel('Lattice constant c/ $eV$');
 set(h,'interpreter','latex');
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -44,8 +46,10 @@ set(h,'interpreter','latex');
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-DATA12 = xlsread('data.xlsx','data12');
+DATA12 = xlsread('data.xlsx','data11');
+DATA12
 dim = size(DATA12);
+dim
 %DATA11 = DATA12(2:13, 1:dim(2));
 A = 2.4671554423831878;
 LatticeC = DATA12(:,1);
@@ -64,7 +68,6 @@ BMfitF = @(FBV, V)( ...
     );
 
 figure; hold on;
-title('Becke-Jonson damping');
 plot(LatticeC, F0, '*');
 xx = 2.5:0.05:8.;
 xxvol = xx*A*A*sqrt(3)/8;
@@ -79,7 +82,3 @@ plot(xlim, [beta(1) beta(1)]);
 plot([optC optC], ylim);
 ylim
 plot(xx, BMfitF(beta, xxvol),'-');
-h = xlabel('Lattice constant c/ $\AA$');
-set(h,'interpreter','latex');
-h = ylabel('Energy/ $eV$ per atom');
-set(h,'interpreter','latex');
