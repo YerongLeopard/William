@@ -1,6 +1,6 @@
 SYSTEM=graphite                 # Job description
 GGA=PE                          #
-ISMEAR=0                        # Tetrahedron method with Bloechl corrections
+ISMEAR=-5                        # Tetrahedron method with Bloechl corrections
 NELM=200                        # Maximum number of SCF cycles
 EDIFF=1.0E-06                   # Convergence criteria for SCF Energy
 ENCUT=600
@@ -12,4 +12,3 @@ EDIFFG=1.0E-03                  # Convergence criteria for Geom Opt forces
 LWAVE=.FALSE.                   # !No wavefunction output file, too big
 LCHARG=.FALSE.                  # !No charge density output file, too big
 IVDW=12
-SIGMA=0.1
