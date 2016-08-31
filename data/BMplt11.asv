@@ -36,7 +36,7 @@ QME = DATA11(:,2);
 %%%%%%%%%%%% ENERGY %%%%%%%%%%
 
 figure; hold on;
-title('Grimme');
+title('Becke-Jonson damping');
 
 plot(LatticeC, QME, 'b*');
 plot(LatticeC(idx), F0(idx), 'r*');

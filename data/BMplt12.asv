@@ -8,13 +8,9 @@ dim = size(DATA12);
 
 idx = find(DATA12(:,5));
 idx_nst = intersect(surrounding, idx);
-P_idx = find(DATA12(:,4));
-P_idx_nst = intersect(surrounding, idx);
 
-LatticeC = DATA12(:,1), Volume = LatticeC.*A*A*sqrt(3)/8, nstVoume = Volume(surrounding);
-QME = DATA12(:,2);
 F0 = DATA12(:, 3);
-Pressure = DATA12(:, 4);
+
 %% model function
 
 
@@ -32,7 +28,9 @@ BMfitP = @(BV, V)( ...
     (1 + 0.75*(BV(2)-4) * ((BV(3)./V)^ (2./3.) - 1)) ...
 );
 
-
+LatticeC = DATA12(:,1);
+Volume = LatticeC.*A*A*sqrt(3)/8, nstVoume = Volume(surrounding) ;
+QME = DATA12(:,2);
 
 
 %%%%%%%%%%%% ENERGY %%%%%%%%%%
@@ -74,7 +72,7 @@ beta = nlinfit(Volume(idx), F0(idx), BMfitF, beta0, opts);
 optC_full_f0 = beta(4)/A/A/sqrt(3)*8.;
 disp(sprintf('Optimal Lattice Constant C (full F0): %.4f', optC_full_f0));
 plot(xlim, [beta(1) beta(1)],'k.-.', [optC_full_f0 optC_full_f0], ylim , 'k.-.');
-fit_full_F0 = plot(xx, BMfitF(beta, xxvol),'r-');
+fit_full_F0 = plot(xx, BMfitF(beta, xxvol),'b-');
 
 
 %%%
@@ -84,44 +82,35 @@ fit_full_F0 = plot(xx, BMfitF(beta, xxvol),'r-');
 %Volume = LatticeC.*A*A*sqrt(3)/8;
 % QME = nst12(:,2);
 beta = nlinfit(Volume(idx), QME(idx), BMfitF,beta0, opts);
-optC_nst_qme = beta(4)/A/A/sqrt(3)*8.;
+optC_nst = beta(4)/A/A/sqrt(3)*8.;
 
-disp(sprintf('Optimal Lattice Constant C (nst QME): %.4f', optC_nst_qme));
+disp(sprintf('Optimal Lattice Constant C (nst QME): %.4f', optC_nst));
 % BMfitF(beta0, Volume);
 % plot(xlim, [beta(1) beta(1)]);
 % plot([optC optC], ylim);
-plot(xlim, [beta(1) beta(1)],'k.-.', [optC_nst_qme optC_nst_qme], ylim , 'k.-.');
+plot(xlim, [beta(1) beta(1)],'k.-.', [optC_nst optC_nst], ylim , 'k.-.');
 %plot([6.87, 6.87], ylim);
 fit_nst_QME = plot(xx, BMfitF(beta, xxvol),'b--');
 % size(F0(idx_nst))
 % size(Volume(idx_nst))
-
 beta = nlinfit(Volume(idx_nst), F0(idx_nst), BMfitF, beta0, opts);
-optC_nst_f0 = beta(4)/A/A/sqrt(3)*8.;
-disp(sprintf('Optimal Lattice Constant C (nst F0): %.4f', optC_nst_f0));
-plot(xlim, [beta(1) beta(1)],'k.-.', [optC_nst_f0 optC_nst_f0], ylim , 'k.-.');
-fit_nst_F0 = plot(xx, BMfitF(beta, xxvol),'b-');
+optC_full_f0 = beta(4)/A/A/sqrt(3)*8.;
+disp(sprintf('Optimal Lattice Constant C (full F0): %.4f', optC_full_f0));
+plot(xlim, [beta(1) beta(1)],'k.-.', [optC_full_f0 optC_full_f0], ylim , 'k.-.');
+fit_full_F0 = plot(xx, BMfitF(beta, xxvol),'b-');
 
 % beta = nlinfit(Volume(idx), F0, BMfitF, beta0, opts);
 % optC_nst = beta(4)/A/A/sqrt(3)*8.;
 % disp(sprintf('Optimal Lattice Constant C (nst F0): %.4f', optC_nst));
 
-h = legend([fit_nst_F0, fit_full_F0, fit_nst_QME, fit_full_QME], ...
-    ['F(0K): $c_{opt}$(nst) = ' num2str(optC_full_f0) '$\AA$'], ...
+h = legend([fit_full_F0, fit_full_QME, fit_nst_QME], ...
     ['F(0K): $c_{opt}$(full) = ' num2str(optC_full_f0) '$\AA$'], ...
-    ['QME: $c_{opt}$(nst) = ' num2str(optC_nst_qme) '$\AA$'], ...
-    ['QME: $c_{opt}$(full) = ' num2str(optC_full_qme) '$\AA$'] ...
-);
+    ['QME: $c_{opt}$(full) = ' num2str(optC_full_qme) '$\AA$'], ...
+    ['QME: $c_{opt}$(nst) = ' num2str(optC_nst) '$\AA$']...
+    );
 set(h, 'interpreter', 'latex');
 set(h, 'fontsize', 15);
 h = xlabel('Lattice constant c/ $\AA$');
 set(h,'interpreter','latex');
 h = ylabel('Energy/ $eV$ per atom');
 set(h,'interpreter','latex');
-
-
-%%
-%%     Pressure Plot
-%%
-%%
-
