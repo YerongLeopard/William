@@ -1,6 +1,6 @@
  vasp.5.3.5 31Mar14 (build Nov 02 2014 15:17:37) complex                        
   
- executed on        ion-Intel-MKL date 2016.08.13  18:46:28
+ executed on        ion-Intel-MKL date 2016.08.28  04:47:26
  running on    6 total cores
  distrk:  each k-point on    6 cores,    1 groups
  distr:  one band on NCORES_PER_BAND=   1 cores,    6 groups
@@ -1356,14 +1356,14 @@ Space group operators:
 ----------------------------------------- Iteration    1(   1)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.24: real time    0.24
-    SETDIJ:  cpu time    0.01: real time    0.02
-     EDDAV:  cpu time  178.23: real time  178.37
+    POTLOK:  cpu time    0.20: real time    0.20
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  132.34: real time  132.41
  BZINTS: Fermi energy: 15.836876;128.000000 electrons
          Band energy:  51.379427;  BLOECHL correction: -0.098703
-       DOS:  cpu time    0.20: real time    0.20
+       DOS:  cpu time    0.21: real time    0.21
     --------------------------------------------
-      LOOP:  cpu time  178.68: real time  178.83
+      LOOP:  cpu time  132.76: real time  132.85
 
  eigenvalue-minimisations  : 27384
  total energy-change (2. order) : 0.5907168E+03  (-0.7167524E+04)
@@ -1395,12 +1395,12 @@ Space group operators:
 ----------------------------------------- Iteration    1(   2)  ---------------------------------------
 
 
-     EDDAV:  cpu time  201.03: real time  201.16
+     EDDAV:  cpu time  156.06: real time  156.14
  BZINTS: Fermi energy:  3.838616;128.000000 electrons
          Band energy:-802.426860;  BLOECHL correction: -0.000492
-       DOS:  cpu time    0.18: real time    0.18
+       DOS:  cpu time    0.17: real time    0.17
     --------------------------------------------
-      LOOP:  cpu time  201.21: real time  201.35
+      LOOP:  cpu time  156.24: real time  156.32
 
  eigenvalue-minimisations  : 34032
  total energy-change (2. order) :-0.8538063E+03  (-0.8229535E+03)
@@ -1432,12 +1432,12 @@ Space group operators:
 ----------------------------------------- Iteration    1(   3)  ---------------------------------------
 
 
-     EDDAV:  cpu time  201.47: real time  201.60
+     EDDAV:  cpu time  154.00: real time  154.08
  BZINTS: Fermi energy:  3.164199;128.000000 electrons
          Band energy:-851.951532;  BLOECHL correction:  0.000000
        DOS:  cpu time    0.06: real time    0.06
     --------------------------------------------
-      LOOP:  cpu time  201.54: real time  201.67
+      LOOP:  cpu time  154.07: real time  154.15
 
  eigenvalue-minimisations  : 33444
  total energy-change (2. order) :-0.4952467E+02  (-0.4905208E+02)
@@ -1469,12 +1469,12 @@ Space group operators:
 ----------------------------------------- Iteration    1(   4)  ---------------------------------------
 
 
-     EDDAV:  cpu time  206.03: real time  206.19
+     EDDAV:  cpu time  158.86: real time  158.94
  BZINTS: Fermi energy:  3.154544;128.000000 electrons
          Band energy:-852.887259;  BLOECHL correction: -0.000000
        DOS:  cpu time    0.09: real time    0.09
     --------------------------------------------
-      LOOP:  cpu time  206.13: real time  206.28
+      LOOP:  cpu time  158.95: real time  159.04
 
  eigenvalue-minimisations  : 34788
  total energy-change (2. order) :-0.9357268E+00  (-0.9338987E+00)
@@ -1506,14 +1506,14 @@ Space group operators:
 ----------------------------------------- Iteration    1(   5)  ---------------------------------------
 
 
-     EDDAV:  cpu time  211.88: real time  212.02
+     EDDAV:  cpu time  150.65: real time  150.73
  BZINTS: Fermi energy:  3.154403;128.000000 electrons
          Band energy:-852.914728;  BLOECHL correction: -0.000000
-       DOS:  cpu time    0.08: real time    0.09
-    CHARGE:  cpu time    9.29: real time    9.30
-    MIXING:  cpu time    0.01: real time    0.01
+       DOS:  cpu time    0.05: real time    0.05
+    CHARGE:  cpu time    4.77: real time    4.78
+    MIXING:  cpu time    0.00: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  221.27: real time  221.42
+      LOOP:  cpu time  155.49: real time  155.57
 
  eigenvalue-minimisations  : 35040
  total energy-change (2. order) :-0.2746916E-01  (-0.2745772E-01)
@@ -1550,16 +1550,16 @@ Space group operators:
 ----------------------------------------- Iteration    1(   6)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.24: real time    0.24
-    SETDIJ:  cpu time    0.01: real time    0.02
-     EDDAV:  cpu time  199.85: real time  199.99
+    POTLOK:  cpu time    0.37: real time    0.37
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  125.29: real time  125.36
  BZINTS: Fermi energy:  3.912993;128.000000 electrons
          Band energy:-713.023078;  BLOECHL correction: -0.000000
-       DOS:  cpu time    0.08: real time    0.08
-    CHARGE:  cpu time   10.12: real time   10.13
+       DOS:  cpu time    0.05: real time    0.05
+    CHARGE:  cpu time    7.18: real time    7.19
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  210.31: real time  210.46
+      LOOP:  cpu time  132.92: real time  132.99
 
  eigenvalue-minimisations  : 31296
  total energy-change (2. order) : 0.1439660E+02  (-0.1485530E+01)
@@ -1600,16 +1600,16 @@ Space group operators:
 ----------------------------------------- Iteration    1(   7)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.24: real time    0.25
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  199.21: real time  199.34
+    POTLOK:  cpu time    0.16: real time    0.16
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  127.78: real time  127.84
  BZINTS: Fermi energy:  4.649555;128.000000 electrons
          Band energy:-570.286413;  BLOECHL correction:  0.000000
-       DOS:  cpu time    0.07: real time    0.07
-    CHARGE:  cpu time    9.94: real time    9.95
+       DOS:  cpu time    0.04: real time    0.04
+    CHARGE:  cpu time    7.30: real time    7.31
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  209.49: real time  209.63
+      LOOP:  cpu time  135.31: real time  135.38
 
  eigenvalue-minimisations  : 30996
  total energy-change (2. order) : 0.4560539E+01  (-0.1562711E+01)
@@ -1650,16 +1650,16 @@ Space group operators:
 ----------------------------------------- Iteration    1(   8)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.24: real time    0.24
+    POTLOK:  cpu time    0.20: real time    0.20
     SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  198.52: real time  198.65
+     EDDAV:  cpu time  129.15: real time  129.22
  BZINTS: Fermi energy:  4.624958;128.000000 electrons
          Band energy:-572.866913;  BLOECHL correction:  0.000000
-       DOS:  cpu time    0.06: real time    0.06
-    CHARGE:  cpu time    9.32: real time    9.32
+       DOS:  cpu time    0.04: real time    0.04
+    CHARGE:  cpu time    7.35: real time    7.35
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  208.17: real time  208.30
+      LOOP:  cpu time  136.77: real time  136.84
 
  eigenvalue-minimisations  : 31740
  total energy-change (2. order) :-0.6083674E-01  (-0.4592848E-01)
@@ -1700,16 +1700,16 @@ Space group operators:
 ----------------------------------------- Iteration    1(   9)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.24: real time    0.25
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  196.63: real time  196.76
+    POTLOK:  cpu time    0.19: real time    0.19
+    SETDIJ:  cpu time    0.01: real time    0.02
+     EDDAV:  cpu time  129.14: real time  129.21
  BZINTS: Fermi energy:  4.630893;128.000000 electrons
          Band energy:-571.677427;  BLOECHL correction:  0.000000
-       DOS:  cpu time    0.05: real time    0.05
-    CHARGE:  cpu time    8.81: real time    8.81
+       DOS:  cpu time    0.03: real time    0.03
+    CHARGE:  cpu time    7.32: real time    7.32
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  205.75: real time  205.90
+      LOOP:  cpu time  136.71: real time  136.78
 
  eigenvalue-minimisations  : 31764
  total energy-change (2. order) :-0.2926634E-02  (-0.3530229E-02)
@@ -1750,16 +1750,16 @@ Space group operators:
 ----------------------------------------- Iteration    1(  10)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.43: real time    0.43
-    SETDIJ:  cpu time    0.01: real time    0.02
-     EDDAV:  cpu time  236.75: real time  236.89
+    POTLOK:  cpu time    0.20: real time    0.20
+    SETDIJ:  cpu time    0.02: real time    0.02
+     EDDAV:  cpu time  147.64: real time  147.71
  BZINTS: Fermi energy:  4.635484;128.000000 electrons
          Band energy:-571.015120;  BLOECHL correction:  0.000000
-       DOS:  cpu time    0.07: real time    0.07
-    CHARGE:  cpu time    8.89: real time    8.89
+       DOS:  cpu time    0.04: real time    0.04
+    CHARGE:  cpu time    4.73: real time    4.73
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  246.17: real time  246.31
+      LOOP:  cpu time  152.63: real time  152.71
 
  eigenvalue-minimisations  : 40128
  total energy-change (2. order) : 0.1156585E-02  (-0.1152043E-02)
@@ -1800,19 +1800,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  11)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.23: real time    0.23
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  191.22: real time  191.35
+    POTLOK:  cpu time    0.16: real time    0.16
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  153.35: real time  153.42
  BZINTS: Fermi energy:  4.639590;128.000000 electrons
          Band energy:-570.066428;  BLOECHL correction:  0.000000
-       DOS:  cpu time    0.06: real time    0.06
-    CHARGE:  cpu time    9.27: real time    9.28
+       DOS:  cpu time    0.04: real time    0.04
+    CHARGE:  cpu time    7.23: real time    7.23
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  200.81: real time  200.95
+      LOOP:  cpu time  160.80: real time  160.88
 
  eigenvalue-minimisations  : 31128
- total energy-change (2. order) :-0.8316583E-03  (-0.7336310E-03)
+ total energy-change (2. order) :-0.8316582E-03  (-0.7336310E-03)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0643439 magnetization 
 
@@ -1850,19 +1850,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  12)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.23: real time    0.23
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  197.65: real time  197.77
+    POTLOK:  cpu time    0.18: real time    0.18
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  151.34: real time  151.42
  BZINTS: Fermi energy:  4.643993;128.000000 electrons
          Band energy:-569.780230;  BLOECHL correction:  0.000000
-       DOS:  cpu time    0.06: real time    0.06
-    CHARGE:  cpu time    9.15: real time    9.15
+       DOS:  cpu time    0.04: real time    0.04
+    CHARGE:  cpu time    4.76: real time    4.76
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  207.12: real time  207.25
+      LOOP:  cpu time  156.34: real time  156.42
 
  eigenvalue-minimisations  : 31272
- total energy-change (2. order) :-0.2662422E-03  (-0.6241245E-03)
+ total energy-change (2. order) :-0.2662423E-03  (-0.6241245E-03)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0641225 magnetization 
 
@@ -1900,19 +1900,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  13)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.25: real time    0.25
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  198.33: real time  198.45
+    POTLOK:  cpu time    0.37: real time    0.37
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  123.61: real time  123.67
  BZINTS: Fermi energy:  4.645853;128.000000 electrons
          Band energy:-569.744385;  BLOECHL correction: -0.000001
-       DOS:  cpu time    0.10: real time    0.10
-    CHARGE:  cpu time    9.96: real time    9.99
-    MIXING:  cpu time    0.01: real time    0.02
+       DOS:  cpu time    0.06: real time    0.06
+    CHARGE:  cpu time    7.29: real time    7.30
+    MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  208.68: real time  208.83
+      LOOP:  cpu time  131.36: real time  131.43
 
  eigenvalue-minimisations  : 31548
- total energy-change (2. order) : 0.1436402E-03  (-0.1399350E-03)
+ total energy-change (2. order) : 0.1436403E-03  (-0.1399350E-03)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640914 magnetization 
 
@@ -1950,19 +1950,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  14)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.50: real time    0.50
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  207.30: real time  207.40
+    POTLOK:  cpu time    0.20: real time    0.20
+    SETDIJ:  cpu time    0.01: real time    0.02
+     EDDAV:  cpu time  133.27: real time  133.33
  BZINTS: Fermi energy:  4.645847;128.000000 electrons
          Band energy:-569.744252;  BLOECHL correction: -0.000001
-       DOS:  cpu time    0.11: real time    0.11
-    CHARGE:  cpu time    8.56: real time    8.56
+       DOS:  cpu time    0.07: real time    0.07
+    CHARGE:  cpu time    7.31: real time    7.32
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  216.49: real time  216.60
+      LOOP:  cpu time  140.87: real time  140.95
 
  eigenvalue-minimisations  : 32076
- total energy-change (2. order) :-0.5619384E-05  (-0.3227884E-04)
+ total energy-change (2. order) :-0.5619429E-05  (-0.3227884E-04)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640822 magnetization 
 
@@ -2000,19 +2000,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  15)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.21: real time    0.21
-    SETDIJ:  cpu time    0.01: real time    0.02
-     EDDAV:  cpu time  192.08: real time  192.18
+    POTLOK:  cpu time    0.39: real time    0.40
+    SETDIJ:  cpu time    0.02: real time    0.02
+     EDDAV:  cpu time  153.75: real time  153.83
  BZINTS: Fermi energy:  4.645844;128.000000 electrons
          Band energy:-569.739146;  BLOECHL correction: -0.000001
-       DOS:  cpu time    0.11: real time    0.11
-    CHARGE:  cpu time    9.34: real time    9.35
+       DOS:  cpu time    0.07: real time    0.07
+    CHARGE:  cpu time    7.52: real time    7.53
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  201.77: real time  201.88
+      LOOP:  cpu time  161.76: real time  161.85
 
  eigenvalue-minimisations  : 30108
- total energy-change (2. order) : 0.2921452E-06  (-0.1946204E-04)
+ total energy-change (2. order) : 0.2921015E-06  (-0.1946204E-04)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640806 magnetization 
 
@@ -2050,19 +2050,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  16)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.23: real time    0.23
+    POTLOK:  cpu time    0.19: real time    0.20
     SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  170.54: real time  170.63
+     EDDAV:  cpu time  114.59: real time  114.65
  BZINTS: Fermi energy:  4.645257;128.000000 electrons
          Band energy:-569.729391;  BLOECHL correction: -0.000000
-       DOS:  cpu time    0.10: real time    0.10
-    CHARGE:  cpu time    9.50: real time    9.51
+       DOS:  cpu time    0.06: real time    0.06
+    CHARGE:  cpu time    4.82: real time    4.82
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  180.41: real time  180.50
+      LOOP:  cpu time  119.70: real time  119.76
 
  eigenvalue-minimisations  : 25296
- total energy-change (2. order) :-0.3237017E-04  (-0.8036191E-04)
+ total energy-change (2. order) :-0.3237012E-04  (-0.8036191E-04)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640750 magnetization 
 
@@ -2101,19 +2101,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  17)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.23: real time    0.23
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  174.61: real time  174.70
+    POTLOK:  cpu time    0.40: real time    0.40
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  134.50: real time  134.57
  BZINTS: Fermi energy:  4.645713;128.000000 electrons
          Band energy:-569.716354;  BLOECHL correction: -0.000000
-       DOS:  cpu time    0.11: real time    0.11
-    CHARGE:  cpu time   10.13: real time   10.14
+       DOS:  cpu time    0.07: real time    0.07
+    CHARGE:  cpu time    7.35: real time    7.36
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  185.11: real time  185.21
+      LOOP:  cpu time  142.34: real time  142.42
 
  eigenvalue-minimisations  : 25764
- total energy-change (2. order) : 0.1980092E-04  (-0.5843417E-04)
+ total energy-change (2. order) : 0.1980086E-04  (-0.5843418E-04)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640705 magnetization 
 
@@ -2152,19 +2152,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  18)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.24: real time    0.24
+    POTLOK:  cpu time    0.40: real time    0.40
     SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  145.61: real time  145.69
+     EDDAV:  cpu time  101.54: real time  101.59
  BZINTS: Fermi energy:  4.645891;128.000000 electrons
          Band energy:-569.708225;  BLOECHL correction: -0.000001
-       DOS:  cpu time    0.11: real time    0.11
-    CHARGE:  cpu time   10.05: real time   10.06
+       DOS:  cpu time    0.07: real time    0.07
+    CHARGE:  cpu time    4.77: real time    4.78
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  156.04: real time  156.13
+      LOOP:  cpu time  106.80: real time  106.86
 
  eigenvalue-minimisations  : 20172
- total energy-change (2. order) : 0.8760123E-05  (-0.3290504E-04)
+ total energy-change (2. order) : 0.8760167E-05  (-0.3290504E-04)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640639 magnetization 
 
@@ -2203,19 +2203,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  19)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.44: real time    0.44
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  145.53: real time  145.63
+    POTLOK:  cpu time    0.17: real time    0.17
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  107.84: real time  107.89
  BZINTS: Fermi energy:  4.646053;128.000000 electrons
          Band energy:-569.705710;  BLOECHL correction: -0.000001
-       DOS:  cpu time    0.12: real time    0.12
-    CHARGE:  cpu time    9.13: real time    9.13
+       DOS:  cpu time    0.07: real time    0.07
+    CHARGE:  cpu time    7.52: real time    7.53
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  155.24: real time  155.35
+      LOOP:  cpu time  115.63: real time  115.69
 
  eigenvalue-minimisations  : 19416
- total energy-change (2. order) : 0.6058563E-05  (-0.1633805E-04)
+ total energy-change (2. order) : 0.6058483E-05  (-0.1633805E-04)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640595 magnetization 
 
@@ -2254,19 +2254,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  20)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.44: real time    0.44
-    SETDIJ:  cpu time    0.01: real time    0.02
-     EDDAV:  cpu time  139.07: real time  139.16
+    POTLOK:  cpu time    0.19: real time    0.19
+    SETDIJ:  cpu time    0.02: real time    0.02
+     EDDAV:  cpu time   88.44: real time   88.49
  BZINTS: Fermi energy:  4.646067;128.000000 electrons
          Band energy:-569.704390;  BLOECHL correction: -0.000001
-       DOS:  cpu time    0.12: real time    0.12
-    CHARGE:  cpu time    8.93: real time    8.94
+       DOS:  cpu time    0.11: real time    0.11
+    CHARGE:  cpu time    6.96: real time    6.96
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  148.58: real time  148.68
+      LOOP:  cpu time   95.73: real time   95.78
 
  eigenvalue-minimisations  : 19428
- total energy-change (2. order) : 0.1077285E-05  (-0.1103583E-04)
+ total energy-change (2. order) : 0.1077334E-05  (-0.1103584E-04)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640566 magnetization 
 
@@ -2305,19 +2305,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  21)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.23: real time    0.23
+    POTLOK:  cpu time    0.20: real time    0.20
     SETDIJ:  cpu time    0.01: real time    0.01
-     EDDAV:  cpu time  146.30: real time  146.41
+     EDDAV:  cpu time  109.12: real time  109.18
  BZINTS: Fermi energy:  4.646102;128.000000 electrons
          Band energy:-569.705734;  BLOECHL correction: -0.000001
        DOS:  cpu time    0.12: real time    0.12
-    CHARGE:  cpu time   10.15: real time   10.15
+    CHARGE:  cpu time    6.88: real time    6.89
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  156.83: real time  156.94
+      LOOP:  cpu time  116.35: real time  116.41
 
  eigenvalue-minimisations  : 19320
- total energy-change (2. order) : 0.1911451E-05  (-0.4498265E-05)
+ total energy-change (2. order) : 0.1911388E-05  (-0.4498271E-05)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640549 magnetization 
 
@@ -2340,7 +2340,7 @@ Space group operators:
   -V(xc)+E(xc)   XCENC  =       460.97849886
   PAW double counting   =      2219.32773061    -2260.63823743
   entropy T*S    EENTRO =         0.00000000
-  eigenvalues    EBANDS =      -569.70573407
+  eigenvalues    EBANDS =      -569.70573408
   atomic energy  EATOM  =      4708.80920826
   ---------------------------------------------------
   free energy    TOTEN  =      -294.68378196 eV
@@ -2356,19 +2356,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  22)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.23: real time    0.23
-    SETDIJ:  cpu time    0.01: real time    0.02
-     EDDAV:  cpu time  144.41: real time  144.50
+    POTLOK:  cpu time    0.20: real time    0.20
+    SETDIJ:  cpu time    0.02: real time    0.02
+     EDDAV:  cpu time  109.12: real time  109.17
  BZINTS: Fermi energy:  4.646084;128.000000 electrons
          Band energy:-569.705156;  BLOECHL correction: -0.000001
        DOS:  cpu time    0.12: real time    0.12
-    CHARGE:  cpu time    8.89: real time    8.90
-    MIXING:  cpu time    0.01: real time    0.04
+    CHARGE:  cpu time    6.83: real time    6.84
+    MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  153.68: real time  153.81
+      LOOP:  cpu time  116.30: real time  116.36
 
  eigenvalue-minimisations  : 18924
- total energy-change (2. order) :-0.1767999E-05  (-0.9310070E-06)
+ total energy-change (2. order) :-0.1767896E-05  (-0.9310063E-06)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640498 magnetization 
 
@@ -2407,19 +2407,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  23)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.24: real time    0.24
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  144.72: real time  144.82
+    POTLOK:  cpu time    0.20: real time    0.20
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  106.79: real time  106.84
  BZINTS: Fermi energy:  4.646057;128.000000 electrons
          Band energy:-569.705559;  BLOECHL correction: -0.000001
        DOS:  cpu time    0.11: real time    0.11
-    CHARGE:  cpu time    9.99: real time   10.00
+    CHARGE:  cpu time    6.84: real time    6.84
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  155.08: real time  155.19
+      LOOP:  cpu time  113.96: real time  114.02
 
  eigenvalue-minimisations  : 19164
- total energy-change (2. order) :-0.3101886E-06  (-0.9364369E-05)
+ total energy-change (2. order) :-0.3101668E-06  (-0.9364369E-05)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640495 magnetization 
 
@@ -2458,19 +2458,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  24)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.24: real time    0.25
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  146.98: real time  147.08
+    POTLOK:  cpu time    0.39: real time    0.39
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  110.35: real time  110.41
  BZINTS: Fermi energy:  4.646089;128.000000 electrons
          Band energy:-569.706812;  BLOECHL correction: -0.000001
        DOS:  cpu time    0.11: real time    0.11
-    CHARGE:  cpu time    9.66: real time    9.66
+    CHARGE:  cpu time    6.84: real time    6.84
     MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  157.02: real time  157.13
+      LOOP:  cpu time  117.72: real time  117.78
 
  eigenvalue-minimisations  : 19224
- total energy-change (2. order) : 0.1056520E-05  (-0.7374499E-05)
+ total energy-change (2. order) : 0.1056443E-05  (-0.7374502E-05)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640504 magnetization 
 
@@ -2491,7 +2491,7 @@ Space group operators:
   -Hartree energ DENC   =     -1472.93620035
   -exchange      EXHF   =         0.00000000
   -V(xc)+E(xc)   XCENC  =       460.97844318
-  PAW double counting   =      2219.32413302    -2260.63462072
+  PAW double counting   =      2219.32413301    -2260.63462072
   entropy T*S    EENTRO =         0.00000000
   eigenvalues    EBANDS =      -569.70681195
   atomic energy  EATOM  =      4708.80920826
@@ -2509,19 +2509,19 @@ Space group operators:
 ----------------------------------------- Iteration    1(  25)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.43: real time    0.43
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  145.52: real time  145.62
+    POTLOK:  cpu time    0.19: real time    0.19
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  107.18: real time  107.23
  BZINTS: Fermi energy:  4.646090;128.000000 electrons
          Band energy:-569.706793;  BLOECHL correction: -0.000001
        DOS:  cpu time    0.11: real time    0.11
-    CHARGE:  cpu time   10.11: real time   10.12
-    MIXING:  cpu time    0.02: real time    0.02
+    CHARGE:  cpu time    6.86: real time    6.86
+    MIXING:  cpu time    0.01: real time    0.01
     --------------------------------------------
-      LOOP:  cpu time  156.21: real time  156.31
+      LOOP:  cpu time  114.37: real time  114.43
 
  eigenvalue-minimisations  : 18984
- total energy-change (2. order) : 0.9868327E-06  (-0.3101365E-05)
+ total energy-change (2. order) : 0.9868127E-06  (-0.3101368E-05)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640507 magnetization 
 
@@ -2560,17 +2560,17 @@ Space group operators:
 ----------------------------------------- Iteration    1(  26)  ---------------------------------------
 
 
-    POTLOK:  cpu time    0.64: real time    0.65
-    SETDIJ:  cpu time    0.02: real time    0.02
-     EDDAV:  cpu time  143.82: real time  143.90
+    POTLOK:  cpu time    0.39: real time    0.39
+    SETDIJ:  cpu time    0.01: real time    0.01
+     EDDAV:  cpu time  105.43: real time  105.48
  BZINTS: Fermi energy:  4.646090;128.000000 electrons
          Band energy:-569.707135;  BLOECHL correction: -0.000001
        DOS:  cpu time    0.12: real time    0.12
     --------------------------------------------
-      LOOP:  cpu time  144.60: real time  144.69
+      LOOP:  cpu time  105.96: real time  106.01
 
  eigenvalue-minimisations  : 18444
- total energy-change (2. order) : 0.5713355E-07  (-0.1320096E-06)
+ total energy-change (2. order) : 0.5723541E-07  (-0.1320101E-06)
  number of electron     128.0000012 magnetization 
  augmentation part        3.0640507 magnetization 
 
@@ -16824,35 +16824,33 @@ Space group operators:
 ------------------------ aborting loop because EDIFF is reached ----------------------------------------
 
 
-    CHARGE:  cpu time   10.12: real time   10.13
+    CHARGE:  cpu time    6.86: real time    6.87
     FORLOC:  cpu time    0.05: real time    0.05
-    FORNL :  cpu time   55.87: real time   55.91
-    STRESS:  cpu time  107.51: real time  107.58
-    FORHAR:  cpu time    0.10: real time    0.10
+    FORNL :  cpu time   50.12: real time   50.15
+    STRESS:  cpu time   87.14: real time   87.18
+    FORHAR:  cpu time    0.08: real time    0.08
     MIXING:  cpu time    0.01: real time    0.01
     OFIELD:  cpu time    0.00: real time    0.00
 
  ---------------------------------------------------------------------------------------------
 
          DFTD3 V3.0 Rev 1        
- IVDW         = 11
+ IVDW         = 12
  DF pbe       
  parameters
  VDW_S6       =    1.0000
- VDW_S8       =    0.7220
- VDW_SR       =    1.2170
- rs18     =    1.0000
- alpha6   =   14.0000
- alpha8   =   16.0000
- k1-k3    =   16.0000    1.3333   -4.0000
+ VDW_S8       =    0.7875
+ VDW_A1       =    0.4289
+ VDW_A2       =    4.4407
+ k1-k3        =   16.0000    1.3333   -4.0000
  VDW_RADIUS   =   50.2022 A
  VDW_CNRADIUS =   21.1671 A
- Edisp (eV)   -3.05792
+ Edisp (eV)   -4.98759
 
- E6    (eV) :    -1.9163
- E8    (eV) :    -1.1417
- % E8        : 37.33
-    FORVDW:  cpu time    0.52: real time    0.53
+ E6    (eV) :    -3.5747
+ E8    (eV) :    -1.4129
+ % E8        : 28.33
+    FORVDW:  cpu time    0.28: real time    0.28
 
   FORCE on cell =-STRESS in cart. coord.  units (eV):
   Direction    XX          YY          ZZ          XY          YZ          ZX
@@ -16866,11 +16864,11 @@ Space group operators:
   augment   -12.35139   -12.35072   -11.32389     0.00177    -0.00000     0.00002
   Kinetic  1920.84610  1920.98410  2202.37139     0.24049    -0.00097     0.00485
   Fock        0.00000     0.00000     0.00000     0.00000     0.00000     0.00000
-  vdW        -0.54609    -0.54549    -4.16458     0.00071     0.00000    -0.00001
+  vdW        -0.82093    -0.81965    -5.96812     0.00150     0.00000    -0.00001
   -------------------------------------------------------------------------------------
-  Total      -1.10699    -1.05946     1.32714     0.01098    -0.00078     0.00240
-  in kB      -6.25348    -5.98498     7.49716     0.06204    -0.00440     0.01357
-  external pressure =       -1.58 kB  Pullay stress =        0.00 kB
+  Total      -1.38182    -1.33362    -0.47640     0.01177    -0.00078     0.00240
+  in kB      -7.80605    -7.53374    -2.69122     0.06649    -0.00440     0.01353
+  external pressure =       -6.01 kB  Pullay stress =        0.00 kB
 
 
  VOLUME and BASIS-vectors are now :
@@ -16927,38 +16925,38 @@ Space group operators:
  
  POSITION                                       TOTAL-FORCE (eV/Angst)
  -----------------------------------------------------------------------------------
-      2.47060     -0.00011      1.69082        -0.217374      0.004176     -0.135127
-      4.93431     -0.00022      1.68144         0.031841      0.003151     -0.004889
-      1.23348      2.13645      1.68144        -0.004290     -0.017706     -0.004825
-      3.70064      2.13634      1.68144        -0.004391      0.024076     -0.004966
-      2.46715     -0.00011      8.40718        -0.006239      0.003189      0.002023
-      4.93431     -0.00022      8.40718        -0.006219      0.003191      0.002053
-      1.23348      2.13645      8.40718        -0.006228      0.003184      0.002053
-      3.70064      2.13634      8.40718        -0.006229      0.003195      0.002053
-     -1.23367      2.13656      5.04431         0.005206     -0.003127     -0.002068
-      1.23348      2.13645      5.04431         0.005024     -0.003218     -0.002134
-     -2.46735      4.27313      5.04431         0.005193     -0.003015     -0.002101
-     -0.00019      4.27302      5.04431         0.005011     -0.003126     -0.001335
-     -1.23367      2.13656     11.77005         0.005679     -0.002959     -0.002167
-      1.23348      2.13645     11.77005         0.005848     -0.003048     -0.002104
-     -2.46735      4.27313     11.77005         0.005838     -0.003152     -0.002135
-     -0.00019      4.27302     11.77005         0.005657     -0.003058     -0.001291
-     -0.00019      1.42441      1.68144         0.004341     -0.002629      0.012058
-      2.46696      1.42430      1.68144         0.031680     -0.003264      0.047078
-     -1.23387      3.56098      1.68144         0.076811      0.023372      0.047495
-      1.23329      3.56086      1.68144         0.077188     -0.028958      0.046608
-     -0.00019      1.42441      8.40718         0.005186     -0.002602     -0.000286
-      2.46696      1.42430      8.40718         0.005186     -0.002600     -0.000269
-     -1.23387      3.56098      8.40718         0.005185     -0.002601     -0.000270
-      1.23329      3.56086      8.40718         0.005185     -0.002601     -0.000269
-      1.23367      0.71204      5.04431        -0.004491      0.002644      0.000748
-      3.70083      0.71193      5.04431        -0.003989      0.002753      0.000792
-     -0.00000      2.84860      5.04431        -0.004335      0.002268      0.000776
-      2.46715      2.84849      5.04431        -0.004162      0.002553      0.000088
-      1.23367      0.71204     11.77005        -0.004308      0.002300      0.000793
-      3.70083      0.71193     11.77005        -0.004736      0.002410      0.000750
-     -0.00000      2.84860     11.77005        -0.004619      0.002727      0.000764
-      2.46715      2.84849     11.77005        -0.004449      0.002477      0.000105
+      2.47060     -0.00011      1.69082        -0.218104      0.004179     -0.134396
+      4.93431     -0.00022      1.68144         0.032376      0.003154     -0.004944
+      1.23348      2.13645      1.68144        -0.004194     -0.017957     -0.004880
+      3.70064      2.13634      1.68144        -0.004295      0.024333     -0.005021
+      2.46715     -0.00011      8.40718        -0.006243      0.003192      0.002023
+      4.93431     -0.00022      8.40718        -0.006223      0.003193      0.002053
+      1.23348      2.13645      8.40718        -0.006233      0.003187      0.002053
+      3.70064      2.13634      8.40718        -0.006233      0.003198      0.002053
+     -1.23367      2.13656      5.04431         0.005210     -0.003135     -0.002119
+      1.23348      2.13645      5.04431         0.005028     -0.003216     -0.002184
+     -2.46735      4.27313      5.04431         0.005189     -0.003018     -0.002152
+     -0.00019      4.27302      5.04431         0.005021     -0.003129     -0.001450
+     -1.23367      2.13656     11.77005         0.005683     -0.002967     -0.002217
+      1.23348      2.13645     11.77005         0.005852     -0.003046     -0.002155
+     -2.46735      4.27313     11.77005         0.005834     -0.003154     -0.002186
+     -0.00019      4.27302     11.77005         0.005666     -0.003061     -0.001402
+     -0.00019      1.42441      1.68144         0.004440     -0.002632      0.012127
+      2.46696      1.42430      1.68144         0.031681     -0.003267      0.047083
+     -1.23387      3.56098      1.68144         0.076766      0.023342      0.047500
+      1.23329      3.56086      1.68144         0.077145     -0.028935      0.046614
+     -0.00019      1.42441      8.40718         0.005191     -0.002605     -0.000286
+      2.46696      1.42430      8.40718         0.005191     -0.002603     -0.000269
+     -1.23387      3.56098      8.40718         0.005190     -0.002604     -0.000270
+      1.23329      3.56086      8.40718         0.005190     -0.002604     -0.000268
+      1.23367      0.71204      5.04431        -0.004489      0.002644      0.000743
+      3.70083      0.71193      5.04431        -0.003998      0.002752      0.000783
+     -0.00000      2.84860      5.04431        -0.004338      0.002278      0.000769
+      2.46715      2.84849      5.04431        -0.004172      0.002556      0.000047
+      1.23367      0.71204     11.77005        -0.004317      0.002306      0.000784
+      3.70083      0.71193     11.77005        -0.004734      0.002415      0.000746
+     -0.00000      2.84860     11.77005        -0.004621      0.002723      0.000757
+      2.46715      2.84849     11.77005        -0.004458      0.002480      0.000066
  -----------------------------------------------------------------------------------
     total drift:                               -0.000048      0.000012      0.000249
 
@@ -16969,22 +16967,22 @@ Space group operators:
 
   FREE ENERGIE OF THE ION-ELECTRON SYSTEM (eV)
   ---------------------------------------------------
-  free  energy   TOTEN  =      -297.74170558 eV
+  free  energy   TOTEN  =      -299.67137425 eV
 
-  energy  without entropy=     -297.74170558  energy(sigma->0) =     -297.74170558
+  energy  without entropy=     -299.67137425  energy(sigma->0) =     -299.67137425
  
 
 
 --------------------------------------------------------------------------------------------------------
 
 
-    POTLOK:  cpu time    0.28: real time    0.28
+    POTLOK:  cpu time    0.42: real time    0.42
 
 
 --------------------------------------------------------------------------------------------------------
 
 
-     LOOP+:  cpu time 5046.93: real time 5050.30
+     LOOP+:  cpu time 3612.87: real time 3614.79
     4ORBIT:  cpu time    0.00: real time    0.00
  BZINTS: Fermi energy:  4.646090;128.000000 electrons
          Band energy:-569.707135;  BLOECHL correction: -0.000001
@@ -17004,14 +17002,14 @@ Space group operators:
  General timing and accounting informations for this job:
  ========================================================
   
-                  Total CPU time used (sec):     5092.157
-                            User time (sec):     4219.044
-                          System time (sec):      873.113
-                         Elapsed time (sec):     5096.055
+                  Total CPU time used (sec):     3648.119
+                            User time (sec):     2838.135
+                          System time (sec):      809.985
+                         Elapsed time (sec):     3650.401
   
-                   Maximum memory used (kb):      625144.
+                   Maximum memory used (kb):      625528.
                    Average memory used (kb):           0.
   
-                          Minor page faults:     88149325
-                          Major page faults:            4
-                 Voluntary context switches:         1110
+                          Minor page faults:     80768298
+                          Major page faults:            0
+                 Voluntary context switches:         1015
