@@ -1,0 +1,44 @@
+disp ('12');
+A = 2.4664372489959372;
+% surrounding = 7:13;
+ surrounding = 3:17;
+%%%%%%%%%%%%%%%%%%%%%%%%%
+DATA12 = xlsread('data.xlsx','data12');
+dim = size(DATA12);
+
+idx = find(DATA12(:,5));
+
+LatticeC = DATA12(:,1);  Volume = LatticeC*A*A*sqrt(3)/8;
+Ener_Corr0 = DATA12(:, 5);
+Ener_Corr300 = DATA12(:, 6);
+
+modelFUNC = @(para, V)(para(1) + para(2) * V);
+
+
+figure; hold on;
+title('Helmholtz free energy Correction' )
+plot(Volume(idx), Ener_Corr0(idx), 'b*');
+beta0 = [0. 0.];
+beta = nlinfit(Volume(idx), Ener_Corr0(idx), modelFUNC, beta0);
+xx = 7.:.5:10.5;
+fit = plot(xx, modelFUNC(beta, xx), 'r-');
+h = legend([fit] ,['SLOPE(0K): ' num2str(beta(2)) ' Gpa/ $\AA^3$']);
+set(h, 'interpreter', 'latex');
+set(h, 'fontsize', 15);
+SLOPE0 = beta(2)
+
+plot(Volume(idx), Ener_Corr0(idx), 'b*');
+beta0 = [0. 0.];
+beta = nlinfit(Volume(idx), Ener_Corr0(idx), modelFUNC, beta0);
+xx = 7.:.5:10.5;
+fit = plot(xx, modelFUNC(beta, xx), 'r-');
+h = legend([fit] ,['SLOPE(0K): ' num2str(beta(2)) ' Gpa/ $\AA^3$']);
+set(h, 'interpreter', 'latex');
+set(h, 'fontsize', 15);
+SLOPE0 = beta(2)
+
+%%%%%%%%%%%%%%%%% 300K %%%%%%%%%%%%%%%%%%
+h = xlabel('Volume/ $\AA^3$');
+set(h,'interpreter','latex');
+h = ylabel('Energy/ $eV$ per atom');
+set(h,'interpreter','latex');
