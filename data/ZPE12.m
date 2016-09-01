@@ -1,7 +1,7 @@
 disp ('12');
 A = 2.4664372489959372;
 % surrounding = 7:13;
- surrounding = 3:17;
+surrounding = 3:17;
 %%%%%%%%%%%%%%%%%%%%%%%%%
 DATA12 = xlsread('data.xlsx','data12');
 dim = size(DATA12);
@@ -9,7 +9,7 @@ dim = size(DATA12);
 idx = find(DATA12(:,5));
 
 LatticeC = DATA12(:,1);  Volume = LatticeC*A*A*sqrt(3)/8;
-Ener_Corr0 = DATA12(:, 5);
+Ener_Corr0 = DATA12(:, 5)
 Ener_Corr300 = DATA12(:, 6);
 
 modelFUNC = @(para, V)(para(1) + para(2) * V);

@@ -116,7 +116,7 @@ h = legend([fit_nst_F0, fit_full_F0, fit_nst_QME, fit_full_QME], ...
     ['QME: $c_{opt}$(nst) = ' num2str(optC_nst_qme) '$\AA$'], ...
     ['QME: $c_{opt}$(full) = ' num2str(optC_full_qme) '$\AA$'] ...
 );
-beta
+% beta
 set(h, 'interpreter', 'latex');
 set(h, 'fontsize', 15);
 h = xlabel('Lattice constant c/ $\AA$');
@@ -129,7 +129,7 @@ set(h,'interpreter','latex');
 %%     Pressure Plot
 %%
 %%
-SLOPE =   -2.4460e-04;
+SLOPE =   -2.4481e-04;
 % SLOPE = -2.7602e-04;
 xx = 2.5:0.05:8.;
 xxvol = xx*A*A*sqrt(3)/8;
