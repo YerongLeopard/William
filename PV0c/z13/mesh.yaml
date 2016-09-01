@@ -1,1408 +1,1425 @@
 mesh: [     9,     9,     4 ]
 nqpoint: 50     
-natom:   4      
 reciprocal_lattice:
-- [   0.40532700,   0.23401531,   0.00000000 ] # a*
-- [  -0.00000030,   0.46803114,   0.00000000 ] # b*
-- [   0.00000000,   0.00000000,   0.24964487 ] # c*
+- [   0.40533564,   0.23404500,   0.00000000 ] # a*
+- [   0.00002110,   0.46805346,   0.00000000 ] # b*
+- [   0.00000000,   0.00000000,   0.24780412 ] # c*
+natom:   4      
+lattice:
+- [     2.467155442383188,    -0.000111200019553,     0.000000000000000 ] # a
+- [    -1.233674023183305,     2.136563688137034,     0.000000000000000 ] # b
+- [     0.000000000000000,     0.000000000000000,     4.035445387000000 ] # c
+points:
+- symbol: C  # 1
+  coordinates: [  0.999999697166835,  0.000000349172772,  0.250000000000000 ]
+  mass: 12.010700
+- symbol: C  # 2
+  coordinates: [  0.000000349172772,  0.999999697166835,  0.750000000000000 ]
+  mass: 12.010700
+- symbol: C  # 3
+  coordinates: [  0.333298929956719,  0.666701052703672,  0.250000000000000 ]
+  mass: 12.010700
+- symbol: C  # 4
+  coordinates: [  0.666701052703672,  0.333298929956719,  0.750000000000000 ]
+  mass: 12.010700
 phonon:
 - q-position: [    0.0000000,    0.0000000,    0.1250000 ]
   weight: 2    
   band:
   - # 1
-    frequency:   -33.7572200806
+    frequency:    -5.3541534985
   - # 2
-    frequency:   -33.7564573186
+    frequency:    -4.7394760275
   - # 3
-    frequency:   -27.7571052051
+    frequency:     1.3500877524
   - # 4
-    frequency:   -27.7568698961
+    frequency:     1.4483950801
   - # 5
-    frequency:   -13.4131996379
+    frequency:     4.9053423866
   - # 6
-    frequency:     1.5391247733
+    frequency:     7.5551619943
   - # 7
-    frequency:     1.5397774202
+    frequency:    24.5743042076
   - # 8
-    frequency:     2.6943439370
+    frequency:    26.9500457334
   - # 9
-    frequency:     2.6943577809
+    frequency:    45.9651593338
   - # 10
-    frequency:     5.0673565728
+    frequency:    46.1953682435
   - # 11
-    frequency:    19.2287697390
+    frequency:    48.7234979816
   - # 12
-    frequency:    19.3121278719
+    frequency:    48.9718629377
 
 - q-position: [    0.1111111,    0.0000000,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -32.4958560427
+    frequency:     2.4740422743
   - # 2
-    frequency:   -31.9556475845
+    frequency:     4.6175804847
   - # 3
-    frequency:   -26.1868042339
+    frequency:     5.2548233868
   - # 4
-    frequency:   -26.1532554844
+    frequency:     6.9341833055
   - # 5
-    frequency:   -12.5079239998
+    frequency:     8.4440509886
   - # 6
-    frequency:     1.6442549100
+    frequency:    11.5025555045
   - # 7
-    frequency:     5.8242176011
+    frequency:    24.2120450859
   - # 8
-    frequency:     6.4126022921
+    frequency:    26.8350979905
   - # 9
-    frequency:     6.6146125510
+    frequency:    45.1847944045
   - # 10
-    frequency:     8.8144271003
+    frequency:    45.6217697797
   - # 11
-    frequency:    19.1545881329
+    frequency:    48.0869012706
   - # 12
-    frequency:    19.3034636707
+    frequency:    48.2952470697
 
 - q-position: [    0.2222222,    0.0000000,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -29.0065321339
+    frequency:     7.1528753236
   - # 2
-    frequency:   -26.6909094765
+    frequency:     8.8168786417
   - # 3
-    frequency:   -21.6403657389
+    frequency:     9.4430421834
   - # 4
-    frequency:   -21.4903754571
+    frequency:     9.5944534987
   - # 5
-    frequency:    -9.6876270698
+    frequency:    17.6941764475
   - # 6
-    frequency:     7.8790377595
+    frequency:    20.7054566716
   - # 7
-    frequency:     9.4078419865
+    frequency:    23.3022912112
   - # 8
-    frequency:    10.5566197786
+    frequency:    26.4295889854
   - # 9
-    frequency:    11.1647255252
+    frequency:    42.6643217454
   - # 10
-    frequency:    13.6416385918
+    frequency:    44.3604370961
   - # 11
-    frequency:    18.7407351509
+    frequency:    46.2436882688
   - # 12
-    frequency:    19.3842762596
+    frequency:    46.4230900018
 
 - q-position: [    0.3333333,    0.0000000,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -24.2872577106
+    frequency:     7.4284670196
   - # 2
-    frequency:   -18.1953226560
+    frequency:    12.8129599053
   - # 3
-    frequency:   -14.5637079962
+    frequency:    13.0745788286
   - # 4
-    frequency:   -14.0093783186
+    frequency:    14.0557091754
   - # 5
-    frequency:    -3.9902170425
+    frequency:    22.1215906159
   - # 6
-    frequency:    11.6803400532
+    frequency:    24.9699958216
   - # 7
-    frequency:    12.1497081261
+    frequency:    26.3298904358
   - # 8
-    frequency:    13.8753291283
+    frequency:    28.8706831065
   - # 9
-    frequency:    14.2552966936
+    frequency:    39.3416304259
   - # 10
-    frequency:    16.2341594893
+    frequency:    42.2316644455
   - # 11
-    frequency:    18.2183263636
+    frequency:    43.2644544658
   - # 12
-    frequency:    19.2019523984
+    frequency:    44.0223141455
 
 - q-position: [    0.4444444,    0.0000000,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -20.4638004286
+    frequency:     7.8900574561
   - # 2
-    frequency:    -5.5416304002
+    frequency:    15.2312235537
   - # 3
-    frequency:    -4.8842269130
+    frequency:    15.5913724870
   - # 4
-    frequency:     0.9694681723
+    frequency:    16.7248407193
   - # 5
-    frequency:     6.3352257660
+    frequency:    21.7847645112
   - # 6
-    frequency:    13.5447598319
+    frequency:    23.9358235088
   - # 7
-    frequency:    13.8864180176
+    frequency:    33.0540320939
   - # 8
-    frequency:    15.1274579603
+    frequency:    34.7143439380
   - # 9
-    frequency:    15.4267732879
+    frequency:    36.7279568072
   - # 10
-    frequency:    15.7484785019
+    frequency:    38.7291058736
   - # 11
-    frequency:    17.8671465494
+    frequency:    39.6059027396
   - # 12
-    frequency:    18.7023058025
+    frequency:    42.2440217764
 
 - q-position: [    0.1111111,    0.1111111,    0.1250000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -29.9299928277
+    frequency:     6.5189302145
   - # 2
-    frequency:   -28.8906028677
+    frequency:     7.8910572609
   - # 3
-    frequency:   -23.1443184640
+    frequency:     8.9045349893
   - # 4
-    frequency:   -22.5463918221
+    frequency:     9.5804181528
   - # 5
-    frequency:   -10.6317968584
+    frequency:    16.3997247710
   - # 6
-    frequency:     7.4572944400
+    frequency:    17.3566101778
   - # 7
-    frequency:     7.9305773099
+    frequency:    23.5613034477
   - # 8
-    frequency:     8.7528367218
+    frequency:    26.6040979035
   - # 9
-    frequency:    11.4582871824
+    frequency:    43.5865400273
   - # 10
-    frequency:    11.5760166603
+    frequency:    44.3035382108
   - # 11
-    frequency:    18.8998600359
+    frequency:    46.9539853118
   - # 12
-    frequency:    19.2972354518
+    frequency:    47.0053205874
 
 - q-position: [    0.2222222,    0.1111111,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -25.5452793932
+    frequency:     6.6354363655
   - # 2
-    frequency:   -22.6757753733
+    frequency:    11.9108074673
   - # 3
-    frequency:   -17.1896666111
+    frequency:    13.2981827513
   - # 4
-    frequency:   -15.9129439950
+    frequency:    14.3947435984
   - # 5
-    frequency:    -6.4320027209
+    frequency:    22.4448474123
   - # 6
-    frequency:    10.5116660278
+    frequency:    23.3420680504
   - # 7
-    frequency:    11.3566404765
+    frequency:    24.8742085730
   - # 8
-    frequency:    11.9011707480
+    frequency:    26.3475386247
   - # 9
-    frequency:    14.4883197345
+    frequency:    40.7644943713
   - # 10
-    frequency:    15.5452577809
+    frequency:    42.3338226923
   - # 11
-    frequency:    18.4531082214
+    frequency:    44.5585194834
   - # 12
-    frequency:    19.1784505666
+    frequency:    44.8410589954
 
 - q-position: [    0.3333333,    0.1111111,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -20.8428699265
+    frequency:     7.6612136525
   - # 2
-    frequency:   -13.4999410490
+    frequency:    14.6416128147
   - # 3
-    frequency:    -8.5766023872
+    frequency:    16.7025656668
   - # 4
-    frequency:    -4.7114037109
+    frequency:    18.0893429468
   - # 5
-    frequency:     5.4260393773
+    frequency:    21.7224002039
   - # 6
-    frequency:    12.4766060430
+    frequency:    24.3792684022
   - # 7
-    frequency:    13.3977693053
+    frequency:    29.9070337909
   - # 8
-    frequency:    14.0751283748
+    frequency:    31.8243127554
   - # 9
-    frequency:    16.3414232038
+    frequency:    37.8225100715
   - # 10
-    frequency:    17.1131961108
+    frequency:    39.8777415868
   - # 11
-    frequency:    18.0316918601
+    frequency:    40.9292015024
   - # 12
-    frequency:    18.7560046344
+    frequency:    42.6812599917
 
-- q-position: [    0.4444444,    0.1111111,    0.1250000 ]
+- q-position: [   -0.5555556,    0.1111111,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -18.5515260813
+    frequency:     8.6333244664
   - # 2
-    frequency:    -5.7496019152
+    frequency:    15.5548649005
   - # 3
-    frequency:     6.2065166601
+    frequency:    17.7023188308
   - # 4
-    frequency:     7.7664540661
+    frequency:    19.3776765435
   - # 5
-    frequency:     8.7228067160
+    frequency:    21.7650202788
   - # 6
-    frequency:    13.9041818989
+    frequency:    23.3994025886
   - # 7
-    frequency:    14.1953988344
+    frequency:    34.8354809091
   - # 8
-    frequency:    14.7336153356
+    frequency:    35.1294252861
   - # 9
-    frequency:    15.6898734515
+    frequency:    36.0864096282
   - # 10
-    frequency:    16.9709086788
+    frequency:    36.7809057235
   - # 11
-    frequency:    17.7641327332
+    frequency:    38.5259348499
   - # 12
-    frequency:    18.5014258030
+    frequency:    41.7595227925
 
 - q-position: [   -0.4444444,    0.1111111,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -20.7615928525
+    frequency:     8.7017017557
   - # 2
-    frequency:   -13.3084475927
+    frequency:    14.2751987755
   - # 3
-    frequency:    -8.6116851914
+    frequency:    15.4660424425
   - # 4
-    frequency:    -6.6217793767
+    frequency:    17.8054881383
   - # 5
-    frequency:     5.4483762498
+    frequency:    21.6800133090
   - # 6
-    frequency:    13.1631331978
+    frequency:    24.2584256178
   - # 7
-    frequency:    13.7917864654
+    frequency:    29.7014309823
   - # 8
-    frequency:    14.4839714084
+    frequency:    31.2846281514
   - # 9
-    frequency:    15.6666432928
+    frequency:    38.1380141774
   - # 10
-    frequency:    16.8608523085
+    frequency:    39.9736746793
   - # 11
-    frequency:    17.8168102036
+    frequency:    41.3840272086
   - # 12
-    frequency:    19.0555747805
+    frequency:    42.7605104058
 
 - q-position: [   -0.3333333,    0.1111111,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -25.4266406971
+    frequency:     7.9395472739
   - # 2
-    frequency:   -21.6266625599
+    frequency:    11.0463313907
   - # 3
-    frequency:   -18.6467556191
+    frequency:    11.3623009418
   - # 4
-    frequency:   -16.5279723186
+    frequency:    14.1397255850
   - # 5
-    frequency:    -6.4645838219
+    frequency:    22.2652280147
   - # 6
-    frequency:    10.8673569826
+    frequency:    22.7846524500
   - # 7
-    frequency:    11.2176173624
+    frequency:    24.5039969189
   - # 8
-    frequency:    12.0388663047
+    frequency:    26.1973023023
   - # 9
-    frequency:    14.6421483284
+    frequency:    41.2009820069
   - # 10
-    frequency:    15.6097155724
+    frequency:    42.9945982987
   - # 11
-    frequency:    18.2932861329
+    frequency:    44.2809526079
   - # 12
-    frequency:    19.4786807355
+    frequency:    45.0077316018
 
 - q-position: [   -0.2222222,    0.1111111,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -29.7098447636
+    frequency:     2.2574546602
   - # 2
-    frequency:   -28.3709390267
+    frequency:     7.1971816027
   - # 3
-    frequency:   -24.1822040439
+    frequency:     8.4378944187
   - # 4
-    frequency:   -22.7313021703
+    frequency:    10.2476937481
   - # 5
-    frequency:   -10.6812343499
+    frequency:    15.0472190290
   - # 6
-    frequency:     6.3448166405
+    frequency:    17.4265322556
   - # 7
-    frequency:     7.8386118424
+    frequency:    23.5698674798
   - # 8
-    frequency:     8.4882900689
+    frequency:    26.4941860984
   - # 9
-    frequency:    11.6359374471
+    frequency:    43.9430808945
   - # 10
-    frequency:    12.7246809158
+    frequency:    44.8577835470
   - # 11
-    frequency:    18.8010533431
+    frequency:    46.4690803873
   - # 12
-    frequency:    19.5204527414
+    frequency:    47.2563283403
 
 - q-position: [   -0.1111111,    0.1111111,    0.1250000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -32.1103407580
+    frequency:    -6.6757491928
   - # 2
-    frequency:   -32.1032590958
+    frequency:     4.8630963359
   - # 3
-    frequency:   -26.7234478995
+    frequency:     7.0910583301
   - # 4
-    frequency:   -26.0069180104
+    frequency:     7.5988352715
   - # 5
-    frequency:   -12.5305046837
+    frequency:     9.0807625618
   - # 6
-    frequency:    -1.2978948496
+    frequency:    10.3094299412
   - # 7
-    frequency:     2.5875658969
+    frequency:    24.2059152611
   - # 8
-    frequency:     6.4418475079
+    frequency:    26.8067968632
   - # 9
-    frequency:     8.6706967110
+    frequency:    45.3750312903
   - # 10
-    frequency:     9.0225660168
+    frequency:    45.7791323039
   - # 11
-    frequency:    19.1187958045
+    frequency:    47.8111410058
   - # 12
-    frequency:    19.3891588543
+    frequency:    48.4604163190
 
 - q-position: [    0.2222222,    0.2222222,    0.1250000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -20.2199167299
+    frequency:     7.7007287673
   - # 2
-    frequency:   -16.6910985652
+    frequency:    14.3557789167
   - # 3
-    frequency:    -9.9294049260
+    frequency:    18.6647098076
   - # 4
-    frequency:    -4.9762103845
+    frequency:    19.4036101749
   - # 5
-    frequency:     5.1875568199
+    frequency:    21.7590919895
   - # 6
-    frequency:    11.9141836790
+    frequency:    24.4506357749
   - # 7
-    frequency:    13.1614289897
+    frequency:    28.7081650278
   - # 8
-    frequency:    13.7546223172
+    frequency:    29.2125178196
   - # 9
-    frequency:    17.1008092581
+    frequency:    39.0932748921
   - # 10
-    frequency:    17.3128142681
+    frequency:    39.2578455996
   - # 11
-    frequency:    18.1071725318
+    frequency:    41.5421331863
   - # 12
-    frequency:    18.7487807177
+    frequency:    42.8774469426
 
 - q-position: [    0.3333333,    0.2222222,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -15.5076785055
+    frequency:     9.4419207215
   - # 2
-    frequency:    -8.6176055071
+    frequency:    15.7032443928
   - # 3
-    frequency:    -1.7349429334
+    frequency:    21.5429129006
   - # 4
-    frequency:     8.9307026559
+    frequency:    21.8537363345
   - # 5
-    frequency:    10.9821041364
+    frequency:    23.0447203849
   - # 6
-    frequency:    13.3958380617
+    frequency:    23.3078928386
   - # 7
-    frequency:    14.2443795080
+    frequency:    31.8829740628
   - # 8
-    frequency:    14.9891172809
+    frequency:    32.8610942398
   - # 9
-    frequency:    17.6874787458
+    frequency:    35.8023691430
   - # 10
-    frequency:    17.8431887010
+    frequency:    37.2500692663
   - # 11
-    frequency:    18.0987542878
+    frequency:    39.0514961562
   - # 12
-    frequency:    18.2197490955
+    frequency:    41.3561158578
 
 - q-position: [   -0.5555556,    0.2222222,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -15.1667313619
+    frequency:    10.1935695076
   - # 2
-    frequency:   -11.2830308716
+    frequency:    15.4415746075
   - # 3
-    frequency:     7.7301428466
+    frequency:    20.7046121522
   - # 4
-    frequency:     8.9414514203
+    frequency:    21.4485881834
   - # 5
-    frequency:    10.0909198274
+    frequency:    23.0115026447
   - # 6
-    frequency:    14.1750587022
+    frequency:    23.3553555593
   - # 7
-    frequency:    14.6645612536
+    frequency:    32.0802641525
   - # 8
-    frequency:    15.5367874633
+    frequency:    32.3584087230
   - # 9
-    frequency:    15.9194259654
+    frequency:    36.0129838477
   - # 10
-    frequency:    17.4638257142
+    frequency:    36.6462317995
   - # 11
-    frequency:    18.2919008704
+    frequency:    40.0289826671
   - # 12
-    frequency:    18.5943844464
+    frequency:    41.3112965664
 
 - q-position: [   -0.4444444,    0.2222222,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -19.3344962938
+    frequency:     9.3361834370
   - # 2
-    frequency:   -17.5113187850
+    frequency:    13.6042597955
   - # 3
-    frequency:   -10.2835772299
+    frequency:    16.0756757993
   - # 4
-    frequency:    -7.1939551708
+    frequency:    19.6790014830
   - # 5
-    frequency:     5.0935855632
+    frequency:    21.7635634291
   - # 6
-    frequency:    12.9490836203
+    frequency:    24.2364323359
   - # 7
-    frequency:    14.1379704401
+    frequency:    27.9189412043
   - # 8
-    frequency:    14.2666637558
+    frequency:    28.6167247508
   - # 9
-    frequency:    15.5137926745
+    frequency:    39.2704111968
   - # 10
-    frequency:    17.5613973487
+    frequency:    39.9715043538
   - # 11
-    frequency:    17.6963027625
+    frequency:    41.8896218845
   - # 12
-    frequency:    19.2508814132
+    frequency:    42.9621038006
 
 - q-position: [   -0.3333333,    0.2222222,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -24.2517791573
+    frequency:     7.0569721309
   - # 2
-    frequency:   -22.8426175881
+    frequency:     9.4868107048
   - # 3
-    frequency:   -19.4632502510
+    frequency:    11.5314202173
   - # 4
-    frequency:   -16.0297740865
+    frequency:    15.2633765068
   - # 5
-    frequency:    -6.6207429006
+    frequency:    22.6013806202
   - # 6
-    frequency:    11.0601641881
+    frequency:    22.8510029859
   - # 7
-    frequency:    11.2738502395
+    frequency:    23.5873267909
   - # 8
-    frequency:    11.7024579681
+    frequency:    25.9811504722
   - # 9
-    frequency:    14.9813716112
+    frequency:    41.7192654335
   - # 10
-    frequency:    15.7610565839
+    frequency:    42.6854793810
   - # 11
-    frequency:    18.1687024362
+    frequency:    44.1011397432
   - # 12
-    frequency:    19.6019651119
+    frequency:    45.1820381996
 
 - q-position: [   -0.2222222,    0.2222222,    0.1250000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -27.6174880743
+    frequency:    -3.6232097388
   - # 2
-    frequency:   -27.3041147794
+    frequency:     6.4454898759
   - # 3
-    frequency:   -23.6074307735
+    frequency:    10.0575136740
   - # 4
-    frequency:   -20.8941208346
+    frequency:    12.1732209965
   - # 5
-    frequency:    -9.8074911127
+    frequency:    17.9851287522
   - # 6
-    frequency:     7.8871223132
+    frequency:    18.9601513197
   - # 7
-    frequency:     8.7050691778
+    frequency:    23.3306012972
   - # 8
-    frequency:     9.2966608569
+    frequency:    26.3018509495
   - # 9
-    frequency:    13.2737119688
+    frequency:    43.4761985854
   - # 10
-    frequency:    13.7304307551
+    frequency:    44.4528528527
   - # 11
-    frequency:    18.5907369624
+    frequency:    45.5398580606
   - # 12
-    frequency:    19.6322563570
+    frequency:    46.8758772408
 
-- q-position: [    0.3333333,    0.3333333,    0.1250000 ]
+- q-position: [   -0.6666667,    0.3333333,    0.1250000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -10.5179076060
+    frequency:    10.8803502007
   - # 2
-    frequency:    -9.2952334621
+    frequency:    15.9308494956
   - # 3
-    frequency:     4.3443271249
+    frequency:    21.6779284909
   - # 4
-    frequency:    10.2183699945
+    frequency:    22.1410116145
   - # 5
-    frequency:    12.2436397049
+    frequency:    25.3783625397
   - # 6
-    frequency:    14.4943671748
+    frequency:    25.4211565705
   - # 7
-    frequency:    15.1119479728
+    frequency:    32.4559878031
   - # 8
-    frequency:    16.0987676459
+    frequency:    32.5946093689
   - # 9
-    frequency:    17.4927948060
+    frequency:    33.7085108549
   - # 10
-    frequency:    17.7364699525
+    frequency:    34.8323354330
   - # 11
-    frequency:    18.1207434250
+    frequency:    40.1764197457
   - # 12
-    frequency:    18.2037884360
+    frequency:    40.2748302548
 
 - q-position: [   -0.5555556,    0.3333333,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -15.7734841628
+    frequency:    10.3080471666
   - # 2
-    frequency:    -9.9833649941
+    frequency:    15.4274205168
   - # 3
-    frequency:     7.7611762337
+    frequency:    20.9710078666
   - # 4
-    frequency:     8.8828133653
+    frequency:    21.3001669877
   - # 5
-    frequency:     9.4523381501
+    frequency:    22.8326951815
   - # 6
-    frequency:    14.2249629347
+    frequency:    23.2118782707
   - # 7
-    frequency:    14.9273054586
+    frequency:    31.9110602133
   - # 8
-    frequency:    15.5786263335
+    frequency:    32.4538148152
   - # 9
-    frequency:    16.2313179911
+    frequency:    35.9734178661
   - # 10
-    frequency:    17.4378190695
+    frequency:    36.5603172713
   - # 11
-    frequency:    17.8598895629
+    frequency:    39.8824415603
   - # 12
-    frequency:    18.5971636895
+    frequency:    41.3162276190
 
 - q-position: [   -0.4444444,    0.3333333,    0.1250000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -20.0775018554
+    frequency:     8.4011282245
   - # 2
-    frequency:   -14.9468346188
+    frequency:    14.2683016842
   - # 3
-    frequency:    -9.4610413533
+    frequency:    14.7095138350
   - # 4
-    frequency:    -4.6126095603
+    frequency:    18.3724398693
   - # 5
-    frequency:     5.2068212644
+    frequency:    21.8172211133
   - # 6
-    frequency:    13.3937392642
+    frequency:    24.1507520120
   - # 7
-    frequency:    14.3293732466
+    frequency:    29.6704864003
   - # 8
-    frequency:    14.5296543772
+    frequency:    30.6838104095
   - # 9
-    frequency:    15.2450775414
+    frequency:    38.1913807234
   - # 10
-    frequency:    17.0700813039
+    frequency:    39.7708944662
   - # 11
-    frequency:    17.5938575312
+    frequency:    41.6795426781
   - # 12
-    frequency:    19.1816118477
+    frequency:    42.4193865259
 
 - q-position: [   -0.3333333,    0.3333333,    0.1250000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -22.8411045209
+    frequency:     7.2735347202
   - # 2
-    frequency:   -19.6286838505
+    frequency:     9.3220918253
   - # 3
-    frequency:   -17.0537760973
+    frequency:    13.0374138353
   - # 4
-    frequency:   -12.5727895261
+    frequency:    15.5228971721
   - # 5
-    frequency:    -4.4363943104
+    frequency:    22.3501301604
   - # 6
-    frequency:    12.1615784912
+    frequency:    24.7050367395
   - # 7
-    frequency:    12.5699066954
+    frequency:    26.1703317102
   - # 8
-    frequency:    12.8269060790
+    frequency:    27.5932040393
   - # 9
-    frequency:    15.4819163249
+    frequency:    40.0334085347
   - # 10
-    frequency:    16.2075390023
+    frequency:    42.0256101844
   - # 11
-    frequency:    17.8860289980
+    frequency:    43.2922757557
   - # 12
-    frequency:    19.5300075114
+    frequency:    44.0964444054
 
 - q-position: [   -0.5555556,    0.4444444,    0.1250000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -18.7399722949
+    frequency:     8.7469785399
   - # 2
-    frequency:    -3.0572776891
+    frequency:    15.5122326396
   - # 3
-    frequency:     6.0469531424
+    frequency:    17.8231263898
   - # 4
-    frequency:     7.5868823379
+    frequency:    18.9343853958
   - # 5
-    frequency:     7.8111049651
+    frequency:    21.5896508211
   - # 6
-    frequency:    14.1878697541
+    frequency:    23.4467988722
   - # 7
-    frequency:    14.6810634131
+    frequency:    34.6248648951
   - # 8
-    frequency:    14.8982939342
+    frequency:    34.9322638255
   - # 9
-    frequency:    15.8312870564
+    frequency:    36.2603708603
   - # 10
-    frequency:    16.1154612916
+    frequency:    36.2835423380
   - # 11
-    frequency:    17.7339853944
+    frequency:    38.5182556495
   - # 12
-    frequency:    18.5269773992
+    frequency:    41.5904046800
 
 - q-position: [   -0.4444444,    0.4444444,    0.1250000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -20.2225389040
+    frequency:     7.7299735244
   - # 2
-    frequency:    -8.8144997555
+    frequency:    14.7225309944
   - # 3
-    frequency:    -4.5021817593
+    frequency:    15.1758403164
   - # 4
-    frequency:     5.0656902784
+    frequency:    17.1209551982
   - # 5
-    frequency:     6.2366613825
+    frequency:    21.8564224074
   - # 6
-    frequency:    13.9219145299
+    frequency:    23.8395013916
   - # 7
-    frequency:    14.4469085632
+    frequency:    32.8989702747
   - # 8
-    frequency:    14.8416231525
+    frequency:    34.1188128039
   - # 9
-    frequency:    15.0291117144
+    frequency:    36.7231295525
   - # 10
-    frequency:    15.9265999797
+    frequency:    38.3247591414
   - # 11
-    frequency:    17.6744435859
+    frequency:    40.0559123821
   - # 12
-    frequency:    18.8492815196
+    frequency:    41.8826643710
 
 - q-position: [    0.0000000,    0.0000000,    0.3750000 ]
   weight: 2    
   band:
   - # 1
-    frequency:   -33.0448037537
+    frequency:    -1.3370865037
   - # 2
-    frequency:   -33.0441706572
+    frequency:     0.6272077136
   - # 3
-    frequency:   -30.6397925337
+    frequency:     3.1670103583
   - # 4
-    frequency:   -30.6393672954
+    frequency:     3.2346555369
   - # 5
-    frequency:     2.4394675471
+    frequency:    13.9845321205
   - # 6
-    frequency:     2.4397425208
+    frequency:    16.4973901734
   - # 7
-    frequency:     2.8732823062
+    frequency:    23.1559042709
   - # 8
-    frequency:     2.8733416458
+    frequency:    23.4186255592
   - # 9
-    frequency:    11.3474683068
+    frequency:    45.9320290738
   - # 10
-    frequency:    13.2918956045
+    frequency:    45.9939402975
   - # 11
-    frequency:    18.3550390484
+    frequency:    47.1002059262
   - # 12
-    frequency:    19.3775064293
+    frequency:    47.1734320891
 
 - q-position: [    0.1111111,    0.0000000,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -31.6378458697
+    frequency:     4.5537083423
   - # 2
-    frequency:   -31.2764721524
+    frequency:     5.1522176798
   - # 3
-    frequency:   -29.1035433618
+    frequency:     7.4822477790
   - # 4
-    frequency:   -28.9581107772
+    frequency:     9.2698909328
   - # 5
-    frequency:     5.1756637630
+    frequency:    15.2832672077
   - # 6
-    frequency:     6.1898635742
+    frequency:    16.3111420700
   - # 7
-    frequency:     6.4779580492
+    frequency:    23.0373760374
   - # 8
-    frequency:     7.6297501281
+    frequency:    23.3534198441
   - # 9
-    frequency:    11.1762139452
+    frequency:    45.1300084881
   - # 10
-    frequency:    13.2039799899
+    frequency:    45.5637213577
   - # 11
-    frequency:    18.2813062460
+    frequency:    46.4025869401
   - # 12
-    frequency:    19.1220178171
+    frequency:    46.6480258903
 
 - q-position: [    0.2222222,    0.0000000,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -27.6843655786
+    frequency:     8.8025857800
   - # 2
-    frequency:   -26.1266553755
+    frequency:     9.1628624100
   - # 3
-    frequency:   -24.6970030894
+    frequency:    11.5467512943
   - # 4
-    frequency:   -24.0822827714
+    frequency:    13.0633466071
   - # 5
-    frequency:     9.9314923519
+    frequency:    18.7127326603
   - # 6
-    frequency:    10.6140718399
+    frequency:    20.3886254865
   - # 7
-    frequency:    10.8883198412
+    frequency:    22.4685312451
   - # 8
-    frequency:    11.0433697554
+    frequency:    24.0570667307
   - # 9
-    frequency:    12.2434633595
+    frequency:    42.8019443557
   - # 10
-    frequency:    13.0099395683
+    frequency:    44.3352545195
   - # 11
-    frequency:    18.0805745531
+    frequency:    44.3719685887
   - # 12
-    frequency:    18.5543097764
+    frequency:    45.1755131500
 
 - q-position: [    0.3333333,    0.0000000,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -22.1008597933
+    frequency:    11.7837216767
   - # 2
-    frequency:   -18.0805476701
+    frequency:    12.5582251722
   - # 3
-    frequency:   -17.8722806677
+    frequency:    12.7520104386
   - # 4
-    frequency:   -16.3856515463
+    frequency:    13.3392476676
   - # 5
-    frequency:    10.0671804972
+    frequency:    21.1872211420
   - # 6
-    frequency:    12.1266552065
+    frequency:    22.4414385564
   - # 7
-    frequency:    13.2749132114
+    frequency:    27.0826425953
   - # 8
-    frequency:    13.9300572418
+    frequency:    28.2728991507
   - # 9
-    frequency:    14.1205440725
+    frequency:    39.6696746890
   - # 10
-    frequency:    14.9999136491
+    frequency:    41.6294694701
   - # 11
-    frequency:    17.6772561971
+    frequency:    42.1735153199
   - # 12
-    frequency:    18.2566026725
+    frequency:    42.6384770528
 
 - q-position: [    0.4444444,    0.0000000,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -17.1606426146
+    frequency:    10.5926069752
   - # 2
-    frequency:   -10.9854399163
+    frequency:    12.5568264139
   - # 3
-    frequency:    -5.7188555799
+    frequency:    15.6057097310
   - # 4
-    frequency:    -5.5019732781
+    frequency:    16.1022622407
   - # 5
-    frequency:     9.6336480802
+    frequency:    21.2888846346
   - # 6
-    frequency:    11.7645210854
+    frequency:    22.6100172961
   - # 7
-    frequency:    13.7960187507
+    frequency:    33.0913006020
   - # 8
-    frequency:    14.7269152863
+    frequency:    33.9077908543
   - # 9
-    frequency:    15.1079773798
+    frequency:    37.1388869623
   - # 10
-    frequency:    15.2570114124
+    frequency:    38.8630369436
   - # 11
-    frequency:    17.3724646973
+    frequency:    39.1211072412
   - # 12
-    frequency:    18.1667789660
+    frequency:    39.5081588581
 
 - q-position: [    0.1111111,    0.1111111,    0.3750000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -28.8653446041
+    frequency:     7.9070221800
   - # 2
-    frequency:   -28.0345288366
+    frequency:     8.2587022235
   - # 3
-    frequency:   -26.1459903213
+    frequency:    11.8513939015
   - # 4
-    frequency:   -25.5057593674
+    frequency:    12.7953435170
   - # 5
-    frequency:     9.0347090101
+    frequency:    17.1588720471
   - # 6
-    frequency:     9.2354898234
+    frequency:    18.5407981609
   - # 7
-    frequency:    10.6344032120
+    frequency:    22.4949662527
   - # 8
-    frequency:    10.6769588998
+    frequency:    23.7250658573
   - # 9
-    frequency:    10.9139767185
+    frequency:    43.6835361571
   - # 10
-    frequency:    13.0486163769
+    frequency:    44.4345261129
   - # 11
-    frequency:    18.1300716323
+    frequency:    45.1778322105
   - # 12
-    frequency:    18.7097339267
+    frequency:    45.6409553407
 
 - q-position: [    0.2222222,    0.1111111,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -23.8966423596
+    frequency:    10.7744617424
   - # 2
-    frequency:   -21.7409853208
+    frequency:    11.1583836262
   - # 3
-    frequency:   -20.4712521651
+    frequency:    14.2201961055
   - # 4
-    frequency:   -19.0292203488
+    frequency:    14.6537687861
   - # 5
-    frequency:    10.3134884447
+    frequency:    20.9492940248
   - # 6
-    frequency:    11.8715217756
+    frequency:    21.8383269007
   - # 7
-    frequency:    12.7382586588
+    frequency:    24.4289463799
   - # 8
-    frequency:    12.9268861813
+    frequency:    25.6443891217
   - # 9
-    frequency:    13.8356586237
+    frequency:    41.0658811760
   - # 10
-    frequency:    14.3575939353
+    frequency:    42.3834815528
   - # 11
-    frequency:    17.9055765939
+    frequency:    43.0147159226
   - # 12
-    frequency:    18.2176832873
+    frequency:    43.5624431332
 
 - q-position: [    0.3333333,    0.1111111,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -18.1328059541
+    frequency:    10.4282624688
   - # 2
-    frequency:   -13.4587112069
+    frequency:    12.3555290036
   - # 3
-    frequency:   -12.0000608330
+    frequency:    16.9209948652
   - # 4
-    frequency:    -9.3937008034
+    frequency:    17.5291953329
   - # 5
-    frequency:     9.7637110755
+    frequency:    21.3215310476
   - # 6
-    frequency:    11.8117769054
+    frequency:    22.4822960334
   - # 7
-    frequency:    13.8099292080
+    frequency:    30.1044814346
   - # 8
-    frequency:    14.6396520467
+    frequency:    30.9506188852
   - # 9
-    frequency:    15.5750162651
+    frequency:    38.1672664735
   - # 10
-    frequency:    15.8440836826
+    frequency:    39.8704957340
   - # 11
-    frequency:    17.5456211902
+    frequency:    40.1421661850
   - # 12
-    frequency:    18.1001266572
+    frequency:    40.5104599955
 
-- q-position: [    0.4444444,    0.1111111,    0.3750000 ]
+- q-position: [   -0.5555556,    0.1111111,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -15.0193226528
+    frequency:    10.0970883493
   - # 2
-    frequency:    -8.2244539115
+    frequency:    12.3454949690
   - # 3
-    frequency:     3.0375371687
+    frequency:    18.2618785326
   - # 4
-    frequency:     6.9862830081
+    frequency:    18.9606408407
   - # 5
-    frequency:     9.4836937542
+    frequency:    21.4175281507
   - # 6
-    frequency:    11.6519577375
+    frequency:    22.5212410312
   - # 7
-    frequency:    13.7395221930
+    frequency:    34.5373813005
   - # 8
-    frequency:    14.3798145088
+    frequency:    34.8690897850
   - # 9
-    frequency:    15.3774606916
+    frequency:    36.6573028447
   - # 10
-    frequency:    16.1405120682
+    frequency:    37.0601242040
   - # 11
-    frequency:    17.3671546038
+    frequency:    37.1800568528
   - # 12
-    frequency:    18.0518574335
+    frequency:    39.0381614942
 
 - q-position: [   -0.4444444,    0.1111111,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -18.0411153091
+    frequency:    10.4889421697
   - # 2
-    frequency:   -13.8712928409
+    frequency:    12.0221542807
   - # 3
-    frequency:   -11.0073626437
+    frequency:    16.6589663696
   - # 4
-    frequency:   -10.2851198021
+    frequency:    17.5419412638
   - # 5
-    frequency:     9.7068682440
+    frequency:    21.3556546333
   - # 6
-    frequency:    11.9269648735
+    frequency:    22.5373438204
   - # 7
-    frequency:    14.1778014345
+    frequency:    30.0965956134
   - # 8
-    frequency:    14.7924924300
+    frequency:    30.8503127814
   - # 9
-    frequency:    15.0814119066
+    frequency:    38.2470319264
   - # 10
-    frequency:    15.8744492867
+    frequency:    39.9323624531
   - # 11
-    frequency:    17.5203546861
+    frequency:    40.2137492442
   - # 12
-    frequency:    18.1350957973
+    frequency:    40.4951003551
 
 - q-position: [   -0.3333333,    0.1111111,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -23.7818050608
+    frequency:    10.1070919599
   - # 2
-    frequency:   -21.5655777081
+    frequency:    10.8040989293
   - # 3
-    frequency:   -20.3894745843
+    frequency:    14.1965838592
   - # 4
-    frequency:   -19.5351008083
+    frequency:    14.6018956636
   - # 5
-    frequency:    10.2011393061
+    frequency:    21.1101013079
   - # 6
-    frequency:    12.1342661095
+    frequency:    22.0780419956
   - # 7
-    frequency:    12.7184060032
+    frequency:    24.1614011217
   - # 8
-    frequency:    12.8122985826
+    frequency:    25.6625303826
   - # 9
-    frequency:    13.8684855614
+    frequency:    41.1405943572
   - # 10
-    frequency:    14.3682541902
+    frequency:    42.3991508638
   - # 11
-    frequency:    17.9140030462
+    frequency:    43.1994411000
   - # 12
-    frequency:    18.2447880899
+    frequency:    43.4658927759
 
 - q-position: [   -0.2222222,    0.1111111,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -28.7188792888
+    frequency:     6.4209215633
   - # 2
-    frequency:   -27.8602043876
+    frequency:     8.4749644677
   - # 3
-    frequency:   -26.4119200293
+    frequency:    11.5538572629
   - # 4
-    frequency:   -25.6317073029
+    frequency:    12.9322005002
   - # 5
-    frequency:     8.6129051780
+    frequency:    17.4764120552
   - # 6
-    frequency:     9.1083065094
+    frequency:    18.3237445831
   - # 7
-    frequency:    10.5491909334
+    frequency:    22.5890979193
   - # 8
-    frequency:    10.9187816180
+    frequency:    23.7280043414
   - # 9
-    frequency:    11.2650610123
+    frequency:    43.7692519584
   - # 10
-    frequency:    13.0155774467
+    frequency:    44.5802619613
   - # 11
-    frequency:    18.2218389827
+    frequency:    45.0587050337
   - # 12
-    frequency:    18.6642588082
+    frequency:    45.6494226483
 
 - q-position: [   -0.1111111,    0.1111111,    0.3750000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -31.4697380889
+    frequency:     1.3686049356
   - # 2
-    frequency:   -31.3378136311
+    frequency:     6.6946837823
   - # 3
-    frequency:   -29.2946177792
+    frequency:     7.7868077567
   - # 4
-    frequency:   -28.8962532054
+    frequency:     8.6927264747
   - # 5
-    frequency:     4.7553759091
+    frequency:    15.0679554889
   - # 6
-    frequency:     5.3343436039
+    frequency:    16.4798573210
   - # 7
-    frequency:     7.5399054487
+    frequency:    22.9462779847
   - # 8
-    frequency:     7.6241423591
+    frequency:    23.4914885317
   - # 9
-    frequency:    11.1564254221
+    frequency:    45.2228267677
   - # 10
-    frequency:    13.1930184877
+    frequency:    45.5922950285
   - # 11
-    frequency:    18.3183745790
+    frequency:    46.2573008923
   - # 12
-    frequency:    19.1064259271
+    frequency:    46.7146501109
 
 - q-position: [    0.2222222,    0.2222222,    0.3750000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -18.0671766197
+    frequency:    10.1880081982
   - # 2
-    frequency:   -15.2292688799
+    frequency:    12.1589142193
   - # 3
-    frequency:   -13.4533603968
+    frequency:    18.9591423789
   - # 4
-    frequency:   -10.6050531975
+    frequency:    19.4324873247
   - # 5
-    frequency:     9.8122037465
+    frequency:    21.5852282764
   - # 6
-    frequency:    11.8194998040
+    frequency:    22.1048856174
   - # 7
-    frequency:    13.7826803998
+    frequency:    28.5132036483
   - # 8
-    frequency:    14.6182325619
+    frequency:    28.5139128975
   - # 9
-    frequency:    15.9265638354
+    frequency:    39.0711390936
   - # 10
-    frequency:    16.0932041224
+    frequency:    39.6541607167
   - # 11
-    frequency:    17.8370653684
+    frequency:    40.6406624657
   - # 12
-    frequency:    17.8537933749
+    frequency:    40.7950477521
 
 - q-position: [    0.3333333,    0.2222222,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -12.2658291619
+    frequency:     9.8310560790
   - # 2
-    frequency:    -6.5805501802
+    frequency:    12.3694216945
   - # 3
-    frequency:    -3.6488036426
+    frequency:    21.6374261316
   - # 4
-    frequency:     7.9566080216
+    frequency:    22.1052846454
   - # 5
-    frequency:     9.4403995922
+    frequency:    22.7403330898
   - # 6
-    frequency:    11.5023206529
+    frequency:    23.2941319488
   - # 7
-    frequency:    13.7790879170
+    frequency:    31.9650600359
   - # 8
-    frequency:    15.1615559220
+    frequency:    32.4171783336
   - # 9
-    frequency:    16.3840095378
+    frequency:    36.1322732152
   - # 10
-    frequency:    16.9429861621
+    frequency:    36.6787136678
   - # 11
-    frequency:    17.5469749438
+    frequency:    37.7827581947
   - # 12
-    frequency:    17.8257441953
+    frequency:    38.9475349314
 
 - q-position: [   -0.5555556,    0.2222222,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -11.9270024399
+    frequency:     9.9495204746
   - # 2
-    frequency:    -8.7335089870
+    frequency:    12.1759194570
   - # 3
-    frequency:     4.1493879211
+    frequency:    21.5927835531
   - # 4
-    frequency:     7.5337939212
+    frequency:    22.0505092137
   - # 5
-    frequency:     9.4133034811
+    frequency:    22.5283597198
   - # 6
-    frequency:    11.5841349355
+    frequency:    23.4047252881
   - # 7
-    frequency:    14.3720291982
+    frequency:    32.1039242188
   - # 8
-    frequency:    14.9088273223
+    frequency:    32.2055336016
   - # 9
-    frequency:    15.9886548787
+    frequency:    36.1649089947
   - # 10
-    frequency:    17.0521219292
+    frequency:    36.6020697004
   - # 11
-    frequency:    17.4652738927
+    frequency:    38.1779993544
   - # 12
-    frequency:    17.8885491204
+    frequency:    38.7776019143
 
 - q-position: [   -0.4444444,    0.2222222,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -17.3789984500
+    frequency:    10.2419890945
   - # 2
-    frequency:   -16.3708947257
+    frequency:    11.6416838613
   - # 3
-    frequency:   -12.3735418024
+    frequency:    18.3699710754
   - # 4
-    frequency:   -11.5637882124
+    frequency:    19.5711148369
   - # 5
-    frequency:     9.7078915430
+    frequency:    21.7600394113
   - # 6
-    frequency:    12.0132330428
+    frequency:    22.2166908728
   - # 7
-    frequency:    14.4138439201
+    frequency:    28.1813163642
   - # 8
-    frequency:    14.7155684495
+    frequency:    28.6209255353
   - # 9
-    frequency:    15.1141145035
+    frequency:    39.2146242231
   - # 10
-    frequency:    16.2992490672
+    frequency:    39.7637915980
   - # 11
-    frequency:    17.6677807571
+    frequency:    40.6286398401
   - # 12
-    frequency:    18.0293729397
+    frequency:    40.8306039785
 
 - q-position: [   -0.3333333,    0.2222222,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -23.1962307261
+    frequency:     9.7162715653
   - # 2
-    frequency:   -22.1801886086
+    frequency:    11.1043087842
   - # 3
-    frequency:   -20.8531376040
+    frequency:    13.7770837278
   - # 4
-    frequency:   -19.1046133582
+    frequency:    15.0833951064
   - # 5
-    frequency:    10.1450134763
+    frequency:    21.1776418091
   - # 6
-    frequency:    12.2181285581
+    frequency:    21.9174364759
   - # 7
-    frequency:    12.6146440621
+    frequency:    24.1683945247
   - # 8
-    frequency:    12.7091964383
+    frequency:    25.5794640049
   - # 9
-    frequency:    14.0819865619
+    frequency:    41.4355298770
   - # 10
-    frequency:    14.3538440494
+    frequency:    42.1494327204
   - # 11
-    frequency:    18.0296735008
+    frequency:    43.0248732076
   - # 12
-    frequency:    18.1479976004
+    frequency:    43.6416040029
 
 - q-position: [   -0.2222222,    0.2222222,    0.3750000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -27.0735550783
+    frequency:     6.9318834439
   - # 2
-    frequency:   -26.3697953550
+    frequency:    10.7395463967
   - # 3
-    frequency:   -25.4118316822
+    frequency:    11.2197469636
   - # 4
-    frequency:   -23.8272050900
+    frequency:    12.8118291104
   - # 5
-    frequency:     9.6326498245
+    frequency:    18.7105611318
   - # 6
-    frequency:    10.1400155072
+    frequency:    20.2399878140
   - # 7
-    frequency:    10.6655061687
+    frequency:    22.4674505452
   - # 8
-    frequency:    12.1502152752
+    frequency:    24.1270813549
   - # 9
-    frequency:    12.1619004252
+    frequency:    43.1608136054
   - # 10
-    frequency:    12.9315816552
+    frequency:    44.0295840639
   - # 11
-    frequency:    18.2297830813
+    frequency:    44.3214313522
   - # 12
-    frequency:    18.4539395602
+    frequency:    45.2962098662
 
-- q-position: [    0.3333333,    0.3333333,    0.3750000 ]
+- q-position: [   -0.6666667,    0.3333333,    0.3750000 ]
   weight: 4    
   band:
   - # 1
-    frequency:    -5.4697066367
+    frequency:     9.8305448675
   - # 2
-    frequency:    -5.3450475965
+    frequency:    12.3169110233
   - # 3
-    frequency:     6.4781160609
+    frequency:    21.8613466480
   - # 4
-    frequency:     9.2815432674
+    frequency:    22.0463067318
   - # 5
-    frequency:    10.2256894092
+    frequency:    26.7569715277
   - # 6
-    frequency:    11.4055967491
+    frequency:    26.8021288873
   - # 7
-    frequency:    14.3797142771
+    frequency:    32.0625516395
   - # 8
-    frequency:    15.2019917084
+    frequency:    32.0709725273
   - # 9
-    frequency:    16.6905782265
+    frequency:    33.8188565328
   - # 10
-    frequency:    17.1985891023
+    frequency:    34.3243943879
   - # 11
-    frequency:    17.4552557692
+    frequency:    37.9481579935
   - # 12
-    frequency:    17.7404525975
+    frequency:    38.0695730109
 
 - q-position: [   -0.5555556,    0.3333333,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -12.2391516620
+    frequency:     9.9931975127
   - # 2
-    frequency:    -8.2092030536
+    frequency:    12.1446756023
   - # 3
-    frequency:     5.5913446157
+    frequency:    21.5006357653
   - # 4
-    frequency:     6.3638895346
+    frequency:    22.1270919509
   - # 5
-    frequency:     9.4287703759
+    frequency:    22.6722214090
   - # 6
-    frequency:    11.5768725487
+    frequency:    23.3642759664
   - # 7
-    frequency:    14.4353215213
+    frequency:    31.9788224396
   - # 8
-    frequency:    14.8917315940
+    frequency:    32.2465962667
   - # 9
-    frequency:    16.1949494787
+    frequency:    36.1913762120
   - # 10
-    frequency:    16.8524942538
+    frequency:    36.5545141560
   - # 11
-    frequency:    17.4205425954
+    frequency:    38.1167811862
   - # 12
-    frequency:    17.9188139289
+    frequency:    38.8263174442
 
 - q-position: [   -0.4444444,    0.3333333,    0.3750000 ]
   weight: 8    
   band:
   - # 1
-    frequency:   -17.6634096968
+    frequency:    10.4461714607
   - # 2
-    frequency:   -14.5006229414
+    frequency:    11.9881895709
   - # 3
-    frequency:   -11.7853615144
+    frequency:    16.5781874636
   - # 4
-    frequency:    -9.2671036385
+    frequency:    17.9488080115
   - # 5
-    frequency:     9.6761981595
+    frequency:    21.3783152066
   - # 6
-    frequency:    11.9618490119
+    frequency:    22.4386959524
   - # 7
-    frequency:    14.4317244124
+    frequency:    30.0801145851
   - # 8
-    frequency:    14.6573099530
+    frequency:    30.6637681497
   - # 9
-    frequency:    14.9488684661
+    frequency:    38.3916993950
   - # 10
-    frequency:    15.9489089258
+    frequency:    39.8049160793
   - # 11
-    frequency:    17.5577184776
+    frequency:    40.0884899327
   - # 12
-    frequency:    18.1046330727
+    frequency:    40.5948635944
 
 - q-position: [   -0.3333333,    0.3333333,    0.3750000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -21.3818961468
+    frequency:    11.6277817615
   - # 2
-    frequency:   -19.0170074706
+    frequency:    11.9265704212
   - # 3
-    frequency:   -18.4694916627
+    frequency:    12.3104112501
   - # 4
-    frequency:   -15.7500824208
+    frequency:    14.3284787817
   - # 5
-    frequency:     9.9471962280
+    frequency:    21.3592703994
   - # 6
-    frequency:    12.3334011297
+    frequency:    22.2695547302
   - # 7
-    frequency:    13.2416905268
+    frequency:    27.0964218635
   - # 8
-    frequency:    13.5364626520
+    frequency:    27.9907479011
   - # 9
-    frequency:    14.6690110447
+    frequency:    40.0193544694
   - # 10
-    frequency:    14.8850176185
+    frequency:    41.3822308529
   - # 11
-    frequency:    17.7842480927
+    frequency:    42.0282825085
   - # 12
-    frequency:    18.1893368611
+    frequency:    42.8137587842
 
 - q-position: [   -0.5555556,    0.4444444,    0.3750000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -15.1143565006
+    frequency:    10.1467075539
   - # 2
-    frequency:    -8.0760969302
+    frequency:    12.2522504669
   - # 3
-    frequency:     5.0398966859
+    frequency:    18.5367332177
   - # 4
-    frequency:     5.6683603171
+    frequency:    19.0448869961
   - # 5
-    frequency:     9.5058242526
+    frequency:    21.2859262506
   - # 6
-    frequency:    11.6562123899
+    frequency:    22.5220668606
   - # 7
-    frequency:    13.9624847616
+    frequency:    34.3780367370
   - # 8
-    frequency:    14.2489598616
+    frequency:    34.7800618253
   - # 9
-    frequency:    15.6627597234
+    frequency:    36.8454944151
   - # 10
-    frequency:    15.8038693021
+    frequency:    36.8680693668
   - # 11
-    frequency:    17.3393831508
+    frequency:    37.1952547556
   - # 12
-    frequency:    18.0727449646
+    frequency:    39.0462238922
 
 - q-position: [   -0.4444444,    0.4444444,    0.3750000 ]
   weight: 4    
   band:
   - # 1
-    frequency:   -17.0157937356
+    frequency:    10.5618275797
   - # 2
-    frequency:   -11.2886692808
+    frequency:    12.4311547028
   - # 3
-    frequency:    -7.2236674097
+    frequency:    15.6191940139
   - # 4
-    frequency:    -3.2752345799
+    frequency:    16.5736772653
   - # 5
-    frequency:     9.6045709507
+    frequency:    21.2330956414
   - # 6
-    frequency:    11.8076102191
+    frequency:    22.5467238471
   - # 7
-    frequency:    14.1575312922
+    frequency:    33.0187508838
   - # 8
-    frequency:    14.3633057957
+    frequency:    33.7115611936
   - # 9
-    frequency:    15.0080727432
+    frequency:    37.2645711698
   - # 10
-    frequency:    15.4017072281
+    frequency:    38.6947029288
   - # 11
-    frequency:    17.3908796753
+    frequency:    39.2344972235
   - # 12
-    frequency:    18.1547078032
+    frequency:    39.4506164279
 
