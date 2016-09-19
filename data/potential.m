@@ -1,13 +1,9 @@
 
 
-
-
 X6poten = @(para, rho)( ...
     para(1)/(para(2) - 6.)* ...
     (6 * exp(para(2).*(1 - rho)) - para(2)./(rho.^6)) ...
 );
-
-
 
 X6Spoten = @(para, rho)( ...
     para(1) /(para(2) - 6.)* ...
@@ -15,7 +11,6 @@ X6Spoten = @(para, rho)( ...
 );
 
 rr = 3.2:0.01: 6;
-
 
 rho = rr./3.7727;
 
@@ -35,10 +30,8 @@ kappa = 6*beta1(2)*(beta1(2)*beta1(3)- 7.)/ (beta1(2)-6.)
 figure; hold on;
 plotX6 = plot(rr, y, 'r.');
 plotX6S= plot(rr, ys, 'b.');
-p0 = size(rr)
-p1 = size(DE(beta1, rhos))
-rhos
-plot(rr, DE(beta1, rhos));
+
+
 plot(xlim, [-0.0661 -0.0661], 'k-');
 plot(xlim, [-0.0623 -0.0623], 'k-');
 
