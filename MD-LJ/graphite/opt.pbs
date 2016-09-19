@@ -1,8 +1,8 @@
 #!/bin/csh
-#PBS -l walltime=24:00:00
-#PBS -l nodes=3:ppn=1
-#PBS -N TESTrun 
+#PBS -l walltime=3:00:00
+#PBS -l nodes=1:ppn=1
+#PBS -N LJ_potential 
 cd "$PBS_O_WORKDIR"
 
-./exe | thee LOG
+./exe | tee LOG
 
