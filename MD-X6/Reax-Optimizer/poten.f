@@ -2492,7 +2492,13 @@
 *     Construct periodic images for each interaction                 *
 *                                                                    *
 **********************************************************************
+!DEBUG
+!      write(*,*) c(i1,1),' ', c(i1,2),' ' ,c(i1,3), 'a'
+!DEBUG
+!      write(*,*) c(i2,1),' ', c(i2,2),' ' ,c(i2,3), 'b'
       rr=sqrt(a(1)*a(1)+a(2)*a(2)+a(3)*a(3))
+!DEBUG
+!      write(*,*) 'rr: ', rr, a(1), ' ', a(2), ' ', a(3)      
       if (rr.gt.swb.or.rr.lt.0.001) goto 10
       ity1=ia(i1,1)
       ity2=ia(i2,1)
@@ -2553,11 +2559,18 @@
       p6=p6co(ity1,ity2)
       p7=p7co(ity1,ity2)
       if (rr.gt.1.6) then
+!      if (rr.lt.1.6) then
       rho = rr/p2
+      !DEBUG
+!      write(*,*) 'ix ', ix, 'iy ', iy, 'iz ', iz
+!      write(*,*) c(i1,1),' ', c(i1,2),' ' ,c(i1,3), 'a'
+!      write(*,*) c(i2,1),' ', c(i2,2),' ' ,c(i2,3), 'b'
       !DEBUG
       !write(*,*) 'rr', rr, 'p2', p2, 'rho ', rho
       rho6 = rho**6
       ewh = p1/(p3-6.)*(6.*exp(p3*(1- rho))- p3/(rho**6))
+*      ewh = - p1/(p3-6.)*(p3/(rho**6))
+      write(*,*) 'ewh ', ewh
       dewdr = 0.0 
       else
       ewh = 0.0
@@ -2699,7 +2712,7 @@
 
 *      ewh=0.50*p2*(h1-2.0*h2)
 *      rrhuw=rr**(vpar(29)-1.0)
-*      dewdr=0.50*(p2*p3/p1)*(h2-h1)*rrhuw*(hulpw**-h15)
+*      iewdr=0.50*(p2*p3/p1)*(h2-h1)*rrhuw*(hulpw**-h15)
 
 
 * ReaxFP start
@@ -2733,9 +2746,12 @@
       p6=p6co(ity1,ity2)
       p7=p7co(ity1,ity2)
       if (rr.gt.1.6) then
+*      if (rr.lt.1.6) then
       rho = rr/p2
       rho6 = rho ** 6
       ewh = 0.5 * p1/(p3-6.)*(6.*exp(p3*(1- rho))- p3/(rho**6))
+*      ewh = - 0.5 * p1/(p3-6.)*(p3/(rho**6))
+      write(*,*) 'ewh2 ',ewh
       dewdr = 0.0
       else
       ewh = 0.0
