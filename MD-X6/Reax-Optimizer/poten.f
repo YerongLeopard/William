@@ -2746,7 +2746,7 @@
       p6=p6co(ity1,ity2)
       p7=p7co(ity1,ity2)
       if (rr.gt.1.6) then
-*      if (rr.lt.1.6) then
+!      if (rr.lt.1.6) then
       rho = rr/p2
       rho6 = rho ** 6
       ewh = 0.5 * p1/(p3-6.)*(6.*exp(p3*(1- rho))- p3/(rho**6))

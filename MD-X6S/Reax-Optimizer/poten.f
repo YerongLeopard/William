@@ -2557,7 +2557,9 @@
       !DEBUG
       !write(*,*) 'rr', rr, 'p2', p2, 'rho ', rho
       rho6 = rho**6
-      ewh = p1/(p3-6.)*(6./rho*exp(p3*p4*(1- rho))- p3/rho6) 
+      ewh = p1/(p3-6.)*(6./p4*exp(p3*p4*(1- rho))- p3/rho6) 
+      !write (*,*) "p4", p4
+      !write (*,*) "ewh", ewh
       dewdr = 0.0 
       else
       ewh = 0.0
@@ -2735,7 +2737,7 @@
       if (rr.gt.1.6) then
       rho = rr/p2
       rho6 = rho ** 6
-      ewh = 0.5* p1/(p3-6.)*(6./rho*exp(p3*p4*(1- rho))- p3/rho6)
+      ewh = 0.5* p1/(p3-6.)*(6./p4*exp(p3*p4*(1- rho))- p3/rho6)
       dewdr = 0.0
       else
       ewh = 0.0
