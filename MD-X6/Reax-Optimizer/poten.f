@@ -2570,7 +2570,7 @@
       rho6 = rho**6
       ewh = p1/(p3-6.)*(6.*exp(p3*(1- rho))- p3/(rho**6))
 *      ewh = - p1/(p3-6.)*(p3/(rho**6))
-      write(*,*) 'ewh ', ewh
+      ! write(*,*) 'ewh ', ewh
       dewdr = 0.0 
       else
       ewh = 0.0
@@ -2751,7 +2751,7 @@
       rho6 = rho ** 6
       ewh = 0.5 * p1/(p3-6.)*(6.*exp(p3*(1- rho))- p3/(rho**6))
 *      ewh = - 0.5 * p1/(p3-6.)*(p3/(rho**6))
-      write(*,*) 'ewh2 ',ewh
+      !write(*,*) 'ewh2 ',ewh
       dewdr = 0.0
       else
       ewh = 0.0
@@ -2968,7 +2968,7 @@
 *     do 10 i3=1,na
 *     if (xmasat(i3).lt.2.0) goto 10       !no H-atoms
 *     imol2=iag(i3,3+mbond)
-*     if (i1.eq.imol2) goto 10            !no intermolecular reactions
+*    if (i1.eq.imol2) goto 10            !no intermolecular reactions
 *     bopisum=zero
 *     do i4=1,ia(i3,2)
 *     ihu2=nubon2(i3,i4)
