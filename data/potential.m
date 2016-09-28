@@ -16,11 +16,14 @@ X6Spoten = @(para, rho)( ...
     (6./para(3)* exp((para(3) * para(2)).*(1 - rho)) - para(2)./(rho.^6)) ...
 );
 
+LGfunc = @(para, rho)( ...
+    1);
+
 fitFUNC1 = @(para, rho)(para(1)* exp(para(2).*rho +para(3))); % A exp (x R + B)
 
 
 rr = 3.2:0.01: 6;
-rrf = 3.2:2: 6;
+rrf = 3.2:0.2: 6;
 
 
 
@@ -52,9 +55,9 @@ ys = X6Spoten(beta1, rhos);
 figure; hold on;
 plotX6 = plot(rr, y, 'r.');
 % plotX6S= plot(rr, ys, 'b.');
-plotX6NB= plot(rr, yNB, 'b.');
+plotX6NB= plot(rr, yNB, 'b*');
 yNB = fitFUNC1(betaf, rho);
- plot(rr, yNB, 'g--');
+ plot(rr, yNB, 'g.-');
 
 
 plot(xlim, [-0.0661 -0.0661], 'k-');
