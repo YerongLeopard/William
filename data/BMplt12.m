@@ -48,7 +48,7 @@ plot(LatticeC(idx), F0(idx), 'r*');
 xx = 2.5:0.05:8.;
 xxvol = xx*A*A*sqrt(3)/8;
 beta0 = [-9.3062    0.2469   10.9828    9.0445 ];
- opts = statset('MaxIter',9000);
+opts = statset('MaxIter',9000);
 %opts = statset('TolFun', 1e-100);
 
 %%%
@@ -58,7 +58,7 @@ LatticeC = DATA12(:,1);
 Volume = LatticeC.*A*A*sqrt(3)/8;
 QME = DATA12(:,2);
 
-beta = nlinfit(Volume, QME, BMfitF,beta0, opts);
+beta = nlinfit(Volume, QME, BMfitF, beta0, opts);
 optC_full_qme = beta(4)/A/A/sqrt(3)*8.;
 
 disp(sprintf('Optimal Lattice Constant C (full QME) : %.4f', optC_full_qme));
