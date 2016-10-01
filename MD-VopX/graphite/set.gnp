@@ -1,0 +1,156 @@
+set terminal postscript eps color  solid
+set output 'h2.eps'
+set encoding iso_8859_1
+set title "H-H in H2" font "Arial ,12"
+set xlabel "Distance (\305)" font "Arial ,20"
+set ylabel "Energy (kcal/mol)" font "Arial ,20"
+set xtics  font "Arial ,16"
+set ytics  font "Arial ,16"
+#set xrange [1.5:5]
+#set yrange [-18:0]
+#set xtics 1.5,0.5
+#set ytics -15,5
+set mxtics 2
+set mytics 2
+set xlabel offset 3,-1
+set ylabel offset -2,2
+set lmargin 15
+set bmargin 5
+set rmargin 5
+set tmargin 5
+set border lw 2
+set pointsize 2
+set xtics mirror
+set ytics mirror
+set grid ytics mytics
+set grid ytics lc rgb "#bbbbbb" lw 1 lt 0
+set grid xtics lc rgb "#bbbbbb" lw 1 lt 0
+#set label 1 "(a)" at 2.3,32.5 font "Arial ,22"
+set key bottom inside spacing 1.25
+#set key font "Arial ,22"
+#set key at 1.9,1100
+#set key vertical
+set pointsize 1.0
+plot "01rep/H2.mol99" u ($2):($3)  w  lp pt 7 lw 2 lt rgb "green" title "Enon-bond", \
+     "02bond/H2.mol99" u ($2):($3)  w  lp pt 3 lw 2 lt rgb "orange" title "Ebond", \
+     "03pqeq/H2.mol99" u ($2):($3)  w  lp pt 13 lw 2 lt rgb "blue" title "Epqeq", \
+     "04tot/H2.mol99" u ($2):($3)  w  lp pt 9 lw 2 lt rgb "red" title "EreaxPQ", \
+     "05qm/H2.mol99" u ($2):($4)  w  lp pt 5 lw 2 lt rgb "black" title "QM"
+
+set terminal postscript eps color  solid
+set output 'h2o.eps'
+set encoding iso_8859_1
+set title "O-H in H2O" font "Arial ,12"
+set xlabel "Distance (\305)" font "Arial ,20"
+set ylabel "Energy (kcal/mol)" font "Arial ,20"
+set xtics  font "Arial ,16"
+set ytics  font "Arial ,16"
+#set xrange [1.5:5]
+#set yrange [-18:0]
+#set xtics 1.5,0.5
+#set ytics -15,5
+set mxtics 2
+set mytics 2
+set xlabel offset 3,-1
+set ylabel offset -2,2
+set lmargin 15
+set bmargin 5
+set rmargin 5
+set tmargin 5
+set border lw 2
+set pointsize 2
+set xtics mirror
+set ytics mirror
+set grid ytics mytics
+set grid ytics lc rgb "#bbbbbb" lw 1 lt 0
+set grid xtics lc rgb "#bbbbbb" lw 1 lt 0
+#set label 1 "(a)" at 2.3,32.5 font "Arial ,22"
+set key bottom inside spacing 1.25
+#set key font "Arial ,22"
+#set key at 1.9,1100
+#set key vertical
+set pointsize 1.0
+plot "01rep/H2O.mol99" u ($2):($3)  w  lp pt 7 lw 2 lt rgb "green" title "Enon-bond", \
+     "02bond/H2O.mol99" u ($2):($3)  w  lp pt 3 lw 2 lt rgb "orange" title "Ebond", \
+     "03pqeq/H2O.mol99" u ($2):($3)  w  lp pt 13 lw 2 lt rgb "blue" title "Epqeq", \
+     "04tot/H2O.mol99" u ($2):($3)  w  lp pt 9 lw 2 lt rgb "red" title "EreaxPQ", \
+     "05qm/H2O.mol99" u ($2):($4)  w  lp pt 5 lw 2 lt rgb "black" title "QM"
+
+set terminal postscript eps color  solid
+set output 'hooh.eps'
+set encoding iso_8859_1
+set title "O-O in HOOH" font "Arial ,12"
+set xlabel "Distance (\305)" font "Arial ,20"
+set ylabel "Energy (kcal/mol)" font "Arial ,20"
+set xtics  font "Arial ,16"
+set ytics  font "Arial ,16"
+#set xrange [1.5:5]
+#set yrange [-18:0]
+#set xtics 1.5,0.5
+#set ytics -15,5
+set mxtics 2
+set mytics 2
+set xlabel offset 3,-1
+set ylabel offset -2,2
+set lmargin 15
+set bmargin 5
+set rmargin 5
+set tmargin 5
+set border lw 2
+set pointsize 2
+set xtics mirror
+set ytics mirror
+set grid ytics mytics
+set grid ytics lc rgb "#bbbbbb" lw 1 lt 0
+set grid xtics lc rgb "#bbbbbb" lw 1 lt 0
+#set label 1 "(a)" at 2.3,32.5 font "Arial ,22"
+set key bottom inside spacing 1.25
+#set key font "Arial ,22"
+#set key at 1.9,1100
+#set key vertical
+set pointsize 1.0
+plot "01rep/HOOH.mol99" u ($2):($3)  w  lp pt 7 lw 2 lt rgb "green" title "Enon-bond", \
+     "02bond/HOOH.mol99" u ($2):($3)  w  lp pt 3 lw 2 lt rgb "orange" title "Ebond", \
+     "03pqeq/HOOH.mol99" u ($2):($3)  w  lp pt 13 lw 2 lt rgb "blue" title "Epqeq", \
+     "04tot/HOOH.mol99" u ($2):($3)  w  lp pt 9 lw 2 lt rgb "red" title "EreaxPQ", \
+     "05qm/HOOH.mol99" u ($2):($4)  w  lp pt 5 lw 2 lt rgb "black" title "QM"
+
+set terminal postscript eps color  solid
+set output 'h4o2.eps'
+set encoding iso_8859_1
+set title "water dimer" font "Arial ,12"
+set xlabel "Distance (\305)" font "Arial ,20"
+set ylabel "Energy (kcal/mol)" font "Arial ,20"
+set xtics  font "Arial ,16"
+set ytics  font "Arial ,16"
+#set xrange [1.5:5]
+#set yrange [-18:0]
+#set xtics 1.5,0.5
+#set ytics -15,5
+set mxtics 2
+set mytics 2
+set xlabel offset 3,-1
+set ylabel offset -2,2
+set lmargin 15
+set bmargin 5
+set rmargin 5
+set tmargin 5
+set border lw 2
+set pointsize 2
+set xtics mirror
+set ytics mirror
+set grid ytics mytics
+set grid ytics lc rgb "#bbbbbb" lw 1 lt 0
+set grid xtics lc rgb "#bbbbbb" lw 1 lt 0
+#set label 1 "(a)" at 2.3,32.5 font "Arial ,22"
+set key bottom inside spacing 1.25
+#set key font "Arial ,22"
+#set key at 1.9,1100
+#set key vertical
+set pointsize 1.0
+plot "01rep/H4O2.mol99" u ($2):($3)  w  lp pt 7 lw 2 lt rgb "green" title "Enon-bond", \
+     "02bond/H4O2.mol99" u ($2):($3)  w  lp pt 3 lw 2 lt rgb "orange" title "Ebond", \
+     "03pqeq/H4O2.mol99" u ($2):($3)  w  lp pt 13 lw 2 lt rgb "blue" title "Epqeq", \
+     "04tot/H4O2.mol99" u ($2):($3)  w  lp pt 9 lw 2 lt rgb "red" title "EreaxPQ", \
+     "05qm/H4O2.mol99" u ($2):($4)  w  lp pt 5 lw 2 lt rgb "black" title "QM"
+
