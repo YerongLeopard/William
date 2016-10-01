@@ -5,7 +5,7 @@ X6poten = @(para, rho)( ...
     (6 * exp(para(2).*(1 - rho)) - para(2)./(rho.^6)) ...
 );
 
-
+% para = 0.1383 3.7934 13.1999
 X6potenNB = @(para, rho)( ...
     para(1)/(para(2) - 6.)* ...
     (6 * exp(para(2).*(1 - rho))) ...
@@ -32,26 +32,12 @@ rrf = 3.2:0.001: 6;
 
 
 disp('finished');
-rho = rr./3.7727;
-rhof = rrf/3.7727;
-
-
-beta0 = [0.0661 , 16.0944];
-
-beta_ = [14.5646  -16.0944   10.1790];
-beta_ = [3 1 1]; % DEBUG
-yNB = X6potenNB(beta0, rhof);
-
-opts = statset('MaxIter',9000);
-
-betaf = nlinfit(rrf, yNB, fitFUNC1, beta_, opts);
-% betaf = [0 0 0] % DEBUG
-disp(betaf);
+rho = rr./3.7934;
 
 
 
-y = X6poten(beta0, rho);
-yNB = X6potenNB(beta0, rho);
+
+
 rhos = rr./3.7750;
 beta1 = [0.0623 , 16.0944 , 1.1];
 
@@ -64,6 +50,9 @@ ys = X6Spoten(beta1, rhos);
 figure; hold on;
 
 %%% potential X6
+beta0 = [0.1383 , 13.1999];
+y = X6poten(beta0, rho);
+yNB = X6potenNB(beta0, rho);
 plotX6 = plot(rr, y, 'r.');
 y1 = X6potenLG(beta0, rho); %DEBUG
 plot(rr, y1, 'k-.'); % DEBUG
@@ -71,19 +60,33 @@ plot(rr, y1, 'k-.'); % DEBUG
 
 % plotX6S= plot(rr, ys, 'b.');
 plotX6NB= plot(rr, yNB, 'b*');
-yNB = fitFUNC1(betaf, rr);
-plot(rr, yNB, 'g.-');
+
 
 %%% fitting
+rhof = rrf/3.7934;
+
+
+
+
+beta_ = [14.5646  -16.0944   10.1790];
+beta_ = [3 1 1]; % DEBUG
+yNB = X6potenNB(beta0, rhof);
+
+opts = statset('MaxIter',9000);
+
+betaf = nlinfit(rrf, yNB, fitFUNC1, beta_, opts);
+% betaf = [0 0 0] % DEBUG
+disp(betaf);
+
 
 %%% potential VOP
 
-rr
-y2 = standardLGpart([684.95, 3.85], rr); % DEBUG
 
-y2
+y2 = standardLGpart([684.95, 3.85], rr); % DEBUG
+yNB = fitFUNC1(betaf, rr);
+plot(rr, yNB, 'g.-');
 plot(rr, y2, 'r-.'); % DEBUG
-test = standardLGpart([684.95, 3.85], 3.5)
+% test = standardLGpart([684.95, 3.85], 3.5)
 
 
 plot(xlim, [-0.0661 -0.0661], 'k-');
