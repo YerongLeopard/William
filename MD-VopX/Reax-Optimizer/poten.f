@@ -2564,7 +2564,7 @@
       exp2 = exp(-p4*rr**p5 + p6*rr) * p7
       ewh = exp1 * exp2  
 *      ewh = - p1/(p3-6.)*(p3/(rho**6))
-      write(*,*) 'ewh ', ewh
+*      write(*,*) 'ewh ', ewh 
       dewdr = 0.0 
       else
       ewh = 0.0
@@ -2601,7 +2601,7 @@
       rr6=rr**6
       rr5=rr6/rr
       write(*,*) 'C6:', -dispscale2, ',', pdisp, '; pdispre :', pdispre ! DEBUG
-      write(*,*) ' dispscale: ', dispscale ! DEBUG
+*      write(*,*) ' dispscale: ', dispscale ! DEBUG
       edisp=-dispscale2*pdisp/(rr6+dispscale*pdispre6)
       dedispdr=-6.0*edisp*rr5/(rr6+dispscale*pdispre6)
 *      else
@@ -4042,5 +4042,3 @@
 
       return
       end 
-********************************************************************** 
-********************************************************************** 
