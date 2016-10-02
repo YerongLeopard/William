@@ -22,5 +22,5 @@
       write (*,110)qhulp
       return
   100 format ('ReaxFF version 2.0')
-  110 format(a20,'Sun Sep 25 18:36:38 PDT 2016')
+  110 format(a20,'Tue Sep 27 21:42:31 PDT 2016')
       end
