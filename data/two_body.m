@@ -8,6 +8,7 @@ LJ_original =DATA(:, 5); LJ_optimized = DATA(:, 6);
 % disp(X6S_optimized)% DEBUG
 X6_original = DATA(:, 7); X6_optimized = DATA(:, 8);
 EXP1_optimized = DATA(:, 9);
+EXP2_optimized = DATA(:, 10);
 CC= LatticeC / 2;
 figure; hold on;
 plotQM = plot (CC, QM, 'ok','MarkerSize',10);
@@ -26,12 +27,17 @@ yy = spline(CC,X6_optimized,xx); plot(xx, yy, '-r');
 plotEXP1_optimized = plot(CC , EXP1_optimized, 'b*','MarkerSize',10);
 yy = spline(CC,EXP1_optimized,xx); plot(xx, yy, 'b-');
 
+plotEXP2_optimized = plot(CC , EXP2_optimized, 'g*','MarkerSize',10);
+yy = spline(CC,EXP2_optimized,xx); plot(xx, yy, 'g-');
+
 h = legend([plotQM, ... 
     plotX6_original, plotX6_optimized, ... 
-    plotEXP1_optimized], ...
+    plotEXP1_optimized, ...
+    plotEXP2_optimized], ...
     'QM', ...
     'X6\_original', 'X6\_optimized', ...
-    'EXP1' ...
+    '$$\textbf{Z}\exp(\textbf{A}r+\textbf{B})$$', ...
+    '$$Z\exp(Ar+B)\cdot\exp(-\textbf{C}r^2+\textbf{D})$$' ...
     );
 %     plotX6S_original, plotX6S_optimized,
 %     plotLJ_original, plotLJ_optimized
@@ -39,6 +45,8 @@ h = legend([plotQM, ...
 %     'LJ\_original', 'LJ\_optimized',
 set(h, 'fontsize', 15);
 set(h, 'Location', 'BestOutside');
+set(h,'interpreter','latex');
+
 h = xlabel('layer distance/ $\AA$');
 set(h,'interpreter','latex');
 set(h, 'fontsize', 20);
