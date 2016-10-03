@@ -9,6 +9,7 @@ LJ_original =DATA(:, 5); LJ_optimized = DATA(:, 6);
 X6_original = DATA(:, 7); X6_optimized = DATA(:, 8);
 EXP1_optimized = DATA(:, 9);
 EXP2_optimized = DATA(:, 10);
+EXPfull_optimized = DATA(:, 11);
 CC= LatticeC / 2;
 figure; hold on;
 plotQM = plot (CC, QM, 'ok','MarkerSize',10);
@@ -30,6 +31,8 @@ yy = spline(CC,EXP1_optimized,xx); plot(xx, yy, 'b-');
 plotEXP2_optimized = plot(CC , EXP2_optimized, 'g*','MarkerSize',10);
 yy = spline(CC,EXP2_optimized,xx); plot(xx, yy, 'g-');
 
+plotEXPfull_optimized = plot(CC , EXPfull_optimized, 'k*','MarkerSize',10);
+yy = spline(CC,EXPfull_optimized,xx); plot(xx, yy, 'k-.');
 h = legend([plotQM, ... 
     plotX6_original, plotX6_optimized, ... 
     plotEXP1_optimized, ...
