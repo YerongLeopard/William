@@ -23,7 +23,7 @@ X6potenLG = @(para, rho)( ...
 standardLGpart = @(para, rr)( ...
     -para(1)./(rr.^6 + para(2)^6));
 
-fitFUNC1 = @(para, r)(para(1)* exp(para(2).*r +para(3))); % A exp (x R + B) Note this function uses r rather than \rho
+fitFUNC1 = @(para, r)(para(1)* exp(para(2).*r)); % A exp (x R) Note this function uses r rather than \rho
 
 
 rr = 3.2:0.01: 6;
@@ -31,7 +31,7 @@ rrf = 3.2:0.001: 6;
 
 
 
-disp('finished');
+% disp('finished');
 rho = rr./3.7934;
 
 
@@ -64,12 +64,7 @@ plotX6NB= plot(rr, yNB, 'b*');
 
 %%% fitting
 rhof = rrf/3.7934;
-
-
-
-
-beta_ = [14.5646  -16.0944   10.1790];
-beta_ = [3 1 1]; % DEBUG
+beta_ = [0.9470   0.0034];
 yNB = X6potenNB(beta0, rhof);
 
 opts = statset('MaxIter',9000);
