@@ -64,10 +64,10 @@ plotX6NB= plot(rr, yNB, 'b*');
 
 %%% fitting
 rhof = rrf/3.7934;
-beta_ = [0.9470   0.0034];
+beta_ = [42.3321 -3.9895];
 yNB = X6potenNB(beta0, rhof);
 
-opts = statset('MaxIter',9000);
+opts = statset('MaxIter',90000);
 
 betaf = nlinfit(rrf, yNB, fitFUNC1, beta_, opts);
 % betaf = [0 0 0] % DEBUG
@@ -77,18 +77,19 @@ disp(betaf);
 %%% potential VOP
 
 
-y2 = standardLGpart([684.95, 3.85], rr); % DEBUG
+y2 = standardLGpart([1704.95, 3.85], rr); % DEBUG
+value1 = X6poten((beta0), 1) % the lowest energy for X6 potential
+value2 = standardLGpart([1704.95, 3.85], 3.7934) % attractive energy for standard LG part
 yNB = fitFUNC1(betaf, rr);
 plot(rr, yNB, 'g.-');
 plot(rr, y2, 'r-.'); % DEBUG
 % test = standardLGpart([684.95, 3.85], 3.5)
 
+plot(xlim, [0 0], 'k --');
+plot(xlim, [value1 value1], 'k-');
+plot(xlim, [value2 value2], 'k-');
 
-plot(xlim, [-0.0661 -0.0661], 'k-');
-plot(xlim, [-0.0623 -0.0623], 'k-');
-
-plot([3.7750 3.7750], ylim, 'k-');
-plot([3.7727 3.7727], ylim, 'k-');
+plot([3.7934 3.7934], ylim, 'k-');
 
 
 
