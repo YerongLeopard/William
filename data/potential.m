@@ -77,28 +77,48 @@ disp(betaf);
 %%% potential VOP
 
 
-y2 = standardLGpart([1704.95, 3.85], rr); % DEBUG
+y2 = standardLGpart([684.95, 3.85], rr); % DEBUG
+
 value1 = X6poten((beta0), 1) % the lowest energy for X6 potential
-value2 = standardLGpart([1704.95, 3.85], 3.7934) % attractive energy for standard LG part
+value2 = standardLGpart([1601.1619, 3.85], 3.7934) % attractive energy for standard LG part
 yNB = fitFUNC1(betaf, rr);
-plot(rr, yNB, 'g.-');
-plot(rr, y2, 'r-.'); % DEBUG
+plot_fit = plot(rr, yNB, 'g.-');
+test1 = plot(rr, y2, 'r-.'); % DEBUG
+
+
+y2 = standardLGpart([1601.1619, 3.85], rr); % DEBUG
+test2 = plot(rr, y2, 'r--'); % DEBUG
 % test = standardLGpart([684.95, 3.85], 3.5)
 
 plot(xlim, [0 0], 'k --');
-plot(xlim, [value1 value1], 'k-');
-plot(xlim, [value2 value2], 'k-');
+plot(xlim, [value1 value1], 'k--');
+plot(xlim, [value2 value2], 'k--');
 
-plot([3.7934 3.7934], ylim, 'k-');
-
-
+plot([3.7934 3.7934], ylim, 'k--');
 
 
+h = legend([plotX6,...
+    plotX6NB, ...
+    plot_fit, ...
+    test1, ...
+    test2], ...
+    'X6', ...
+    'X6NB', ...
+    '$$Z\exp(Ar)$$', ...
+    'LG part:original $$C_6$$', ...
+    'LG part:optimizd $$C_6$$');
+set(h,'interpreter','latex');
+set(h, 'fontsize', 20);
 
+h = xlabel('layer distance/ $\AA$');
+set(h,'interpreter','latex');
+set(h, 'fontsize', 20);
+set(h, 'fontweight', 'bold');
 
-h = legend([plotX6, plotX6NB], 'X6', 'X6NB');
-
-% value = X6Spoten(beta1, 1)
+h = ylabel('Energy difference/ $kcal/ mol$');
+set(h,'interpreter','latex');
+set(h, 'fontsize', 20);
+set(h, 'fontweight', 'bold');
 
 %axis([3 6 -0.1 0.1]);
 
