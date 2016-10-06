@@ -2559,17 +2559,17 @@
       p6=p6co(ity1,ity2)
       p7=p7co(ity1,ity2)
 *      if (rr.lt.1.6) then ! DEBUG      
-      if (rr.gt.1.6) then
+*      if (rr.gt.1.6) then
       exp1 = p1 *exp(p2 * rr + p3)
       exp2 = exp(-p4*rr**p5 + p6*rr) * p7
       ewh = exp1 * exp2  
 *      ewh = - p1/(p3-6.)*(p3/(rho**6))
 *      write(*,*) 'ewh ', ewh 
       dewdr = 0.0 
-      else
-      ewh = 0.0
-      dewdr=0.0
-      endif
+*      else
+*      ewh = 0.0
+*      dewdr=0.0
+*      endif
 *1. END X6S potential function  
 
 **********************************************************************
@@ -2594,7 +2594,7 @@
 **********************************************************************
 * 1. Yerong: LG part
 *      if (rr.lt.1.6) then ! DEBUG
-      if (rr.gt.1.6) then
+*      if (rr.gt.1.6) then
       pdisp=dispc6(ity1,ity2)
       pdispre=dispre(ity1,ity2)
 *      slgfactor=scalslg(ity1,ity2)
@@ -2605,10 +2605,10 @@
 *      write(*,*) ' dispscale: ', dispscale ! DEBUG
       edisp=-dispscale2*pdisp/(rr6+dispscale*pdispre6)
       dedispdr=0.0
-      else
-      edisp=0.0
-      dedispdr=0.0
-      endif 
+*      else
+*      edisp=0.0
+*      dedispdr=0.0
+*      endif 
 
 * 1. End Yerong: LG part  
 
@@ -2743,15 +2743,15 @@
       p6=p6co(ity1,ity2)
       p7=p7co(ity1,ity2)
 *      if (rr.lt.1.6) then ! DEBUG
-      if (rr.gt.1.6) then
+*      if (rr.gt.1.6) then
       exp1 = p1 *exp(p2 * rr + p3)
       exp2 = exp(-p4*rr**p5 + p6*rr) * p7
       ewh = 0.5 *exp1*exp2
       dewdr = 0.0
-      else
-      ewh = 0.0
-      dewdr=0.0
-      endif
+*      else
+*      ewh = 0.0
+*      dewdr=0.0
+*      endif
 *2. END X6S potential function 
 
 
@@ -2772,7 +2772,7 @@
 **********************************************************************
 * 2. Yerong: LG part
 *      if (rr.lt.1.6) then ! DEBUG
-      if (rr.gt.1.6) then
+*      if (rr.gt.1.6) then
       pdisp=dispc6(ity1,ity1)
       pdispre=dispre(ity1,ity1)
 *      slgfactor=scalslg(ity1,ity2)
@@ -2781,10 +2781,10 @@
       rr5=rr6/rr
       edisp=-0.5*dispscale2*pdisp/(rr6+dispscale*pdispre6)
       dedispdr=0.0
-      else
-      edisp=0.0
-      dedispdr=0.0
-      endif
+*      else
+*      edisp=0.0
+*      dedispdr=0.0
+*      endif
 * 2. End Yerong: LG part
 
 * if bonded then only consider bond energy of exact singlet
