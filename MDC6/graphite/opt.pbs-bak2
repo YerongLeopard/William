@@ -1,0 +1,25 @@
+#!/bin/csh
+#PBS -l walltime=04:00:00
+#PBS -l nodes=1:ppn=1
+#PBS -N 13PQ
+cd "$PBS_O_WORKDIR"
+
+set jobname = 13PQ-norm
+
+
+set PATH = /temp1/naserifa/$jobname/
+cd $PBS_O_WORKDIR
+hostname > run.machine
+
+if (-d $PATH) then
+   rm -r  $PATH
+   mkdir $PATH
+else
+   mkdir $PATH
+endif
+cp * $PATH
+cd $PATH
+
+
+./exe
+
