@@ -64,7 +64,7 @@ plotX6NB= plot(rr, yNB, 'b*');
 
 %%% fitting
 rhof = rrf/3.7934;
-beta_ = [42.3321 -3.9895];
+beta_ = [2.3321 -0.9895];
 yNB = X6potenNB(beta0, rhof);
 
 opts = statset('MaxIter',90000);
