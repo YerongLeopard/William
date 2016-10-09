@@ -1,5 +1,5 @@
 #PBS -l nodes=1:ppn=6,walltime=3:00:00
-#PBS -N 12pressure_b
+#PBS -N reference_001
 #PBS -S /bin/tcsh
 
 source /share/apps/intel/composer_xe_2013_sp1.3.174/composer_xe_2013_sp1.3.174/bin/compilervars.csh intel64
@@ -9,7 +9,7 @@ setenv LD_LIBRARY_PATH ${OPAL_PREFIX}/lib:$LD_LIBRARY_PATH
 
 set MPI=mpirun
 set nprocs=`wc -l < $PBS_NODEFILE`
-set VASP=/project/source/VASP/vasp.5.3.5/bin/vasp.atom
+set VASP=/project/source/VASP/vasp.5.3.5/bin/vasp.ion
 
 cd $PBS_O_WORKDIR
 
