@@ -1,33 +1,11 @@
- running on    6 total cores
- distrk:  each k-point on    6 cores,    1 groups
- distr:  one band on    1 cores,    6 groups
+ running on    2 total cores
+ distrk:  each k-point on    2 cores,    1 groups
+ distr:  one band on    1 cores,    2 groups
  using from now: INCAR     
  vasp.5.3.5 31Mar14 (build Nov 02 2014 15:17:37) complex                        
   
  POSCAR found :  1 types and      32 ions
  scaLAPACK will be used
-
- ----------------------------------------------------------------------------- 
-|                                                                             |
-|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
-|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
-|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
-|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
-|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
-|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
-|                                                                             |
-|      For optimal performance we recommend to set                            |
-|        NCORE= 4 - approx SQRT( number of cores)                             |
-|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
-|      This setting can  greatly improve the performance of VASP for DFT.     |
-|      The default, NPAR=number of cores might be grossly inefficient         |
-|      on modern multi-core architectures or massively parallel machines.     |
-|      Do your own testing !!!!                                               |
-|      Unfortunately you need to use the default for GW and RPA calculations. |
-|      (for HF NCORE is supported but not extensively tested yet)             |
-|                                                                             |
- ----------------------------------------------------------------------------- 
-
 
  ----------------------------------------------------------------------------- 
 |                                                                             |
@@ -49,29 +27,3 @@
  WARNING: random wavefunctions but no delay for mixing, default for NELMDL
  entering main loop
        N       E                     dE             d eps       ncg     rms          rms(c)
-DAV:   1     0.601016903817E+03    0.60102E+03   -0.71507E+04 27384   0.159E+03
-DAV:   2    -0.262223637444E+03   -0.86324E+03   -0.83251E+03 34152   0.312E+02
-DAV:   3    -0.312847801872E+03   -0.50624E+02   -0.50134E+02 33264   0.760E+01
-DAV:   4    -0.313824837673E+03   -0.97704E+00   -0.97525E+00 34980   0.114E+01
-DAV:   5    -0.313853657961E+03   -0.28820E-01   -0.28808E-01 35148   0.183E+00    0.221E+01
-DAV:   6    -0.299323703816E+03    0.14530E+02   -0.14975E+01 31296   0.107E+01    0.116E+01
-DAV:   7    -0.294700479159E+03    0.46232E+01   -0.15824E+01 30792   0.110E+01    0.195E+00
-DAV:   8    -0.294767452682E+03   -0.66974E-01   -0.41373E-01 30864   0.187E+00    0.332E-01
-DAV:   9    -0.294768254090E+03   -0.80141E-03   -0.26830E-02 32412   0.520E-01    0.167E-01
-DAV:  10    -0.294768476522E+03   -0.22243E-03   -0.53303E-03 33336   0.224E-01    0.105E-01
-DAV:  11    -0.294769202560E+03   -0.72604E-03   -0.37503E-03 31920   0.153E-01    0.833E-02
-DAV:  12    -0.294769461019E+03   -0.25846E-03   -0.13647E-03 31164   0.103E-01    0.539E-02
-DAV:  13    -0.294769630757E+03   -0.16974E-03   -0.30898E-03 35604   0.127E-01    0.581E-02
-DAV:  14    -0.294769552621E+03    0.78136E-04   -0.97126E-04 32988   0.872E-02    0.948E-03
-DAV:  15    -0.294769557203E+03   -0.45826E-05   -0.44427E-05 31476   0.244E-02    0.671E-03
--------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code.. Per user-direction, the job has been aborted.
--------------------------------------------------------
---------------------------------------------------------------------------
-mpirun detected that one or more processes exited with non-zero status, thus causing
-the job to be terminated. The first process to do so was:
-
-  Process name: [[742,1],0]
-  Exit code:    28
---------------------------------------------------------------------------
