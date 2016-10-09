@@ -6,7 +6,7 @@ X6poten = @(para, rho)( ...
 );
 
 % para = 0.1383 3.7934 13.1999
-X6potenNB = @(para, rho)( ...
+repX6poten = @(para, rho)( ...
     para(1)/(para(2) - 6.)* ...
     (6 * exp(para(2).*(1 - rho))) ...
 );
@@ -16,15 +16,16 @@ X6Spoten = @(para, rho)( ...
     (6./para(3)* exp((para(3) * para(2)).*(1 - rho)) - para(2)./(rho.^6)) ...
 );
 
-X6potenLG = @(para, rho)( ...
+atrX6poten = @(para, rho)( ...
      - para(1)/(para(2)-6)*para(2)./(rho.^6) ...
 );
 
-standardLGpart = @(para, rr)( ...
+atrFUN= @(para, rr)( ...
     -para(1)./(rr.^6 + para(2)^6));
 
-fitFUNC1 = @(para, r)(para(1)* exp(para(2).*r)); % A exp (x R) Note this function uses r rather than \rho
-
+repFUNC1 = @(para, r)(para(1)* exp(para(2).*r + para(3))); % A exp (x R) Note this function uses r rather than \rho
+%  Note this function uses r rather than \rho
+repFUNC2=  @(para, r)((para(1)* exp(para(2).*r + para(3))) .* (-para(4) .* (r.^para(5)) + para(6).* r) .* para(7)) ; 
 
 rr = 3.2:0.01: 6;
 rrf = 3.2:0.001: 6;
@@ -51,25 +52,26 @@ figure; hold on;
 
 %%% potential X6
 beta0 = [0.1383 , 13.1999];
-y = X6poten(beta0, rho);
-yNB = X6potenNB(beta0, rho);
-plotX6 = plot(rr, y, 'r.');
-y1 = X6potenLG(beta0, rho); %DEBUG
-plot(rr, y1, 'k-.'); % DEBUG
+yy = X6poten(beta0, rho);
+
+plotX6 = plot(rr, yy, 'r.');
+ya = atrX6poten(beta0, rho); %DEBUG
+plot(rr, ya, 'r-'); % DEBUG
 
 
 % plotX6S= plot(rr, ys, 'b.');
-plotX6NB= plot(rr, yNB, 'b*');
+repy = repX6poten(beta0, rho);
+plot_repX6= plot(rr, repy, 'r*');
 
 
 %%% fitting
 rhof = rrf/3.7934;
-beta_ = [2.3321 -0.9895];
-yNB = X6potenNB(beta0, rhof);
+beta_ = [6.3321 -0.9895, 0.0];
+repy = repX6poten(beta0, rhof);
 
 opts = statset('MaxIter',90000);
 
-betaf = nlinfit(rrf, yNB, fitFUNC1, beta_, opts);
+betaf = nlinfit(rrf, repy, repFUNC1, beta_, opts);
 % betaf = [0 0 0] % DEBUG
 disp(betaf);
 
@@ -77,36 +79,53 @@ disp(betaf);
 %%% potential VOP
 
 
-y2 = standardLGpart([684.95, 3.85], rr); % DEBUG
+yy = atrFUN([684.95, 3.85], rr); % DEBUG
 
-value1 = X6poten((beta0), 1) % the lowest energy for X6 potential
-value2 = standardLGpart([1601.1619, 3.85], 3.7934) % attractive energy for standard LG part
-yNB = fitFUNC1(betaf, rr);
-plot_fit = plot(rr, yNB, 'g.-');
-test1 = plot(rr, y2, 'r-.'); % DEBUG
+% value1 = X6poten((beta0), 1) % the lowest energy for X6 potential
+% value2 = standardLGpart([1601.1619, 3.85], 3.7934) % attractive energy for standard LG part
+repy = repFUNC1(betaf, rr);
+plot_fit = plot(rr, repy, 'g.-');
+test1 = plot(rr, yy, 'r-.'); % DEBUG
 
 
-y2 = standardLGpart([1601.1619, 3.85], rr); % DEBUG
-test2 = plot(rr, y2, 'r--'); % DEBUG
+yy = atrFUN([998.8719, 3.85], rr); % DEBUG
+plot_repEXP2 = plot(rr, yy, 'b--'); % DEBUG
 % test = standardLGpart([684.95, 3.85], 3.5)
 
 plot(xlim, [0 0], 'k --');
-plot(xlim, [value1 value1], 'k--');
-plot(xlim, [value2 value2], 'k--');
+% plot(xlim, [value1 value1], 'k--');
+% plot(xlim, [value2 value2], 'k--');
 
 plot([3.7934 3.7934], ylim, 'k--');
 
 
+%%% potential VOPfull
+full_para = [40.6220 -3.8638  8.6854 -0.3018   0.7171  -0.4959 1];
+ry = repFUNC2([40.6220 -3.8638  8.6854 -0.3018   0.7171  -0.4959 1], rr);
+plot_repEXP2 = plot(rr ,ry, 'b*');
+
+
+
+ay = atrFUN([998.8719 3.85], rr); 
+plot_atrEXP2 = plot(rr, ay, 'b-');
+
+yy = ay + ry;
+plot_EXP2 = plot(rr, yy, 'b--');
+
+repFUNC2([40.6220 -3.8638  8.6854 -0.3018   0.7171  -0.4959 1], 0.1)
+
 h = legend([plotX6,...
-    plotX6NB, ...
+    plot_repX6, ...
     plot_fit, ...
     test1, ...
-    test2], ...
+    plot_atrEXP2], ...
     'X6', ...
-    'X6NB', ...
+    'X6 repulsive part ', ...
     '$$Z\exp(Ar)$$', ...
     'LG part:original $$C_6$$', ...
-    'LG part:optimizd $$C_6$$');
+    'LG part:full fitting');
+
+
 set(h,'interpreter','latex');
 set(h, 'fontsize', 20);
 
