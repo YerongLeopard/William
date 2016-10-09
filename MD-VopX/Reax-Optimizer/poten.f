@@ -2601,7 +2601,7 @@
       pdispre6=pdispre**6
       rr6=rr**6
       rr5=rr6/rr
-      write(*,*) 'C6:', -dispscale2, ',', pdisp, '; pdispre :', pdispre ! DEBUG
+*      write(*,*) 'C6:', -dispscale2, ',', pdisp, '; pdispre :', pdispre ! DEBUG
 *      write(*,*) ' dispscale: ', dispscale ! DEBUG
       edisp=-dispscale2*pdisp/(rr6+dispscale*pdispre6)
       dedispdr=0.0

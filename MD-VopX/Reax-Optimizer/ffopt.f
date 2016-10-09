@@ -92,7 +92,6 @@
 *     read (21,1100)ichn(1),ichn(2),ichn(3),vchange,vpmax,vpmin
 *     read (21,*)ichn(1),ichn(2),ichn(3),vchange,vpmax,vpmin
       read (21,'(a200)')qstrana1
-      write(*, *)  'qstranal',qstranal
       istart=1
       call stranal(istart,iend,vout,iout,1)
       istart=iend
