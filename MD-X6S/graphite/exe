@@ -84,5 +84,5 @@ if (-f restraintv) cp restraintv fort.38
 if (-f vels) cp vels moldyn.vel
 ../Reax-Optimizer/reac > run.log
 cat fort.99
-rm *.bgf *.geo *mol99* *.jpg fort.83 83s 59s fort.59 
+rm *.bgf *.geo *mol99* *.jpg fort.83 83s 59s fort.59 run.log.old 
 exit
