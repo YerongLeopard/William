@@ -13,7 +13,7 @@ EXP2_optimized = DATA(:, 11);
 EXPfull_optimized = DATA(:, 12);
 CC= LatticeC / 2;
 figure; hold on;
-plotQM = plot (CC, QM, 'xk','MarkerSize',10);
+plotQM = plot (CC, QM, 'sk','MarkerSize',10);
 plotQMph = plot (CC, QMph, 'ok','MarkerSize',10);
 
 
