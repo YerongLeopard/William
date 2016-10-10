@@ -2,17 +2,19 @@ DATA = xlsread('data.xlsx','CCmd');
 %dim = size(DATA);
 LatticeC = DATA(:, 1);
 QM = DATA(:, 2);
-xx = 3: 0.01: 3.6; %intrapolation range
-X6S_original = DATA(:, 3); X6S_optimized = DATA(:, 4);
-LJ_original =DATA(:, 5); LJ_optimized = DATA(:, 6);
+QMph =DATA(:, 3);
+X6S_original = DATA(:, 4); X6S_optimized = DATA(:, 5);
+LJ_original =DATA(:, 6); LJ_optimized = DATA(:, 7);
 % disp(X6S_optimized)% DEBUG
-X6_original = DATA(:, 7); X6_optimized = DATA(:, 8);
-EXP1_optimized = DATA(:, 9);
-EXP2_optimized = DATA(:, 10);
-EXPfull_optimized = DATA(:, 11);
+xx = 3: 0.01: 3.6; %intrapolation range
+X6_original = DATA(:, 8); X6_optimized = DATA(:, 9);
+EXP1_optimized = DATA(:, 10);
+EXP2_optimized = DATA(:, 11);
+EXPfull_optimized = DATA(:, 12);
 CC= LatticeC / 2;
 figure; hold on;
-plotQM = plot (CC, QM, 'ok','MarkerSize',10);
+plotQM = plot (CC, QM, 'xk','MarkerSize',10);
+plotQMph = plot (CC, QMph, 'ok','MarkerSize',10);
 
 
 % plotX6S_original = plot(CC , X6S_original, 'xb','MarkerSize',10); plotX6S_optimized = plot(CC , X6S_optimized, '*b','MarkerSize',10);
@@ -34,10 +36,12 @@ yy = spline(CC,EXP1_optimized,xx); plot(xx, yy, 'b-');
 plotEXPfull_optimized = plot(CC , EXPfull_optimized, 'k*','MarkerSize',10);
 yy = spline(CC,EXPfull_optimized,xx); plot(xx, yy, 'k-.');
 h = legend([plotQM, ... 
+    plotQMph, ...
     plotX6_original, plotX6_optimized, ... 
     plotEXP1_optimized, ...
     plotEXPfull_optimized], ...
     'QM', ...
+    'QM + phonons', ...
     'X6\_original', 'X6\_optimized', ...
     '$$\textbf{Z}\exp(\textbf{A}r)$$    $$\textbf{C}_6$$,$$R_0$$', ...
     '$$\textbf{Z}\exp(\textbf{A}r)\cdot\exp(-\textbf{C}r^\textbf{n}+\textbf{D}r)$$   $$\textbf{C}_6$$,$$R_0$$' ...
