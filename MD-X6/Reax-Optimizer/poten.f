@@ -2570,7 +2570,7 @@
       rho6 = rho**6
       ewh = p1/(p3-6.)*(6.*exp(p3*(1- rho))- p3/(rho**6))
       ! DEBUG
-      write(*,*) 'NB ewh ', p1/(p3-6.)*6.*exp(p3*(1- rho))
+      ! write(*,*) 'NB ewh ', p1/(p3-6.)*6.*exp(p3*(1- rho))
       dewdr = 0.0 
       else
       ewh = 0.0
