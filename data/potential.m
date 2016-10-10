@@ -83,7 +83,9 @@ test1 = plot(rr, yy, 'g-.'); % DEBUG
 
 %%% potential VOP single
 rr2 = 0.5: 0.01: 6;
-single_para = [34.1319  -4.0855  8.6854 0 0 0 1];
+single_para = [31.5659  -4.0699  8.6854 0 0 0 1];
+
+
 ry = repFUNC(single_para, rr);
 plot_repEXP1 = plot(rr ,ry, 'k*');
 
@@ -100,7 +102,7 @@ plot_EXP1 = plot(rr, yy, 'k--');
 %%% potential VOPfull
 rr2 = 0.5: 0.01: 6;
 full_para = [40.6220 -3.8638  8.6854 -0.3018   0.7171  -0.4959 1];
-ry = repFUNC([40.6220 -3.8638  8.6854 -0.3018   0.7171  -0.4959 1], rr);
+ry = repFUNC(full_para, rr);
 plot_repEXP2 = plot(rr ,ry, 'b*');
 
 
