@@ -1,5 +1,5 @@
 #PBS -l nodes=1:ppn=6,walltime=3:00:00
-#PBS -N reference_002
+#PBS -N 12grft_a_002
 #PBS -S /bin/tcsh
 
 source /share/apps/intel/composer_xe_2013_sp1.3.174/composer_xe_2013_sp1.3.174/bin/compilervars.csh intel64
