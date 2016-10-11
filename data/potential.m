@@ -33,18 +33,13 @@ rr = 3.2:0.001: 6;
 rrf = 3.2:0.01: 6;
 
 
-
+beta1 = 3.7903;
 % disp('finished');
-rho = rr./3.7934;
-
-
-
-
-
+rho = rr./beta1;
 rhos = rr./3.7750;
-beta1 = [0.0623 , 16.0944 , 1.1];
+% beta1 = [0.0623 , 16.0944 , 1.1];
 
-ys = X6Spoten(beta1, rhos);
+% ys=X6Spoten(beta1, rhos);
 % kappa = 6*beta1(2)*(beta1(2)*beta1(3)- 7.)/ (beta1(2)-6.);
 
 
@@ -53,16 +48,16 @@ ys = X6Spoten(beta1, rhos);
 figure; hold on;
 
 %%% potential X6
-beta0 = [0.1383 , 13.1999];
+beta0 = [0.1325 13.4326];
 yy = X6poten(beta0, rho);
 plotX6 = plot(rr, yy, 'r--');
 
 
-ya = atrX6poten(beta0, rho); 
-plot_atrX6 = plot(rr, ya, 'r-'); %
+ya=atrX6poten(beta0, rho); 
+plot_atrX6=plot(rr, ya, 'r-'); %
 
-ry = repX6poten(beta0, rho);
-plot_repX6= plot(rr, ry, 'r*');
+ry=repX6poten(beta0, rho);
+plot_repX6=plot(rr, ry, 'r*');
 
 % plotX6S= plot(rr, ys, 'b.');
 
@@ -83,7 +78,7 @@ test1 = plot(rr, yy, 'g-.'); % DEBUG
 
 %%% potential VOP single
 rr2 = 0.5: 0.01: 6;
-single_para = [31.5659  -4.0699  8.6854 0 0 0 1];
+single_para = [31.5659 -4.0699 8.6854 0 0 0 1];
 
 
 ry = repFUNC(single_para, rr);
@@ -91,7 +86,7 @@ plot_repEXP1 = plot(rr ,ry, 'k*');
 
 
 
-ay = atrFUN([1011.5138 3.85], rr); 
+ay = atrFUN([967.7296 3.85], rr); 
 plot_atrEXP1 = plot(rr, ay, 'k-');
 
 yy = ay + ry;
@@ -101,13 +96,13 @@ plot_EXP1 = plot(rr, yy, 'k--');
 
 %%% potential VOPfull
 rr2 = 0.5: 0.01: 6;
-full_para = [40.6220 -3.8638  8.6854 -0.3018   0.7171  -0.4959 1];
+full_para = [39.8367 -3.8383   8.6937 -0.2531 0.7508  -0.4985  1];
 ry = repFUNC(full_para, rr);
 plot_repEXP2 = plot(rr ,ry, 'b*');
 
 
 
-ay = atrFUN([998.8719 3.85], rr); 
+ay = atrFUN([955.1573 3.85], rr); 
 plot_atrEXP2 = plot(rr, ay, 'b-');
 
 yy = ay + ry;
@@ -116,7 +111,7 @@ plot_EXP2 = plot(rr, yy, 'b--');
 %%% horizontal and vertical lines
 
 plot(xlim, [0 0], 'k-.');
-plot([3.7934 3.7934], ylim, 'r-.');
+plot([beta1 beta1], ylim, 'r-.');
 plot(xlim, [X6poten(beta0, 1) X6poten(beta0, 1)], 'r-.');
 plot(xlim, [atrX6poten(beta0, 1) atrX6poten(beta0, 1)], 'r-.');
 
