@@ -1,6 +1,6 @@
 #!/bin/csh
 #PBS -l walltime=24:00:00
-#PBS -l nodes=3:ppn=1
+#PBS -l nodes=3:ppn=2
 #PBS -N X6_potential 
 cd "$PBS_O_WORKDIR"
 

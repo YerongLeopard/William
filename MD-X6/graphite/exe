@@ -28,7 +28,7 @@ if (-f fort.97) cp fort.97 97s
 if (-f fort.90) cp fort.90 90s
 if (-f fort.98) cp fort.98 98s
 if (-f end.geo) rm end.geo
-if (-f run.log) mv run.log run.log.old
+# if (-f run.log) mv run.log run.log.old
 rm *.out
 rm remove.*
 touch fort.5a
