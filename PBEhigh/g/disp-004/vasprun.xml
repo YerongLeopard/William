@@ -5,8 +5,8 @@
   <i name="version" type="string">5.3.5  </i>
   <i name="subversion" type="string">31Mar14 (build Nov 02 2014 15:17:37) complex                          parallel </i>
   <i name="platform" type="string">ion-Intel-MKL </i>
-  <i name="date" type="string">2016 10 16 </i>
-  <i name="time" type="string">20:13:06 </i>
+  <i name="date" type="string">2016 10 20 </i>
+  <i name="time" type="string">09:27:16 </i>
  </generator>
  <incar>
   <i type="string" name="SYSTEM">graphite</i>
@@ -637,7 +637,7 @@
    <i name="EDIFF">      0.00000001</i>
    <i type="int" name="IALGO">    38</i>
    <i type="int" name="IWAVPR">    10</i>
-   <i type="int" name="NBANDS">    82</i>
+   <i type="int" name="NBANDS">    84</i>
    <i name="NELECT">    128.00000000</i>
    <i type="int" name="TURBO">     0</i>
    <i type="int" name="IRESTART">     0</i>
@@ -769,7 +769,7 @@
    <v name="STM">      0.00000000      0.00000000      0.00000000      0.00000000      0.00000000      0.00000000      0.00000000</v>
   </separator>
   <separator name="performance" >
-   <i type="int" name="NPAR">     2</i>
+   <i type="int" name="NPAR">     6</i>
    <i type="int" name="NSIM">     4</i>
    <i type="int" name="NBLK">    -1</i>
    <i type="logical" name="LPLANE"> T  </i>
@@ -1011,3 +1011,95 @@
    <v>       0.83370753       0.66629246       0.87500000 </v>
   </varray>
  </structure>
+ <calculation>
+  <scstep>
+   <time name="dav">  266.35  663.79</time>
+   <time name="total">  267.55  666.79</time>
+   <energy>
+    <i name="alphaZ">    295.69007636 </i>
+    <i name="ewald">  -3694.38521971 </i>
+    <i name="hartreedc">  -1182.69996840 </i>
+    <i name="XCdc">    443.12610043 </i>
+    <i name="pawpsdc">   1210.60617908 </i>
+    <i name="pawaedc">  -1247.42152856 </i>
+    <i name="eentropy">      0.00000000 </i>
+    <i name="bandstr">    172.07186964 </i>
+    <i name="atom">   4708.94155045 </i>
+    <i name="e_fr_energy">    705.92905930 </i>
+    <i name="e_wo_entrp">    705.92905930 </i>
+    <i name="e_0_energy">    705.92905930 </i>
+   </energy>
+  </scstep>
+  <scstep>
+   <time name="dav">  306.33  770.97</time>
+   <time name="total">  306.41  771.16</time>
+   <energy>
+    <i name="e_fr_energy">   -254.65946867 </i>
+    <i name="e_wo_entrp">   -254.65946867 </i>
+    <i name="e_0_energy">   -254.65946867 </i>
+   </energy>
+  </scstep>
+  <scstep>
+   <time name="dav">  305.72  762.58</time>
+   <time name="total">  305.78  762.74</time>
+   <energy>
+    <i name="e_fr_energy">   -312.59092969 </i>
+    <i name="e_wo_entrp">   -312.59092969 </i>
+    <i name="e_0_energy">   -312.59092969 </i>
+   </energy>
+  </scstep>
+  <scstep>
+   <time name="dav">  303.57  761.45</time>
+   <time name="total">  303.65  761.62</time>
+   <energy>
+    <i name="e_fr_energy">   -313.71867229 </i>
+    <i name="e_wo_entrp">   -313.71867229 </i>
+    <i name="e_0_energy">   -313.71867229 </i>
+   </energy>
+  </scstep>
+  <scstep>
+   <time name="dav">  306.95  773.86</time>
+   <time name="total">  313.03  788.62</time>
+   <energy>
+    <i name="e_fr_energy">   -313.75310196 </i>
+    <i name="e_wo_entrp">   -313.75310196 </i>
+    <i name="e_0_energy">   -313.75310196 </i>
+   </energy>
+  </scstep>
+  <scstep>
+   <time name="dav">  285.78  716.78</time>
+   <time name="total">  293.86  735.17</time>
+   <energy>
+    <i name="e_fr_energy">   -299.33453242 </i>
+    <i name="e_wo_entrp">   -299.33453242 </i>
+    <i name="e_0_energy">   -299.33453242 </i>
+   </energy>
+  </scstep>
+  <scstep>
+   <time name="dav">  282.96  705.55</time>
+   <time name="total">  290.05  723.13</time>
+   <energy>
+    <i name="e_fr_energy">   -294.76704191 </i>
+    <i name="e_wo_entrp">   -294.76704191 </i>
+    <i name="e_0_energy">   -294.76704191 </i>
+   </energy>
+  </scstep>
+  <scstep>
+   <time name="dav">  289.13  717.72</time>
+   <time name="total">  296.24  736.01</time>
+   <energy>
+    <i name="e_fr_energy">   -294.83721226 </i>
+    <i name="e_wo_entrp">   -294.83721226 </i>
+    <i name="e_0_energy">   -294.83721226 </i>
+   </energy>
+  </scstep>
+  <scstep>
+   <time name="dav">  287.48  718.79</time>
+   <time name="total">  295.05  737.90</time>
+   <energy>
+    <i name="e_fr_energy">   -294.83368303 </i>
+    <i name="e_wo_entrp">   -294.83368303 </i>
+    <i name="e_0_energy">   -294.83368303 </i>
+   </energy>
+  </scstep>
+  <scstep>
