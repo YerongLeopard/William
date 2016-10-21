@@ -1,0 +1,89 @@
+ running on    6 total cores
+ distrk:  each k-point on    6 cores,    1 groups
+ distr:  one band on    1 cores,    6 groups
+ using from now: INCAR     
+ vasp.5.3.5 31Mar14 (build Nov 02 2014 15:17:37) complex                        
+  
+ POSCAR found :  1 types and      32 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default, NPAR=number of cores might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You have a (more or less) 'large supercell' and for larger cells       |
+|      it might be more efficient to use real space projection operators      |
+|      So try LREAL= Auto  in the INCAR   file.                               |
+|      Mind: If you want to do a very accurate calculations keep the          |
+|      reciprocal projection scheme          (i.e. LREAL=.FALSE.)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.705929059300E+03    0.70593E+03   -0.84121E+04 12768   0.200E+03
+DAV:   2    -0.254659468667E+03   -0.96059E+03   -0.92555E+03 15900   0.341E+02
+DAV:   3    -0.312590929686E+03   -0.57931E+02   -0.57339E+02 15564   0.824E+01
+DAV:   4    -0.313718672289E+03   -0.11277E+01   -0.11255E+01 15900   0.124E+01
+DAV:   5    -0.313753101963E+03   -0.34430E-01   -0.34418E-01 16404   0.203E+00    0.221E+01
+DAV:   6    -0.299334532419E+03    0.14419E+02   -0.14870E+01 14592   0.107E+01    0.116E+01
+DAV:   7    -0.294767041914E+03    0.45675E+01   -0.15661E+01 14496   0.110E+01    0.196E+00
+DAV:   8    -0.294837212264E+03   -0.70170E-01   -0.74309E-01 14964   0.217E+00    0.817E-01
+DAV:   9    -0.294833683033E+03    0.35292E-02   -0.53217E-02 14844   0.800E-01    0.445E-01
+DAV:  10    -0.294826069771E+03    0.76133E-02   -0.47617E-02 20076   0.528E-01    0.132E-01
+DAV:  11    -0.294827051645E+03   -0.98187E-03   -0.11755E-02 14556   0.255E-01    0.101E-01
+DAV:  12    -0.294826999150E+03    0.52495E-04   -0.76566E-04 15624   0.936E-02    0.813E-02
+DAV:  13    -0.294827317556E+03   -0.31841E-03   -0.60664E-03 18552   0.116E-01    0.121E-01
+DAV:  14    -0.294827752292E+03   -0.43474E-03   -0.33565E-03 16524   0.123E-01    0.106E-01
+DAV:  15    -0.294827684071E+03    0.68221E-04   -0.17267E-04 14592   0.435E-02    0.105E-01
+DAV:  16    -0.294827421537E+03    0.26253E-03   -0.13504E-04 22368   0.510E-02    0.940E-02
+DAV:  17    -0.294827201100E+03    0.22044E-03   -0.40057E-03 23712   0.122E-01    0.696E-02
+DAV:  18    -0.294827103233E+03    0.97867E-04   -0.58166E-04 14520   0.465E-02    0.255E-02
+DAV:  19    -0.294827111165E+03   -0.79317E-05   -0.42656E-05 15396   0.164E-02    0.331E-02
+DAV:  20    -0.294827106186E+03    0.49788E-05   -0.17522E-04 19536   0.127E-02    0.338E-02
+DAV:  21    -0.294827119599E+03   -0.13413E-04   -0.30310E-05 16680   0.697E-03    0.462E-02
+DAV:  22    -0.294827105451E+03    0.14148E-04   -0.24253E-04 21912   0.149E-02    0.280E-02
+DAV:  23    -0.294827114819E+03   -0.93688E-05   -0.21663E-05 16080   0.749E-03    0.351E-02
+DAV:  24    -0.294827103844E+03    0.10975E-04   -0.17989E-05 15852   0.666E-03    0.242E-02
+DAV:  25    -0.294827101318E+03    0.25264E-05   -0.14934E-05 16860   0.355E-03    0.350E-03
+DAV:  26    -0.294827102065E+03   -0.74756E-06   -0.58344E-06 15324   0.184E-03    0.155E-02
+DAV:  27    -0.294827101765E+03    0.30011E-06   -0.27571E-07 11916   0.607E-04    0.129E-02
+DAV:  28    -0.294827101372E+03    0.39310E-06   -0.15943E-06 13068   0.858E-04    0.558E-03
+DAV:  29    -0.294827101466E+03   -0.93867E-07   -0.25995E-07 11928   0.530E-04    0.825E-03
+DAV:  30    -0.294827102539E+03   -0.10734E-05   -0.42724E-06 14112   0.173E-03    0.187E-02
+DAV:  31    -0.294827101368E+03    0.11709E-05   -0.15613E-05 14868   0.266E-03    0.754E-03
+DAV:  32    -0.294827101363E+03    0.55034E-08   -0.34059E-06 13668   0.109E-03    0.575E-03
+DAV:  33    -0.294827101332E+03    0.30530E-07   -0.70606E-08 11808   0.517E-04    0.468E-03
+DAV:  34    -0.294827101325E+03    0.67866E-08   -0.20803E-06 12156   0.103E-03    0.504E-03
+DAV:  35    -0.294827101327E+03   -0.16653E-08   -0.12091E-06  9216   0.672E-04    0.257E-03
+DAV:  36    -0.294827101257E+03    0.69950E-07   -0.58507E-07  8820   0.532E-04    0.248E-03
+DAV:  37    -0.294827101234E+03    0.22962E-07   -0.19419E-07  8796   0.308E-04    0.517E-04
+DAV:  38    -0.294827101226E+03    0.83046E-08   -0.32974E-08  8784   0.155E-04
+   1 F= -.29984006E+03 E0= -.29984006E+03  d E =0.000000E+00

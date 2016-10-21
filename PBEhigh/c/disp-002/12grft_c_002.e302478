@@ -1,0 +1,127 @@
+stty: standard input: Invalid argument
+tset: standard error: Inappropriate ioctl for device
+
+TERM: Undefined variable.
+stty: standard input: Invalid argument
+forrtl: Stale NFS file handle
+forrtl: severe (38): error during write, unit 17, file /net/hulk/home6/yerong/William/PBEhigh/c/disp-002/OSZICAR
+Image              PC                Routine            Line        Source             
+vasp.ion           0000000005088174  Unknown               Unknown  Unknown
+vasp.ion           000000000508568F  Unknown               Unknown  Unknown
+vasp.ion           00000000010B4978  Unknown               Unknown  Unknown
+vasp.ion           000000000046F89A  Unknown               Unknown  Unknown
+vasp.ion           0000000000449936  Unknown               Unknown  Unknown
+libc.so.6          0000003EBBE1ECDD  Unknown               Unknown  Unknown
+vasp.ion           0000000000449829  Unknown               Unknown  Unknown
+forrtl: severe (28): CLOSE error, unit 8, file "Unknown"
+Image              PC                Routine            Line        Source             
+vasp.ion           000000000503D997  Unknown               Unknown  Unknown
+vasp.ion           000000000503CFAB  Unknown               Unknown  Unknown
+vasp.ion           0000000005088174  Unknown               Unknown  Unknown
+vasp.ion           000000000508568F  Unknown               Unknown  Unknown
+vasp.ion           00000000010B4978  Unknown               Unknown  Unknown
+vasp.ion           000000000046F89A  Unknown               Unknown  Unknown
+vasp.ion           0000000000449936  Unknown               Unknown  Unknown
+libc.so.6          0000003EBBE1ECDD  Unknown               Unknown  Unknown
+vasp.ion           0000000000449829  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    0000003EBC60F500  Unknown               Unknown  Unknown
+vasp.ion           00000000050E5E50  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    0000003EBC60F500  Unknown               Unknown  Unknown
+libc.so.6          0000003EBBEDEA63  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002AB45114AEE9  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002AB45114093C  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002AB4510F70DB  Unknown               Unknown  Unknown
+libmpi.so.1        00002AB4508610D4  Unknown               Unknown  Unknown
+mca_coll_tuned.so  00002AB4575D8D8E  Unknown               Unknown  Unknown
+mca_coll_tuned.so  00002AB4575E082C  Unknown               Unknown  Unknown
+libmpi.so.1        00002AB450876609  Unknown               Unknown  Unknown
+libmpi_mpifh.so.2  00002AB450600E9F  Unknown               Unknown  Unknown
+vasp.ion           000000000049C2FE  Unknown               Unknown  Unknown
+vasp.ion           000000000173B914  Unknown               Unknown  Unknown
+vasp.ion           000000000172E94D  Unknown               Unknown  Unknown
+vasp.ion           000000000172FB15  Unknown               Unknown  Unknown
+vasp.ion           000000000096CDE6  Unknown               Unknown  Unknown
+vasp.ion           00000000010B67D5  Unknown               Unknown  Unknown
+vasp.ion           000000000046F89A  Unknown               Unknown  Unknown
+vasp.ion           0000000000449936  Unknown               Unknown  Unknown
+libc.so.6          0000003EBBE1ECDD  Unknown               Unknown  Unknown
+vasp.ion           0000000000449829  Unknown               Unknown  Unknown
+[node-2-4][[54212,1],4][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
+[node-2-4][[54212,1],5][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    000000385980F500  Unknown               Unknown  Unknown
+Unknown            FFFFFFFFFF60014C  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    000000385980F500  Unknown               Unknown  Unknown
+.                  00007FFF2C1D28D4  Unknown               Unknown  Unknown
+libc.so.6          000000385909C18A  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B6462D5B9D6  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B6462D120DB  Unknown               Unknown  Unknown
+libmpi.so.1        00002B646247C0D4  Unknown               Unknown  Unknown
+mca_coll_tuned.so  00002B64691F3D8E  Unknown               Unknown  Unknown
+mca_coll_tuned.so  00002B64691FB82C  Unknown               Unknown  Unknown
+libmpi.so.1        00002B6462491609  Unknown               Unknown  Unknown
+libmpi_mpifh.so.2  00002B646221BE9F  Unknown               Unknown  Unknown
+vasp.ion           000000000049C2FE  Unknown               Unknown  Unknown
+vasp.ion           000000000173B914  Unknown               Unknown  Unknown
+vasp.ion           000000000172E94D  Unknown               Unknown  Unknown
+vasp.ion           000000000172FB15  Unknown               Unknown  Unknown
+vasp.ion           000000000096CDE6  Unknown               Unknown  Unknown
+vasp.ion           00000000010B67D5  Unknown               Unknown  Unknown
+vasp.ion           000000000046F89A  Unknown               Unknown  Unknown
+vasp.ion           0000000000449936  Unknown               Unknown  Unknown
+libc.so.6          000000385901ECDD  Unknown               Unknown  Unknown
+vasp.ion           0000000000449829  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    000000385980F500  Unknown               Unknown  Unknown
+libc.so.6          00000038590DEA63  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B486E9C2EE9  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B486E9B893C  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B486E96F0DB  Unknown               Unknown  Unknown
+libmpi.so.1        00002B486E0D90D4  Unknown               Unknown  Unknown
+mca_coll_tuned.so  00002B4874E50D8E  Unknown               Unknown  Unknown
+mca_coll_tuned.so  00002B4874E5882C  Unknown               Unknown  Unknown
+libmpi.so.1        00002B486E0EE609  Unknown               Unknown  Unknown
+libmpi_mpifh.so.2  00002B486DE78E9F  Unknown               Unknown  Unknown
+vasp.ion           000000000049C2FE  Unknown               Unknown  Unknown
+vasp.ion           000000000173B914  Unknown               Unknown  Unknown
+vasp.ion           000000000172E94D  Unknown               Unknown  Unknown
+vasp.ion           000000000172FB15  Unknown               Unknown  Unknown
+vasp.ion           000000000096CDE6  Unknown               Unknown  Unknown
+vasp.ion           00000000010B67D5  Unknown               Unknown  Unknown
+vasp.ion           000000000046F89A  Unknown               Unknown  Unknown
+vasp.ion           0000000000449936  Unknown               Unknown  Unknown
+libc.so.6          000000385901ECDD  Unknown               Unknown  Unknown
+vasp.ion           0000000000449829  Unknown               Unknown  Unknown
