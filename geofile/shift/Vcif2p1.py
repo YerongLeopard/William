@@ -83,7 +83,7 @@ def orientc(input,al,bl):
 
 if __name__=='__main__':
     helpString ="""
-        Usage: cif2p1.py file.cif orientation 
+        Usage: Vcif2p1.py file.cif orientation 
         This script converts the .cif file into .xyz with p1 symmetry
         Input:
             file.cif: cif file with fractional coordinates
