@@ -1,7 +1,0 @@
-rm ./disp-001/LOG
-rm ./disp-002/LOG
-cd ./disp-001
-qsub pbs
-cd ..
-cd ./disp-002
-qsub pbs

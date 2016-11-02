@@ -1,7 +1,0 @@
-cp POSCAR POSCAR-bak
-cp CONTCAR POSCAR
-phonopy -d --dim="2 2 2"
-cp POSCAR-001 ./disp-001/POSCAR
-cp POSCAR-002 ./disp-002/POSCAR
-cp POSCAR-003 ./disp-003/POSCAR
-cp POSCAR-004 ./disp-004/POSCAR
