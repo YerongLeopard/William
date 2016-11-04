@@ -17,12 +17,14 @@ downX6 = DATAdown(:,3);
 downVopX = DATAdown(:,4);
 
 xx = 6.1: 0.01: 7.1; %intrapolation range
+x_search = LatticeC(8):0.00001:LatticeC(5);
 
 figure; hold on;
 plotQM = plot (Lattice_C, QMph, 'ok','MarkerSize',10);
 plotQMup = plot (Lattice_C, upQM, 'ok','MarkerSize',10);
 plotQMdown = plot (Lattice_C, downQM, 'ok','MarkerSize',10);
-
+y_search =  spline(Lattice_C, QMph, x_search);
+x_min_QM = x_search(find(y_search == min(y_search)))
 
 plotX6 = plot(Lattice_C , X6_optimized, '*r','MarkerSize',10);
 yy = spline(Lattice_C, X6_optimized, xx); plot(xx, yy, '-r');
