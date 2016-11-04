@@ -15,7 +15,7 @@ figure; hold on;
 plot_phn    = plot(LatticeC,   phn, 'ko');
 y_search =  spline(LatticeC, phn, x_search);
 x_min_phn = x_search(find(y_search == min(y_search)))
-plot_org    = plot(ORG(:,1), ORG(:,3), 'ks');
+plot_org    = plot(ORG(:,1), ORG(:,3), 'kx');
 
 plot_X6    = plot(LatticeC,   X6, 'g*');
 yy = spline(LatticeC, X6, xx); plot(xx, yy, 'g-');
@@ -33,3 +33,11 @@ y_search =  spline(LatticeC, full, x_search);
 x_min_full = x_search(find(y_search == min(y_search)))
 
 axis([6.0 7.1 ylim]);
+
+
+h = legend([plot_org,...
+    plot_phn], ...
+    'Original QM+phn', ...
+    'Shifted QM+phn, reducing c by 0.0733 \AA');
+set(h,'interpreter','latex');
+set(h, 'fontsize', 15);
