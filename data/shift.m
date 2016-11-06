@@ -53,3 +53,12 @@ h = legend([plot_org,...
 
 set(h,'interpreter','latex');
 set(h, 'fontsize', 15);
+
+h = ylabel('Energy difference/ $kcal/ mol$');
+set(h,'interpreter','latex');
+set(h, 'fontsize', 15);
+h = xlabel('Lattice constant c/ $\AA$');
+set(h,'interpreter','latex');
+set(h, 'fontsize', 15);
+
+
