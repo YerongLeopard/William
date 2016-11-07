@@ -6,36 +6,35 @@ QMph =DATA(:, 3);
 X6S_original = DATA(:, 4); X6S_optimized = DATA(:, 5);
 LJ_original =DATA(:, 6); LJ_optimized = DATA(:, 7);
 % disp(X6S_optimized)% DEBUG
-xx = 3: 0.01: 3.6; %intrapolation range
+xx = 6.1: 0.01: 7.1; %intrapolation range
 X6_original = DATA(:, 8); X6_optimized = DATA(:, 9);
 EXP1_optimized = DATA(:, 10);
 EXP2_optimized = DATA(:, 11);
 EXPfull_optimized = DATA(:, 12);
-CC= LatticeC / 2;
 figure; hold on;
-plotQM = plot (CC, QM, 'sk','MarkerSize',10);
-plotQMph = plot (CC, QMph, 'ok','MarkerSize',10);
-yy = spline(CC,QMph,xx); plot(xx, yy, '--k');
+plotQM = plot (LatticeC, QM, 'sk','MarkerSize',10);
+plotQMph = plot (LatticeC, QMph, 'ok','MarkerSize',10);
+yy = spline(LatticeC,QMph,xx); plot(xx, yy, '--k');
 
-% plotX6S_original = plot(CC , X6S_original, 'xb','MarkerSize',10); plotX6S_optimized = plot(CC , X6S_optimized, '*b','MarkerSize',10);
-% yy = spline(CC,X6S_original,xx); plot(xx, yy, '-b');
-% yy = spline(CC,X6S_optimized,xx); plot(xx, yy, '-b');
-% plotLJ_original = plot(CC , LJ_original, 'xg','MarkerSize',10); plotLJ_optimized = plot(CC , LJ_optimized, '*g','MarkerSize',10);
-% yy = spline(CC,LJ_original,xx); plot(xx, yy, '-g');
-% yy = spline(CC,LJ_optimized,xx); plot(xx, yy, '-g');
-% plotX6_original = plot(CC , X6_original, 'xr','MarkerSize',10); 
-plotX6_optimized = plot(CC , X6_optimized, '*r','MarkerSize',10);
-% yy = spline(CC,X6_original,xx); plot(xx, yy, '-r');
-yy = spline(CC,X6_optimized,xx); plot(xx, yy, '-r');
+% plotX6S_original = plot(LatticeC , X6S_original, 'xb','MarkerSize',10); plotX6S_optimized = plot(LatticeC , X6S_optimized, '*b','MarkerSize',10);
+% yy = spline(LatticeC,X6S_original,xx); plot(xx, yy, '-b');
+% yy = spline(LatticeC,X6S_optimized,xx); plot(xx, yy, '-b');
+% plotLJ_original = plot(LatticeC , LJ_original, 'xg','MarkerSize',10); plotLJ_optimized = plot(LatticeC , LJ_optimized, '*g','MarkerSize',10);
+% yy = spline(LatticeC,LJ_original,xx); plot(xx, yy, '-g');
+% yy = spline(LatticeC,LJ_optimized,xx); plot(xx, yy, '-g');
+% plotX6_original = plot(LatticeC , X6_original, 'xr','MarkerSize',10); 
+plotX6_optimized = plot(LatticeC , X6_optimized, '*r','MarkerSize',10);
+% yy = spline(LatticeC,X6_original,xx); plot(xx, yy, '-r');
+yy = spline(LatticeC,X6_optimized,xx); plot(xx, yy, '-r');
 
-plotEXP1_optimized = plot(CC , EXP1_optimized, 'b*','MarkerSize',10);
-yy = spline(CC,EXP1_optimized,xx); plot(xx, yy, 'b-');
+plotEXP1_optimized = plot(LatticeC , EXP1_optimized, 'b*','MarkerSize',10);
+yy = spline(LatticeC,EXP1_optimized,xx); plot(xx, yy, 'b-');
 
-% plotEXP2_optimized = plot(CC , EXP2_optimized, 'g*','MarkerSize',10);
-% yy = spline(CC,EXP2_optimized,xx); plot(xx, yy, 'g-');
+% plotEXP2_optimized = plot(LatticeC , EXP2_optimized, 'g*','MarkerSize',10);
+% yy = spline(LatticeC,EXP2_optimized,xx); plot(xx, yy, 'g-');
 
-plotEXPfull_optimized = plot(CC , EXPfull_optimized, 'k*','MarkerSize',10);
-yy = spline(CC,EXPfull_optimized,xx); plot(xx, yy, 'k-.');
+plotEXPfull_optimized = plot(LatticeC , EXPfull_optimized, 'k*','MarkerSize',10);
+yy = spline(LatticeC,EXPfull_optimized,xx); plot(xx, yy, 'k-.');
 h = legend([plotQM, ... 
     plotQMph, ...
     plotX6_optimized, ... 
