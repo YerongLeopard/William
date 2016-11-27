@@ -1,0 +1,36 @@
+ running on    6 total cores
+ distrk:  each k-point on    6 cores,    1 groups
+ distr:  one band on    3 cores,    2 groups
+ using from now: INCAR     
+ vasp.5.3.5 31Mar14 (build Nov 02 2014 15:17:37) complex                        
+  
+ POSCAR found type information on POSCAR  C 
+ POSCAR found :  1 types and       4 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: small aliasing (wrap around) errors must be expected
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.702212091923E+02    0.70221E+02   -0.10461E+04  5160   0.172E+03
+DAV:   2    -0.342021769208E+02   -0.10442E+03   -0.95815E+02  7320   0.268E+02
+DAV:   3    -0.391650581154E+02   -0.49629E+01   -0.49150E+01  6560   0.585E+01
+DAV:   4    -0.392292060542E+02   -0.64148E-01   -0.64021E-01  6348   0.762E+00
+DAV:   5    -0.392306080994E+02   -0.14020E-02   -0.14015E-02  6444   0.110E+00    0.781E+00
+DAV:   6    -0.374239554115E+02    0.18067E+01   -0.17882E+00  5952   0.936E+00    0.410E+00
+DAV:   7    -0.368500082250E+02    0.57395E+00   -0.18610E+00  6176   0.965E+00    0.683E-01
+DAV:   8    -0.368583834066E+02   -0.83752E-02   -0.50895E-02  5900   0.156E+00    0.901E-02
+DAV:   9    -0.368585523415E+02   -0.16893E-03   -0.12696E-03  6508   0.300E-01    0.393E-02
+DAV:  10    -0.368586891530E+02   -0.13681E-03   -0.15929E-04  6308   0.113E-01    0.594E-03
+DAV:  11    -0.368586899387E+02   -0.78576E-06   -0.31142E-06  6560   0.150E-02    0.182E-03
+DAV:  12    -0.368586900430E+02   -0.10431E-06   -0.56686E-07  6408   0.649E-03    0.673E-04
+DAV:  13    -0.368586901486E+02   -0.10553E-06   -0.11174E-07  6416   0.284E-03    0.116E-04
+DAV:  14    -0.368586901451E+02    0.34820E-08   -0.98748E-10  4336   0.327E-04
+   1 F= -.37480061E+02 E0= -.37480061E+02  d E =-.374801E+02
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.567E-04 g(S)=  0.000E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.567E-04
+ reached required accuracy - stopping structural energy minimisation
