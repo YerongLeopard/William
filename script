@@ -1,0 +1,4 @@
+for f in MD*/graphite/trainset.in;
+do
+cp geofile/trainset.in $f;
+done
