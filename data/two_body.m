@@ -53,7 +53,8 @@ h = legend([plotQM, ...
 %     plotEXP2_optimized, ...
 %     '$$Z\exp(Ar)\cdot\exp(-\textbf{C}r^2+\textbf{D}r)$$   $$C_6$$,$$R_0$$', ...
 set(h, 'fontsize', 20);
-set(h, 'Location', 'BestOutside');
+% set(h, 'Location', 'BestOutside');
+set(h, 'Location', 'Best');
 set(h,'interpreter','latex');
 
 h = xlabel('layer distance/ $\AA$');
