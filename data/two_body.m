@@ -1,16 +1,40 @@
-DATA = xlsread('data.xlsx','CCmd');
-%dim = size(DATA);
+function []=two_body(RMdata, varargin)
+if true == RMdata & nargin>2
+    RMidx=varargin(:);
+else if true == RMdata & nargin >1
+    name =varargin{1};RMidx=7
+    else
+        name='CCmd'; RMidx=7;        
+    end
+end
+DATA = xlsread('data.xlsx',name);
+
 LatticeC = DATA(:, 1);
+% disp(LatticeC);disp('LatticeC')
+% disp(LatticeC([1:RMidx-1,RMidx+1:end]));disp('LatticeC(:)')
 QM = DATA(:, 2);
 QMph =DATA(:, 3);
 X6S_original = DATA(:, 4); X6S_optimized = DATA(:, 5);
 LJ_original =DATA(:, 6); LJ_optimized = DATA(:, 7);
-% disp(X6S_optimized)% DEBUG
-xx = 6.1: 0.01: 7.1; %intrapolation range
 X6_original = DATA(:, 8); X6_optimized = DATA(:, 9);
 EXP1_optimized = DATA(:, 10);
 EXP2_optimized = DATA(:, 11);
 EXPfull_optimized = DATA(:, 12);
+
+if true == RMdata
+    LatticeC=LatticeC([1:RMidx-1,RMidx+1:end]);
+    QM=QM([1:RMidx-1,RMidx+1:end]);
+    QMph=QMph([1:RMidx-1,RMidx+1:end]);
+    X6S_original= X6S_original([1:RMidx-1,RMidx+1:end]);X6S_optimized=X6S_optimized([1:RMidx-1,RMidx+1:end]);
+    X6_original=X6_original([1:RMidx-1,RMidx+1:end]);X6_optimized=X6_optimized([1:RMidx-1,RMidx+1:end]);
+    EXP1_optimized=EXP1_optimized([1:RMidx-1,RMidx+1:end]);
+    EXP2_optimized=EXP2_optimized([1:RMidx-1,RMidx+1:end]);
+    EXPfull_optimized=EXPfull_optimized([1:RMidx-1,RMidx+1:end]);
+end
+
+% disp(X6S_optimized)% DEBUG
+xx = 6.1: 0.01: 7.1; %intrapolation range
+
 figure; hold on;
 plotQM = plot (LatticeC, QM, 'sk','MarkerSize',10);
 plotQMph = plot (LatticeC, QMph, 'ok','MarkerSize',10);
@@ -26,6 +50,7 @@ yy = spline(LatticeC,QMph,xx); plot(xx, yy, '--k');
 plotX6_optimized = plot(LatticeC , X6_optimized, '*r','MarkerSize',10);
 % yy = spline(LatticeC,X6_original,xx); plot(xx, yy, '-r');
 yy = spline(LatticeC,X6_optimized,xx); plot(xx, yy, '-r');
+
 
 plotEXP1_optimized = plot(LatticeC , EXP1_optimized, 'b*','MarkerSize',10);
 yy = spline(LatticeC,EXP1_optimized,xx); plot(xx, yy, 'b-');
