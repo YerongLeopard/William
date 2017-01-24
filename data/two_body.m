@@ -35,9 +35,17 @@ end
 xx = 6.1: 0.01: 7.1; %intrapolation range
 
 figure; hold on;
+x_search = LatticeC(8):0.00001:LatticeC(5);
+
 plotQM = plot (LatticeC, QM, 'sk','MarkerSize',10);
+yy = spline(LatticeC,QM,xx); plot(xx, yy, '--k');
+y_search =  spline(LatticeC, QM, x_search);
+x_min_QM = x_search(find(y_search == min(y_search)));
+
 plotQMph = plot (LatticeC, QMph, 'ok','MarkerSize',10);
 yy = spline(LatticeC,QMph,xx); plot(xx, yy, '--k');
+y_search =  spline(LatticeC, QMph, x_search);
+x_min_PN = x_search(find(y_search == min(y_search)));
 
 % plotX6S_original = plot(LatticeC , X6S_original, 'xb','MarkerSize',10); plotX6S_optimized = plot(LatticeC , X6S_optimized, '*b','MarkerSize',10);
 % yy = spline(LatticeC,X6S_original,xx); plot(xx, yy, '-b');
@@ -64,20 +72,18 @@ h = legend([plotQM, ...
     plotX6_optimized, ... 
     plotEXP1_optimized, ...
     plotEXPfull_optimized], ...
-    'QM', ...
-    'QM + phonons', ...
+    ['QM: $C_{opt}=$' num2str(x_min_QM) '$\AA$'], ...
+    ['QM + phonons : $C_{opt}=$' num2str(x_min_PN) '$\AA$'], ...
     'X6\_optimized', ...
     '$\textbf{Z}\exp(\textbf{A}r)$    $\textbf{C}_6$,$R_0$', ...
     '$\textbf{Z}\exp(\textbf{A}r)\cdot\exp(-\textbf{C}r^\textbf{n}+\textbf{D}r)$   $\textbf{C}_6$,$R_0$' ...
     );
-%     plotX6S_original, plotX6S_optimized,
-%     plotLJ_original, plotLJ_optimized
-%     'X6S\_original', 'X6S\_optimized',
-%     'LJ\_original', 'LJ\_optimized',
-%     plotEXP2_optimized, ...
-%     '$$Z\exp(Ar)\cdot\exp(-\textbf{C}r^2+\textbf{D}r)$$   $$C_6$$,$$R_0$$', ...
+%ylim = [-9.38 -9.31];
+plot([x_min_QM x_min_QM], ylim, 'k-.');
+plot([x_min_PN x_min_PN], ylim, 'k-.');
+
+
 set(h, 'fontsize', 20);
-% set(h, 'Location', 'BestOutside');
 set(h, 'Location', 'Best');
 set(h,'interpreter','latex');
 
