@@ -1,8 +1,8 @@
 function []=two_body(RMdata, varargin)
 if true == RMdata & nargin>2
     RMidx=varargin(:);
-else if true == RMdata & nargin >1
-    name =varargin{1};RMidx=7
+else if nargin >1
+    name =varargin{1};RMidx=7;
     else
         name='CCmd'; RMidx=7;        
     end
@@ -32,7 +32,6 @@ if true == RMdata
     EXPfull_optimized=EXPfull_optimized([1:RMidx-1,RMidx+1:end]);
 end
 
-% disp(X6S_optimized)% DEBUG
 xx = 6.1: 0.01: 7.1; %intrapolation range
 
 figure; hold on;
