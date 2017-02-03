@@ -56,7 +56,7 @@ x_min_PN = x_search(find(y_search == min(y_search)));
 % plotX6_original = plot(LatticeC , X6_original, 'xr','MarkerSize',10); 
 plotX6_optimized = plot(LatticeC , X6_optimized, '*r','MarkerSize',10);
 % yy = spline(LatticeC,X6_original,xx); plot(xx, yy, '-r');
-yy = spline(LatticeC,X6_optimized,xx); plot(xx, yy, '-r');
+% yy = spline(LatticeC,X6_optimized,xx); plot(xx, yy, '-r');
 
 
 plotEXP1_optimized = plot(LatticeC , EXP1_optimized, 'b*','MarkerSize',10);
