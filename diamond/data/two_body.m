@@ -7,11 +7,9 @@ else if nargin >1
         name='CCmd'; RMidx=7;        
     end
 end
-DATA = xlsread('data.xlsx',name);
+DATA = xlsread('diamond_data.xlsx',name);
 
 LatticeC = DATA(:, 1);
-% disp(LatticeC);disp('LatticeC')
-% disp(LatticeC([1:RMidx-1,RMidx+1:end]));disp('LatticeC(:)')
 QM = DATA(:, 2);
 QMph =DATA(:, 3);
 X6S_original = DATA(:, 4); X6S_optimized = DATA(:, 5);
