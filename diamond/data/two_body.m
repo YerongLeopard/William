@@ -9,9 +9,10 @@ else if nargin >1
 end
 DATA = xlsread('diamond_data.xlsx',name);
 
-Vol = DATA(:, 1);
-QM = DATA(:, 2);
-QMph =DATA(:, 4);
+vol = DATA(:, 1);
+QM = DATA(:, 3);
+QMph =DATA(:, 5);
+disp(vol)
 % X6S_optimized = DATA(:, 5);
 % LJ_optimized = DATA(:, 7);
 % X6_original = DATA(:, 8); X6_optimized = DATA(:, 9);
