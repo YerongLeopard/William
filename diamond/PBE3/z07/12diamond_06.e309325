@@ -1,0 +1,65 @@
+stty: standard input: Invalid argument
+tset: standard error: Inappropriate ioctl for device
+
+TERM: Undefined variable.
+stty: standard input: Invalid argument
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    000000349560F500  Unknown               Unknown  Unknown
+libc.so.6          0000003494EDEA63  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B556590BEE9  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B556590193C  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B55658B80DB  Unknown               Unknown  Unknown
+libmpi.so.1        00002B55650220D4  Unknown               Unknown  Unknown
+mca_coll_tuned.so  00002B556BD99D8E  Unknown               Unknown  Unknown
+
+Stack trace terminated abnormally.
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    000000349560F500  Unknown               Unknown  Unknown
+libc.so.6          0000003494EE02D7  Unknown               Unknown  Unknown
+mca_btl_tcp.so     00002B9BF340587A  Unknown               Unknown  Unknown
+mca_btl_tcp.so     00002B9BF3404906  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B9BEE8D5DC7  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B9BEE88C0DB  Unknown               Unknown  Unknown
+mca_pml_ob1.so     00002B9BF3AC21D9  Unknown               Unknown  Unknown
+mca_coll_tuned.so  00002B9BF4D726E8  Unknown               Unknown  Unknown
+libmpi.so.1        00002B9BEE00A861  Unknown               Unknown  Unknown
+libmpi_mpifh.so.2  00002B9BEDD95C44  Unknown               Unknown  Unknown
+vasp.ion           00000000004A0384  Unknown               Unknown  Unknown
+vasp.ion           0000000000609D6A  Unknown               Unknown  Unknown
+vasp.ion           0000000001091658  Unknown               Unknown  Unknown
+vasp.ion           00000000010B65C2  Unknown               Unknown  Unknown
+vasp.ion           000000000046F89A  Unknown               Unknown  Unknown
+vasp.ion           0000000000449936  Unknown               Unknown  Unknown
+libc.so.6          0000003494E1ECDD  Unknown               Unknown  Unknown
+vasp.ion           0000000000449829  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    000000349560F500  Unknown               Unknown  Unknown
+libc.so.6          0000003494EDEA63  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002ACEA68ADEE9  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002ACEA68A393C  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002ACEA685A0DB  Unknown               Unknown  Unknown
+libmpi.so.1        00002ACEA5FC40D4  Unknown               Unknown  Unknown
+mca_coll_tuned.so  00002ACEACD3BD8E  Unknown               Unknown  Unknown
+
+Stack trace terminated abnormally.
+[node-1-3][[4521,1],3][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
+[node-1-3][[4521,1],4][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
+[node-1-3][[4521,1],5][btl_tcp_frag.c:215:mca_btl_tcp_frag_recv] mca_btl_tcp_frag_recv: readv failed: Connection reset by peer (104)
