@@ -12,39 +12,35 @@ DATA = xlsread('diamond_data.xlsx',name);
 vol = DATA(:, 1);
 QM = DATA(:, 3);
 QMph =DATA(:, 5);
-disp(vol)
-% X6S_optimized = DATA(:, 5);
-% LJ_optimized = DATA(:, 7);
-% X6_original = DATA(:, 8); X6_optimized = DATA(:, 9);
-% EXP1_optimized = DATA(:, 10);
-% EXP2_optimized = DATA(:, 11);
-% EXPfull_optimized = DATA(:, 12);
-% 
-% if true == RMdata
-%     LatticeC=LatticeC([1:RMidx-1,RMidx+1:end]);
-%     QM=QM([1:RMidx-1,RMidx+1:end]);
-%     QMph=QMph([1:RMidx-1,RMidx+1:end]);
+
+
+if true == RMdata
+    LatticeC=LatticeC([1:RMidx-1,RMidx+1:end]);
+    QM=QM([1:RMidx-1,RMidx+1:end]);
+    QMph=QMph([1:RMidx-1,RMidx+1:end]);
 %     X6S_original= X6S_original([1:RMidx-1,RMidx+1:end]);X6S_optimized=X6S_optimized([1:RMidx-1,RMidx+1:end]);
 %     X6_original=X6_original([1:RMidx-1,RMidx+1:end]);X6_optimized=X6_optimized([1:RMidx-1,RMidx+1:end]);
 %     EXP1_optimized=EXP1_optimized([1:RMidx-1,RMidx+1:end]);
 %     EXP2_optimized=EXP2_optimized([1:RMidx-1,RMidx+1:end]);
 %     EXPfull_optimized=EXPfull_optimized([1:RMidx-1,RMidx+1:end]);
-% end
+end
 % 
-% xx = 6.1: 0.01: 7.1; %intrapolation range
+xx = 3.1: 0.01: 7.1; %intrapolation range
 % 
-% figure; hold on;
-% x_search = LatticeC(8):0.00001:LatticeC(5);
+figure; hold on;
+x_search= xx
 % 
-% plotQM = plot (LatticeC, QM, 'sk','MarkerSize',10);
-% yy = spline(LatticeC,QM,xx); plot(xx, yy, '--k');
-% y_search =  spline(LatticeC, QM, x_search);
-% x_min_QM = x_search(find(y_search == min(y_search)));
-% 
-% plotQMph = plot (LatticeC, QMph, 'ok','MarkerSize',10);
-% yy = spline(LatticeC,QMph,xx); plot(xx, yy, '--k');
-% y_search =  spline(LatticeC, QMph, x_search);
-% x_min_PN = x_search(find(y_search == min(y_search)));
+plotQM= plot (vol, QM, 'sk','MarkerSize',10);
+yy= spline(vol,QM,xx); plot(xx, yy, '--k');
+y_search=  spline(vol, QM, x_search);
+x_min_QM= x_search(find(y_search == min(y_search)))
+
+plotQMph= plot (vol, QMph, 'ok','MarkerSize',10);
+yy =spline(vol,QMph,xx); plot(xx, yy, '--k');
+y_search =  spline(vol, QMph, x_search);
+x_min_PN = x_search(find(y_search == min(y_search)))
+presupposed=plot([6.3316, 6.3316], ylim, 'r-.');
+plot([x_min_QM x_min_QM], ylim, 'k-.');
 % 
 % % plotX6S_original = plot(LatticeC , X6S_original, 'xb','MarkerSize',10); plotX6S_optimized = plot(LatticeC , X6S_optimized, '*b','MarkerSize',10);
 % % yy = spline(LatticeC,X6S_original,xx); plot(xx, yy, '-b');
@@ -77,20 +73,27 @@ disp(vol)
 %     '$\textbf{Z}\exp(\textbf{A}r)$    $\textbf{C}_6$,$R_0$', ...
 %     '$\textbf{Z}\exp(\textbf{A}r)\cdot\exp(-\textbf{C}r^\textbf{n}+\textbf{D}r)$   $\textbf{C}_6$,$R_0$' ...
 %     );
-% %ylim = [-9.38 -9.31];
+
+h = legend([plotQM, ... 
+    plotQMph, presupposed], ...
+    ['QM: $C_{opt}=$' num2str(x_min_QM) '$\AA$'], ...
+    ['QM + phonons : $C_{opt}=$' num2str(x_min_PN) '$\AA$'], ...
+    ['Presupposed optimal structure']);
+
+
 % plot([x_min_QM x_min_QM], ylim, 'k-.');
 % plot([x_min_PN x_min_PN], ylim, 'k-.');
 % 
 % 
-% set(h, 'fontsize', 20);
-% set(h, 'Location', 'Best');
-% set(h,'interpreter','latex');
+set(h, 'fontsize', 20);
+set(h, 'Location', 'Best');
+set(h,'interpreter','latex');
 % 
-% h = xlabel('layer distance/ $\AA$');
-% set(h,'interpreter','latex');
-% set(h, 'fontsize', 20);
-% set(h, 'fontweight', 'bold');
-% h = ylabel('Energy difference/ $kcal/ mol$');
-% set(h,'interpreter','latex');
-% set(h, 'fontsize', 20);
-% set(h, 'fontweight', 'bold');
+h = xlabel('Volume per C atom/ $\AA^3 a.u.$');
+set(h,'interpreter','latex');
+set(h, 'fontsize', 20);
+set(h, 'fontweight', 'bold');
+h = ylabel('Energy difference/ $kcal/ mol$');
+set(h,'interpreter','latex');
+set(h, 'fontsize', 20);
+set(h, 'fontweight', 'bold');
