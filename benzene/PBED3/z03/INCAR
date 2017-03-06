@@ -1,0 +1,34 @@
+# Benzene Molecule Relaxation
+#===========================================
+
+# General Setup
+  System = benzene    # Calculation Title
+  PREC   = NORMAL     # Options: Normal, Medium, High, Low
+  ENCUT  = 400        # Carbon Kinetic Energy Cutoff [eV]
+  ISTART = 0          # Job: 0-new  1-cont  2-samecut
+  ICHARG = 2          # initial charge density: 1-file 2-atom 10-cons 11-DOS
+  ISPIN  = 1          # Spin Polarize: 1-No 2-Yes
+
+# Electronic Relaxation (SCF)
+  NELM     = 60       # Max Number of Elec Self Cons Steps  
+    NELMIN = 2        # Min Number of ESC steps
+    NELMDL = 10       # Number of non-SC at the beginning
+  EDIFF    = 1.0E-04  # Stopping criteria for ESC
+  LREAL    = .TRUE.   # Real space projection
+  IALGO    = 48       # Electronic algorithm minimization
+  VOSKOWN  = 1        # 1- uses VWN exact correlation
+  ADDGRID  = .TRUE.   # Improve the grid accuracy
+
+# Ionic Relaxation 
+  EDIFFG   = -1.0E-04  # Stopping criteria for ionic self cons steps
+  NSW      = 55       # Max Number of ISC steps: 0- Single Point
+  IBRION   = 2        # Ionic Relaxation Method: 0-MD 1-qNewton-RaphsonElectronic 2-CG
+  ISIF     = 2        # Stress and Relaxation: 2-Ion 3-cell+ion
+  ADDGRID  = .TRUE.   # Improve the grid accuracy
+  SIGMA    = 0.10     # Insulators/semiconductors=0.1  metals=0.05 
+  ISMEAR   = 1        # Partial Occupancies for each Orbital
+                      # -5 DOS, -2 from file, -1 Fermi Smear, 0 Gaussian Smear
+# Parallelization
+  NPAR=8
+  NCORE=8   # Search the NPAR of your system
+  NSIM = 4  
