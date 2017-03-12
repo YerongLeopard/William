@@ -1,0 +1,18 @@
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+ vasp.5.3.5 31Mar14 (build Nov 02 2014 15:17:37) complex                        
+  
+ POSCAR found type information on POSCAR  C  H 
+ POSCAR found :  2 types and      12 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.899652196715E+02    0.89965E+02   -0.12688E+04 13300   0.145E+03
+DAV:   2    -0.587388135797E+02   -0.14870E+03   -0.14571E+03 16992   0.225E+02

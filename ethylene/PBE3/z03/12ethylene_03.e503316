@@ -1,0 +1,31 @@
+stty: standard input: Invalid argument
+tset: standard error: Inappropriate ioctl for device
+
+TERM: Undefined variable.
+stty: standard input: Invalid argument
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    0000003349E0F500  Unknown               Unknown  Unknown
+vasp.ion           00000000050E5E57  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    0000003349E0F500  Unknown               Unknown  Unknown
+libc.so.6          00000033496DEA63  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B026DFEBEE9  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B026DFE193C  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B026DF980DB  Unknown               Unknown  Unknown
+mca_pml_ob1.so     00002B02732471D9  Unknown               Unknown  Unknown
+mca_coll_tuned.so  00002B027451981B  Unknown               Unknown  Unknown
+mca_coll_tuned.so  00002B027450E129  Unknown               Unknown  Unknown
+
+Stack trace terminated abnormally.

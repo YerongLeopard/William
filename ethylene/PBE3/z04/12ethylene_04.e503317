@@ -1,0 +1,32 @@
+stty: standard input: Invalid argument
+tset: standard error: Inappropriate ioctl for device
+
+TERM: Undefined variable.
+stty: standard input: Invalid argument
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    0000003349E0F500  Unknown               Unknown  Unknown
+vasp.ion           00000000005F1682  Unknown               Unknown  Unknown
+vasp.ion           0000000000460DEB  Unknown               Unknown  Unknown
+vasp.ion           0000000000449936  Unknown               Unknown  Unknown
+libc.so.6          000000334961ECDD  Unknown               Unknown  Unknown
+vasp.ion           0000000000449829  Unknown               Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+vasp.ion           00000000050E5769  Unknown               Unknown  Unknown
+vasp.ion           00000000050E403E  Unknown               Unknown  Unknown
+vasp.ion           0000000005093AA2  Unknown               Unknown  Unknown
+vasp.ion           000000000503DA18  Unknown               Unknown  Unknown
+vasp.ion           0000000005043B19  Unknown               Unknown  Unknown
+libpthread.so.0    0000003349E0F500  Unknown               Unknown  Unknown
+libc.so.6          00000033496DEA63  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B2253273EE9  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B225326993C  Unknown               Unknown  Unknown
+libopen-pal.so.6   00002B22532200DB  Unknown               Unknown  Unknown
+
+Stack trace terminated abnormally.
