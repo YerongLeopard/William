@@ -1,6 +1,6 @@
- running on    6 total cores
- distrk:  each k-point on    6 cores,    1 groups
- distr:  one band on    1 cores,    6 groups
+ running on    4 total cores
+ distrk:  each k-point on    4 cores,    1 groups
+ distr:  one band on    1 cores,    4 groups
  using from now: INCAR     
  vasp.5.3.5 31Mar14 (build Nov 02 2014 15:17:37) complex                        
   
@@ -14,6 +14,6 @@ a non-zero exit code.. Per user-direction, the job has been aborted.
 mpirun detected that one or more processes exited with non-zero status, thus causing
 the job to be terminated. The first process to do so was:
 
-  Process name: [[42417,1],2]
+  Process name: [[2667,1],1]
   Exit code:    174
 --------------------------------------------------------------------------
