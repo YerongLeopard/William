@@ -7,7 +7,7 @@ else if nargin >1
         name='CCmd'; RMidx=7;        
     end
 end
-DATA = xlsread('diamond_data.xlsx',name);
+DATA = xlsread('ethylene_data.xlsx',name);
 
 vol = DATA(:, 1);
 QM = DATA(:, 3);
@@ -25,10 +25,10 @@ if true == RMdata
 %     EXPfull_optimized=EXPfull_optimized([1:RMidx-1,RMidx+1:end]);
 end
 % 
-xx = 3.1: 0.01: 7.1; %intrapolation range
+xx = 129: 0.01: 137; %intrapolation range
 % 
 figure; hold on;
-x_search= xx
+x_search= xx;
 % 
 plotQM= plot (vol, QM, 'sk','MarkerSize',10);
 yy= spline(vol,QM,xx); plot(xx, yy, '--k');
@@ -39,8 +39,8 @@ plotQMph= plot (vol, QMph, 'ok','MarkerSize',10);
 yy =spline(vol,QMph,xx); plot(xx, yy, '--k');
 y_search =  spline(vol, QMph, x_search);
 x_min_PN = x_search(find(y_search == min(y_search)))
-presupposed=plot([6.3316, 6.3316], ylim, 'r-.');
-plot([x_min_QM x_min_QM], ylim, 'k-.');
+% presupposed=plot([6.3316, 6.3316], ylim, 'r-.');
+% plot([x_min_QM x_min_QM], ylim, 'k-.');
 % 
 % % plotX6S_original = plot(LatticeC , X6S_original, 'xb','MarkerSize',10); plotX6S_optimized = plot(LatticeC , X6S_optimized, '*b','MarkerSize',10);
 % % yy = spline(LatticeC,X6S_original,xx); plot(xx, yy, '-b');
@@ -75,10 +75,16 @@ plot([x_min_QM x_min_QM], ylim, 'k-.');
 %     );
 
 h = legend([plotQM, ... 
-    plotQMph, presupposed], ...
-    ['QM: $C_{opt}=$' num2str(x_min_QM) '$\AA$'], ...
-    ['QM + phonons : $C_{opt}=$' num2str(x_min_PN) '$\AA$'], ...
-    ['Presupposed optimal structure']);
+    plotQMph], ...
+    ['QM: $V_{opt}=$' num2str(x_min_QM) '$\AA^3$'], ...
+    ['QM + phonons : $V_{opt}=$' num2str(x_min_PN) '$\AA^3$'] ...
+    );
+% 
+% h = legend([plotQM, ... 
+%     plotQMph, presupposed], ...
+%     ['QM: $C_{opt}=$' num2str(x_min_QM) '$\AA$'], ...
+%     ['QM + phonons : $C_{opt}=$' num2str(x_min_PN) '$\AA$'], ...
+%     ['Presupposed optimal structure']);
 
 
 % plot([x_min_QM x_min_QM], ylim, 'k-.');
@@ -89,7 +95,7 @@ set(h, 'fontsize', 20);
 set(h, 'Location', 'Best');
 set(h,'interpreter','latex');
 % 
-h = xlabel('Volume per C atom/ $\AA^3 a.u.$');
+h = xlabel('Volume per C2H2 molecule/ $\AA^3 a.u.$');
 set(h,'interpreter','latex');
 set(h, 'fontsize', 20);
 set(h, 'fontweight', 'bold');
