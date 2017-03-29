@@ -25,7 +25,7 @@ if true == RMdata
 %     EXPfull_optimized=EXPfull_optimized([1:RMidx-1,RMidx+1:end]);
 end
 % 
-xx = 129: 0.01: 137; %intrapolation range
+xx = 106: 0.01: 137; %intrapolation range
 % 
 figure; hold on;
 x_search= xx;
@@ -73,21 +73,23 @@ x_min_PN = x_search(find(y_search == min(y_search)))
 %     '$\textbf{Z}\exp(\textbf{A}r)$    $\textbf{C}_6$,$R_0$', ...
 %     '$\textbf{Z}\exp(\textbf{A}r)\cdot\exp(-\textbf{C}r^\textbf{n}+\textbf{D}r)$   $\textbf{C}_6$,$R_0$' ...
 %     );
-
+presupposed = plot([130.2452 130.2452], ylim, 'r-');
 h = legend([plotQM, ... 
-    plotQMph], ...
+    plotQMph,...
+    presupposed], ...
     ['QM: $V_{opt}=$' num2str(x_min_QM) '$\AA^3$'], ...
-    ['QM + phonons : $V_{opt}=$' num2str(x_min_PN) '$\AA^3$'] ...
+    ['QM + phonons : $V_{opt}=$' num2str(x_min_PN) '$\AA^3$'], ...
+    ['Presupposed optimal structure: 98K']...
     );
 % 
 % h = legend([plotQM, ... 
 %     plotQMph, presupposed], ...
 %     ['QM: $C_{opt}=$' num2str(x_min_QM) '$\AA$'], ...
 %     ['QM + phonons : $C_{opt}=$' num2str(x_min_PN) '$\AA$'], ...
-%     ['Presupposed optimal structure']);
+%     ['Presupposed optimal structure: 98K']);
 
 
-% plot([x_min_QM x_min_QM], ylim, 'k-.');
+plot([x_min_QM x_min_QM], ylim, 'k-.');
 % plot([x_min_PN x_min_PN], ylim, 'k-.');
 % 
 % 
@@ -95,7 +97,7 @@ set(h, 'fontsize', 20);
 set(h, 'Location', 'Best');
 set(h,'interpreter','latex');
 % 
-h = xlabel('Volume per C2H2 molecule/ $\AA^3 a.u.$');
+h = xlabel('Volume per $C_2H_2$ molecule/ $\AA^3 a.u.$');
 set(h,'interpreter','latex');
 set(h, 'fontsize', 20);
 set(h, 'fontweight', 'bold');
