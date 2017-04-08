@@ -1,0 +1,6 @@
+for i in {001..018}; 
+do 
+cp pbs      disp-$i/pbs
+cp pbs.ion  disp-$i/pbs.ion
+cp pbs.atom disp-$i/pbs.atom
+done

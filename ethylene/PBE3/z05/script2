@@ -1,0 +1,4 @@
+for i in {001..018}; 
+do 
+cp POSCAR-$i disp-$i/POSCAR
+done

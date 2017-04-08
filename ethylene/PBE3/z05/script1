@@ -1,0 +1,4 @@
+for i in {001..018}; 
+do 
+cp -r disp-001 disp-$i
+done
