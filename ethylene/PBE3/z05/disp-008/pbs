@@ -1,8 +1,0 @@
-if [ "$HOSTNAME" == "atom.wag.caltech.edu" ];then 
-qsub pbs.atom
-echo "Submitted to atom"
-fi
-if [ "$HOSTNAME" == "ion.wag.caltech.edu" ];then 
-qsub pbs.ion
-echo "Submitted to ion"
-fi
