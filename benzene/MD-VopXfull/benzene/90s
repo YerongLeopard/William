@@ -1,301 +1,353 @@
 XTLGRF 200
-DESCRP CC-ref                                                      
-CRYSTX     2.46644    2.46644   20.00000   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   1.94500  -0.00073  10.00000    C   4 0  0.00000
-HETATM     2 C                   0.52144   2.46717  10.00000    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-UNIT ENERGY   kcal
-ENERGY        2284.250713
-END
-
-XTLGRF 200
-DESCRP CC-70959                                                    
+DESCRP bnz_a                                                       
 REMARK a                                                           
-CRYSTX     2.46644    2.46644    7.09590   90.00000   90.00000  120.04459
+CRYSTX     7.49925    9.55479    6.83141   90.00000   90.00000   90.00000
 FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29919  -0.61476   1.77396    C   4 0  0.00000
-HETATM     2 C                   0.16725   3.08120   5.32194    C   4 0  0.00000
-HETATM     3 C                   0.87589   1.85268   1.77396    C   4 0  0.00000
-HETATM     4 C                   1.59055   0.61375   5.32194    C   4 0  0.00000
+HETATM     1 C                   7.09393   1.33844   0.58502    C   3 0  0.00000
+HETATM     2 C                   0.40532   8.21635   0.55354    C   3 0  0.00000
+HETATM     3 C                   4.15494   8.21635   4.00072    C   3 0  0.00000
+HETATM     4 C                   3.34431   1.33844   3.96925    C   3 0  0.00000
+HETATM     5 C                   0.40532   6.11584   3.96925    C   3 0  0.00000
+HETATM     6 C                   7.09393   3.43895   4.00072    C   3 0  0.00000
+HETATM     7 C                   3.34431   3.43895   0.55354    C   3 0  0.00000
+HETATM     8 C                   4.15494   6.11584   0.58502    C   3 0  0.00000
+HETATM     9 C                   0.57806   0.89271   1.47426    C   3 0  0.00000
+HETATM    10 C                   6.92119   8.66208   6.49571    C   3 0  0.00000
+HETATM    11 C                   3.17157   8.66208   4.88997    C   3 0  0.00000
+HETATM    12 C                   4.32768   0.89271   3.08000    C   3 0  0.00000
+HETATM    13 C                   6.92119   5.67011   3.08000    C   3 0  0.00000
+HETATM    14 C                   0.57806   3.88468   4.88997    C   3 0  0.00000
+HETATM    15 C                   4.32768   3.88468   6.49571    C   3 0  0.00000
+HETATM    16 C                   3.17157   5.67011   1.47426    C   3 0  0.00000
+HETATM    17 C                   6.51266   0.44465   6.51109    C   3 0  0.00000
+HETATM    18 C                   0.98659   9.11014   1.45888    C   3 0  0.00000
+HETATM    19 C                   4.73622   9.11014   3.09539    C   3 0  0.00000
+HETATM    20 C                   2.76303   0.44465   4.87458    C   3 0  0.00000
+HETATM    21 C                   0.98659   5.22205   4.87458    C   3 0  0.00000
+HETATM    22 C                   6.51266   4.33274   3.09539    C   3 0  0.00000
+HETATM    23 C                   2.76303   4.33274   1.45888    C   3 0  0.00000
+HETATM    24 C                   4.73622   5.22205   6.51109    C   3 0  0.00000
+HETATM    25 C                   6.78111   2.38380   0.59877    C   3 0  0.00000
+HETATM    26 C                   0.71814   7.17099   0.53979    C   3 0  0.00000
+HETATM    27 C                   4.46776   7.17099   4.01448    C   3 0  0.00000
+HETATM    28 C                   3.03149   2.38380   3.95549    C   3 0  0.00000
+HETATM    29 C                   0.71814   7.16119   3.95549    C   3 0  0.00000
+HETATM    30 C                   6.78111   2.39360   4.01448    C   3 0  0.00000
+HETATM    31 C                   3.03149   2.39360   0.53979    C   3 0  0.00000
+HETATM    32 C                   4.46776   7.16119   0.59877    C   3 0  0.00000
+HETATM    33 C                   1.02560   1.58526   2.18720    C   3 0  0.00000
+HETATM    34 C                   6.47365   7.96953   5.78277    C   3 0  0.00000
+HETATM    35 C                   2.72403   7.96953   5.60291    C   3 0  0.00000
+HETATM    36 C                   4.77522   1.58526   2.36706    C   3 0  0.00000
+HETATM    37 C                   6.47365   6.36266   2.36706    C   3 0  0.00000
+HETATM    38 C                   1.02560   3.19213   5.60291    C   3 0  0.00000
+HETATM    39 C                   4.77522   3.19213   5.78277    C   3 0  0.00000
+HETATM    40 C                   2.72403   6.36266   2.18720    C   3 0  0.00000
+HETATM    41 C                   5.73973   0.78054   5.81793    C   3 0  0.00000
+HETATM    42 C                   1.75952   8.77425   2.15204    C   3 0  0.00000
+HETATM    43 C                   5.50914   8.77425   2.40222    C   3 0  0.00000
+HETATM    44 C                   1.99011   0.78054   5.56775    C   3 0  0.00000
+HETATM    45 C                   1.75952   5.55794   5.56775    C   3 0  0.00000
+HETATM    46 C                   5.73973   3.99685   2.40222    C   3 0  0.00000
+HETATM    47 C                   1.99011   3.99685   2.15204    C   3 0  0.00000
+HETATM    48 C                   5.50914   5.55794   5.81793    C   3 0  0.00000
 FORMAT CONECT (a6,12i6)
 CONECT     1
 CONECT     2
 CONECT     3
 CONECT     4
+CONECT     5
+CONECT     6
+CONECT     7
+CONECT     8
+CONECT     9
+CONECT    10
+CONECT    11
+CONECT    12
+CONECT    13
+CONECT    14
+CONECT    15
+CONECT    16
+CONECT    17
+CONECT    18
+CONECT    19
+CONECT    20
+CONECT    21
+CONECT    22
+CONECT    23
+CONECT    24
+CONECT    25
+CONECT    26
+CONECT    27
+CONECT    28
+CONECT    29
+CONECT    30
+CONECT    31
+CONECT    32
+CONECT    33
+CONECT    34
+CONECT    35
+CONECT    36
+CONECT    37
+CONECT    38
+CONECT    39
+CONECT    40
+CONECT    41
+CONECT    42
+CONECT    43
+CONECT    44
+CONECT    45
+CONECT    46
+CONECT    47
+CONECT    48
 UNIT ENERGY   kcal
-ENERGY        4563.798201
+ENERGY       90713.446590
 END
 
 XTLGRF 200
-DESCRP CC-70296                                                    
+DESCRP bnz_b                                                       
 REMARK b                                                           
-CRYSTX     2.46644    2.46644    7.02960   90.00000   90.00000  120.04459
+CRYSTX     7.45179    9.49432    6.78817   90.00000   90.00000   90.00000
 FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.75739    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   5.27221    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.75739    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   5.27221    C   4 0  0.00000
+HETATM     1 C                   7.04593   1.33816   0.58196    C   3 0  0.00000
+HETATM     2 C                   0.40586   8.15616   0.54940    C   3 0  0.00000
+HETATM     3 C                   4.13176   8.15616   3.97604    C   3 0  0.00000
+HETATM     4 C                   3.32003   1.33816   3.94349    C   3 0  0.00000
+HETATM     5 C                   0.40586   6.08532   3.94349    C   3 0  0.00000
+HETATM     6 C                   7.04593   3.40900   3.97604    C   3 0  0.00000
+HETATM     7 C                   3.32003   3.40900   0.54940    C   3 0  0.00000
+HETATM     8 C                   4.13176   6.08532   0.58196    C   3 0  0.00000
+HETATM     9 C                   0.57818   0.89251   1.47030    C   3 0  0.00000
+HETATM    10 C                   6.87361   8.60181   6.44923    C   3 0  0.00000
+HETATM    11 C                   3.14772   8.60181   4.86438    C   3 0  0.00000
+HETATM    12 C                   4.30407   0.89251   3.05515    C   3 0  0.00000
+HETATM    13 C                   6.87361   5.63967   3.05515    C   3 0  0.00000
+HETATM    14 C                   0.57818   3.85465   4.86438    C   3 0  0.00000
+HETATM    15 C                   4.30407   3.85465   6.44923    C   3 0  0.00000
+HETATM    16 C                   3.14772   5.63967   1.47030    C   3 0  0.00000
+HETATM    17 C                   6.46506   0.44450   6.46458    C   3 0  0.00000
+HETATM    18 C                   0.98673   9.04982   1.45495    C   3 0  0.00000
+HETATM    19 C                   4.71262   9.04982   3.07049    C   3 0  0.00000
+HETATM    20 C                   2.73917   0.44450   4.84904    C   3 0  0.00000
+HETATM    21 C                   0.98673   5.19166   4.84904    C   3 0  0.00000
+HETATM    22 C                   6.46506   4.30266   3.07049    C   3 0  0.00000
+HETATM    23 C                   2.73917   4.30266   1.45495    C   3 0  0.00000
+HETATM    24 C                   4.71262   5.19166   6.46458    C   3 0  0.00000
+HETATM    25 C                   6.73286   2.38325   0.59555    C   3 0  0.00000
+HETATM    26 C                   0.71893   7.11107   0.53581    C   3 0  0.00000
+HETATM    27 C                   4.44482   7.11107   3.98963    C   3 0  0.00000
+HETATM    28 C                   3.00697   2.38325   3.92990    C   3 0  0.00000
+HETATM    29 C                   0.71893   7.13041   3.92990    C   3 0  0.00000
+HETATM    30 C                   6.73286   2.36391   3.98963    C   3 0  0.00000
+HETATM    31 C                   3.00697   2.36391   0.53581    C   3 0  0.00000
+HETATM    32 C                   4.44482   7.13041   0.59555    C   3 0  0.00000
+HETATM    33 C                   1.02576   1.58471   2.18335    C   3 0  0.00000
+HETATM    34 C                   6.42603   7.90961   5.73618    C   3 0  0.00000
+HETATM    35 C                   2.70013   7.90961   5.57743    C   3 0  0.00000
+HETATM    36 C                   4.75166   1.58471   2.34210    C   3 0  0.00000
+HETATM    37 C                   6.42603   6.33187   2.34210    C   3 0  0.00000
+HETATM    38 C                   1.02576   3.16245   5.57743    C   3 0  0.00000
+HETATM    39 C                   4.75166   3.16245   5.73618    C   3 0  0.00000
+HETATM    40 C                   2.70013   6.33187   2.18335    C   3 0  0.00000
+HETATM    41 C                   5.69186   0.78005   5.77196    C   3 0  0.00000
+HETATM    42 C                   1.75993   8.71427   2.14757    C   3 0  0.00000
+HETATM    43 C                   5.48582   8.71427   2.37787    C   3 0  0.00000
+HETATM    44 C                   1.96597   0.78005   5.54166    C   3 0  0.00000
+HETATM    45 C                   1.75993   5.52721   5.54166    C   3 0  0.00000
+HETATM    46 C                   5.69186   3.96711   2.37787    C   3 0  0.00000
+HETATM    47 C                   1.96597   3.96711   2.14757    C   3 0  0.00000
+HETATM    48 C                   5.48582   5.52721   5.77196    C   3 0  0.00000
 FORMAT CONECT (a6,12i6)
 CONECT     1
 CONECT     2
 CONECT     3
 CONECT     4
+CONECT     5
+CONECT     6
+CONECT     7
+CONECT     8
+CONECT     9
+CONECT    10
+CONECT    11
+CONECT    12
+CONECT    13
+CONECT    14
+CONECT    15
+CONECT    16
+CONECT    17
+CONECT    18
+CONECT    19
+CONECT    20
+CONECT    21
+CONECT    22
+CONECT    23
+CONECT    24
+CONECT    25
+CONECT    26
+CONECT    27
+CONECT    28
+CONECT    29
+CONECT    30
+CONECT    31
+CONECT    32
+CONECT    33
+CONECT    34
+CONECT    35
+CONECT    36
+CONECT    37
+CONECT    38
+CONECT    39
+CONECT    40
+CONECT    41
+CONECT    42
+CONECT    43
+CONECT    44
+CONECT    45
+CONECT    46
+CONECT    47
+CONECT    48
 UNIT ENERGY   kcal
-ENERGY        4563.695413
+ENERGY       90813.606822
 END
 
 XTLGRF 200
-DESCRP CC-69633                                                    
+DESCRP bnz_c                                                       
 REMARK c                                                           
-CRYSTX     2.46644    2.46644    6.96330   90.00000   90.00000  120.04459
+CRYSTX     7.40371    9.43306    6.74437   90.00000   90.00000   90.00000
 FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.74082    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   5.22248    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.74082    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   5.22248    C   4 0  0.00000
+HETATM     1 C                   6.99910   1.33856   0.57772    C   3 0  0.00000
+HETATM     2 C                   0.40461   8.09450   0.54634    C   3 0  0.00000
+HETATM     3 C                   4.10647   8.09450   3.94991    C   3 0  0.00000
+HETATM     4 C                   3.29724   1.33856   3.91852    C   3 0  0.00000
+HETATM     5 C                   0.40461   6.05509   3.91852    C   3 0  0.00000
+HETATM     6 C                   6.99910   3.37797   3.94991    C   3 0  0.00000
+HETATM     7 C                   3.29724   3.37797   0.54634    C   3 0  0.00000
+HETATM     8 C                   4.10647   6.05509   0.57772    C   3 0  0.00000
+HETATM     9 C                   0.57776   0.89251   1.46694    C   3 0  0.00000
+HETATM    10 C                   6.82595   8.54055   6.40149    C   3 0  0.00000
+HETATM    11 C                   3.12409   8.54055   4.83913    C   3 0  0.00000
+HETATM    12 C                   4.27961   0.89251   3.02930    C   3 0  0.00000
+HETATM    13 C                   6.82595   5.60904   3.02930    C   3 0  0.00000
+HETATM    14 C                   0.57776   3.82402   4.83913    C   3 0  0.00000
+HETATM    15 C                   4.27961   3.82402   6.40149    C   3 0  0.00000
+HETATM    16 C                   3.12409   5.60904   1.46694    C   3 0  0.00000
+HETATM    17 C                   6.41771   0.44459   6.41776    C   3 0  0.00000
+HETATM    18 C                   0.98600   8.98847   1.45067    C   3 0  0.00000
+HETATM    19 C                   4.68786   8.98847   3.04558    C   3 0  0.00000
+HETATM    20 C                   2.71585   0.44459   4.82285    C   3 0  0.00000
+HETATM    21 C                   0.98600   5.16112   4.82285    C   3 0  0.00000
+HETATM    22 C                   6.41771   4.27194   3.04558    C   3 0  0.00000
+HETATM    23 C                   2.71585   4.27194   1.45067    C   3 0  0.00000
+HETATM    24 C                   4.68786   5.16112   6.41776    C   3 0  0.00000
+HETATM    25 C                   6.68738   2.38408   0.59094    C   3 0  0.00000
+HETATM    26 C                   0.71633   7.04898   0.53312    C   3 0  0.00000
+HETATM    27 C                   4.41819   7.04898   3.96312    C   3 0  0.00000
+HETATM    28 C                   2.98552   2.38408   3.90531    C   3 0  0.00000
+HETATM    29 C                   0.71633   7.10061   3.90531    C   3 0  0.00000
+HETATM    30 C                   6.68738   2.33245   3.96312    C   3 0  0.00000
+HETATM    31 C                   2.98552   2.33245   0.53312    C   3 0  0.00000
+HETATM    32 C                   4.41819   7.10061   0.59094    C   3 0  0.00000
+HETATM    33 C                   1.02428   1.58408   2.18096    C   3 0  0.00000
+HETATM    34 C                   6.37943   7.84898   5.68747    C   3 0  0.00000
+HETATM    35 C                   2.67757   7.84898   5.55315    C   3 0  0.00000
+HETATM    36 C                   4.72614   1.58408   2.31528    C   3 0  0.00000
+HETATM    37 C                   6.37943   6.30061   2.31528    C   3 0  0.00000
+HETATM    38 C                   1.02428   3.13245   5.55315    C   3 0  0.00000
+HETATM    39 C                   4.72614   3.13245   5.68747    C   3 0  0.00000
+HETATM    40 C                   2.67757   6.30061   2.18096    C   3 0  0.00000
+HETATM    41 C                   5.64395   0.77951   5.72540    C   3 0  0.00000
+HETATM    42 C                   1.75976   8.65355   2.14303    C   3 0  0.00000
+HETATM    43 C                   5.46161   8.65355   2.35321    C   3 0  0.00000
+HETATM    44 C                   1.94210   0.77951   5.51522    C   3 0  0.00000
+HETATM    45 C                   1.75976   5.49604   5.51522    C   3 0  0.00000
+HETATM    46 C                   5.64395   3.93702   2.35321    C   3 0  0.00000
+HETATM    47 C                   1.94210   3.93702   2.14303    C   3 0  0.00000
+HETATM    48 C                   5.46161   5.49604   5.72540    C   3 0  0.00000
 FORMAT CONECT (a6,12i6)
 CONECT     1
 CONECT     2
 CONECT     3
 CONECT     4
+CONECT     5
+CONECT     6
+CONECT     7
+CONECT     8
+CONECT     9
+CONECT    10
+CONECT    11
+CONECT    12
+CONECT    13
+CONECT    14
+CONECT    15
+CONECT    16
+CONECT    17
+CONECT    18
+CONECT    19
+CONECT    20
+CONECT    21
+CONECT    22
+CONECT    23
+CONECT    24
+CONECT    25
+CONECT    26
+CONECT    27
+CONECT    28
+CONECT    29
+CONECT    30
+CONECT    31
+CONECT    32
+CONECT    33
+CONECT    34
+CONECT    35
+CONECT    36
+CONECT    37
+CONECT    38
+CONECT    39
+CONECT    40
+CONECT    41
+CONECT    42
+CONECT    43
+CONECT    44
+CONECT    45
+CONECT    46
+CONECT    47
+CONECT    48
 UNIT ENERGY   kcal
-ENERGY        4563.614771
+ENERGY       90882.721568
 END
 
 XTLGRF 200
-DESCRP CC-68970                                                    
-REMARK d                                                           
-CRYSTX     2.46644    2.46644    6.89700   90.00000   90.00000  120.04459
+DESCRP ref.bgf                                                     
+REMARK ref                                                         
+REMARK BGF file created by Babel 1.6                               
+CRYSTX    20.00000   20.00000   20.00000   90.00000   90.00000   90.00000
 FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.72424    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   5.17276    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.72424    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   5.17276    C   4 0  0.00000
+HETATM     1 C                  10.40816  11.33740   9.98114    C   3 0  0.00000
+HETATM     2 C                   9.59184   8.66260  10.01886    C   3 0  0.00000
+HETATM     3 C                   9.42298  10.89482   9.09418    C   3 0  0.00000
+HETATM     4 C                  10.57702   9.10518  10.90582    C   3 0  0.00000
+HETATM     5 C                  10.98526  10.44184  10.88642    C   3 0  0.00000
+HETATM     6 C                   9.01474   9.55816   9.11358    C   3 0  0.00000
+HETATM     7 C                  10.72370  12.38248   9.96738    C   3 0  0.00000
+HETATM     8 C                   9.27630   7.61752  10.03262    C   3 0  0.00000
+HETATM     9 C                   8.97248  11.59126   8.38572    C   3 0  0.00000
+HETATM    10 C                  11.02752   8.40874  11.61428    C   3 0  0.00000
+HETATM    11 C                  11.75610  10.78578  11.57752    C   3 0  0.00000
+HETATM    12 C                   8.24390   9.21422   8.42248    C   3 0  0.00000
 FORMAT CONECT (a6,12i6)
 CONECT     1
 CONECT     2
 CONECT     3
 CONECT     4
+CONECT     5
+CONECT     6
+CONECT     7
+CONECT     8
+CONECT     9
+CONECT    10
+CONECT    11
+CONECT    12
 UNIT ENERGY   kcal
-ENERGY        4563.545072
-END
-
-XTLGRF 200
-DESCRP CC-68307                                                    
-REMARK e                                                           
-CRYSTX     2.46644    2.46644    6.83070   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.70768    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   5.12303    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.70768    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   5.12303    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4563.488465
-END
-
-XTLGRF 200
-DESCRP CC-67643                                                    
-REMARK f                                                           
-CRYSTX     2.46644    2.46644    6.67643   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.64712    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   5.02931    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.64712    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   5.02931    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4563.442476
-END
-
-XTLGRF 200
-DESCRP CC-67454                                                    
-REMARK opt                                                         
-CRYSTX     2.46644    2.46644    6.67540   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.65135    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   5.02405    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.65135    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   5.02405    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4563.434819
-END
-
-XTLGRF 200
-DESCRP CC-66980                                                    
-REMARK g                                                           
-CRYSTX     2.46644    2.46644    6.69800   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.69281    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   5.00520    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.69281    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   5.00520    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4563.438303
-END
-
-XTLGRF 200
-DESCRP CC-66317                                                    
-REMARK z01                                                         
-CRYSTX     2.46644    2.46644    6.63170   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.65792    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   4.97379    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.65792    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   4.97379    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4563.423511
-END
-
-XTLGRF 200
-DESCRP CC-65654                                                    
-REMARK z02                                                         
-CRYSTX     2.46644    2.46644    6.56540   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.64135    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   4.92406    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.64135    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   4.92406    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4563.447544
-END
-
-XTLGRF 200
-DESCRP CC-64991                                                    
-REMARK z03                                                         
-CRYSTX     2.46644    2.46644    6.49910   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.62477    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   4.87433    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.62477    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   4.87433    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4563.500910
-END
-
-XTLGRF 200
-DESCRP CC-64327                                                    
-REMARK z04                                                         
-CRYSTX     2.46644    2.46644    6.43270   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.60815    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   4.82455    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.60815    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   4.82455    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4563.588501
-END
-
-XTLGRF 200
-DESCRP CC-63664                                                    
-REMARK z05                                                         
-CRYSTX     2.46644    2.46644    6.36640   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.59158    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   4.77482    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.59158    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   4.77482    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4563.715450
-END
-
-XTLGRF 200
-DESCRP CC-63001                                                    
-REMARK z06                                                         
-CRYSTX     2.46644    2.46644    6.30010   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.57501    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   4.72509    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.57501    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   4.72509    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4563.888001
-END
-
-XTLGRF 200
-DESCRP CC-62338                                                    
-REMARK z07                                                         
-CRYSTX     2.46644    2.46644    6.23380   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.55843    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   4.67536    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.55843    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   4.67536    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4564.113148
-END
-
-XTLGRF 200
-DESCRP CC-61675                                                    
-REMARK z08                                                         
-CRYSTX     2.46644    2.46644    6.16750   90.00000   90.00000  120.04459
-FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 C                   2.29935  -0.61502   1.54187    C   4 0  0.00000
-HETATM     2 C                   0.16709   3.08146   4.62563    C   4 0  0.00000
-HETATM     3 C                   0.87578   1.85288   1.54187    C   4 0  0.00000
-HETATM     4 C                   1.59066   0.61356   4.62563    C   4 0  0.00000
-FORMAT CONECT (a6,12i6)
-CONECT     1
-CONECT     2
-CONECT     3
-CONECT     4
-UNIT ENERGY   kcal
-ENERGY        4564.398851
+ENERGY       22646.610177
 END
 
