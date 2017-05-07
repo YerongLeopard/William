@@ -1,0 +1,35 @@
+ running on    1 total cores
+ distrk:  each k-point on    1 cores,    1 groups
+ distr:  one band on    1 cores,    1 groups
+ using from now: INCAR     
+ vasp.5.3.5 31Mar14 (build Nov 02 2014 15:17:37) complex                        
+  
+ POSCAR found :  1 types and      16 ions
+ scaLAPACK will be used
+ LDA part: xc-table for Pade appr. of Perdew
+
+
+ VERY BAD NEWS! internal error in subroutine IBZKPT:
+ Reciprocal lattice and k-lattice belong to different class of lattices. Often results are still useful...      12
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: small aliasing (wrap around) errors must be expected
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.277811892413E+03    0.27781E+03   -0.44851E+04  5904   0.216E+03
+DAV:   2    -0.130330896363E+03   -0.40814E+03   -0.38765E+03  7580   0.324E+02
+DAV:   3    -0.148776804548E+03   -0.18446E+02   -0.18295E+02  7230   0.664E+01
+DAV:   4    -0.149159821262E+03   -0.38302E+00   -0.38174E+00  7477   0.971E+00
+DAV:   5    -0.149169019872E+03   -0.91986E-02   -0.91898E-02  7215   0.146E+00    0.124E+01
+DAV:   6    -0.146075029846E+03    0.30940E+01   -0.22289E+00  7127   0.677E+00    0.687E+00
+DAV:   7    -0.145038036327E+03    0.10370E+01   -0.25503E+00  6886   0.742E+00    0.973E-01
+DAV:   8    -0.145051445250E+03   -0.13409E-01   -0.55755E-02  7359   0.111E+00    0.102E-01
+DAV:   9    -0.145051929755E+03   -0.48450E-03   -0.10221E-03  7189   0.178E-01    0.387E-02
+DAV:  10    -0.145052052785E+03   -0.12303E-03   -0.11390E-04  7216   0.640E-02    0.845E-03
+DAV:  11    -0.145052054313E+03   -0.15288E-05   -0.80463E-06  7140   0.150E-02    0.144E-03
+DAV:  12    -0.145052054262E+03    0.51640E-07   -0.42846E-07  7183   0.328E-03    0.533E-04
+DAV:  13    -0.145052054424E+03   -0.16184E-06   -0.49124E-08  7101   0.119E-03    0.306E-04
+DAV:  14    -0.145052054420E+03    0.31428E-08   -0.79831E-09  4852   0.577E-04
+   1 F= -.14790951E+03 E0= -.14790951E+03  d E =0.000000E+00
