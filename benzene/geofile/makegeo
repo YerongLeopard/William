@@ -7,9 +7,11 @@ printf "REMARK ref\n" >> geo
 #echo $var
 num="$(echo $var | tr -dc '.0-9')"
 num1=${num:0:7}
-num2=${num:7:7}
-num3=${num:14:7}
-num4=${num:21:8}
+num2=${num:8:7}
+num3=${num:16:7}
+num4=${num:24:8}
+echo $num1
+echo "${var:1:6}      $num1   $num2    $num3   $num4   $num4   $num4\n"
 printf "${var:1:6}      $num1   $num2    $num3   $num4   $num4   $num4\n" >> geo
 echo "FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)" >> geo
 head -17 ref.bgf | tail -12 >> geo
