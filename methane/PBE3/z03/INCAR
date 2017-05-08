@@ -1,6 +1,6 @@
 SYSTEM=diamond                 # Job description
 NPAR=2                          # (# of CPUs)/(NPAR) node(s) work on one band require NPAR=#CPUs for HF
-#GGA=PE                          #
+GGA=PE                          #
 ISMEAR=-5                        # Tetrahedron method with Bloechl corrections
 NELM=200                        # Maximum number of SCF cycles
 EDIFF=1.0E-06                   # Convergence criteria for SCF Energy
