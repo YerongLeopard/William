@@ -47,7 +47,7 @@ def readcif(input):
     al[i].append(float(s[3]))
     al[i].append(float(s[4]))
     al[i].append(s[1])
-
+    al[i].append(s[0])
   return al, bl
 
 
@@ -77,7 +77,7 @@ def orientc(input,al,bl):
     X = M11*al[i][0]
     Y = M21*al[i][0] + M22*al[i][1]
     Z = M31*al[i][0] + M32*al[i][1] + M33*al[i][2]
-    f.write('C %0.5f %0.5f %0.5f \n'%(X,Y,Z))
+    f.write(al[i][-1]+' %0.5f %0.5f %0.5f \n'%(X,Y,Z))
   f.close()
 
 
