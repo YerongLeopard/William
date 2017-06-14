@@ -1,0 +1,4 @@
+for FILE in *xyz
+do
+jaguar babel -ixyz $FILE -obgf ${FILE%xyz}bgf
+done
