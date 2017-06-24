@@ -7,7 +7,7 @@ else if nargin >1
         name='CCmd'; RMidx=7;        
     end
 end
-DATA = xlsread('diamond_data.xlsx',name);
+DATA = xlsread('benzene_data.xlsx',name);
 
 vol = DATA(:, 1);
 QM = DATA(:, 3);
@@ -25,7 +25,7 @@ if true == RMdata
 %     EXPfull_optimized=EXPfull_optimized([1:RMidx-1,RMidx+1:end]);
 end
 % 
-xx = 3.1: 0.01: 7.1; %intrapolation range
+xx = 313: 0.01: 490; %intrapolation range
 % 
 figure; hold on;
 x_search= xx
@@ -39,7 +39,7 @@ plotQMph= plot (vol, QMph, 'ok','MarkerSize',10);
 yy =spline(vol,QMph,xx); plot(xx, yy, '--k');
 y_search =  spline(vol, QMph, x_search);
 x_min_PN = x_search(find(y_search == min(y_search)))
-presupposed=plot([6.3316, 6.3316], ylim, 'r-.');
+presupposed=plot([461.7888235, 461.7888235], ylim, 'r-.');
 plot([x_min_QM x_min_QM], ylim, 'k-.');
 % 
 % % plotX6S_original = plot(LatticeC , X6S_original, 'xb','MarkerSize',10); plotX6S_optimized = plot(LatticeC , X6S_optimized, '*b','MarkerSize',10);
