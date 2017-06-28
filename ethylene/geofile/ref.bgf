@@ -3,20 +3,23 @@ DESCRP ref.bgf
 REMARK BGF file created by Babel 1.6 
 FORCEFIELD DREIDING  
 FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)
-HETATM     1 H1    RES A   444   1.90016   1.31313   1.91211 H_     1 0  0.00000
-HETATM     2 H2    RES A   444   1.57380   1.98157   0.28434 H_     1 0  0.00000
-HETATM     3 H3    RES A   444   1.70424   0.21176   0.51520 H_     1 0  0.00000
-HETATM     4 H4    RES A   444   0.28972   1.09664   1.16219 H_     1 0  0.00000
-HETATM     5 C5    RES A   444   1.36699   1.15079   0.96845 C_3    4 0  0.00000
+HETATM     1 C1    RES A   444   2.98376   3.57690   2.21798 C_2    3 0  0.00000
+HETATM     2 C2    RES A   444   1.88624   2.88310   1.92202 C_2    3 0  0.00000
+HETATM     3 H3    RES A   444   3.37018   4.35986   1.56098 H_     1 0  0.00000
+HETATM     4 H4    RES A   444   1.49982   2.10014   2.57902 H_     1 0  0.00000
+HETATM     5 H5    RES A   444   3.55142   3.39724   3.13190 H_     1 0  0.00000
+HETATM     6 H6    RES A   444   1.31858   3.06276   1.00810 H_     1 0  0.00000
 FORMAT CONECT (a6,12i6)
-CONECT     1     5
-ORDER      1     1
-CONECT     2     5
-ORDER      2     1
-CONECT     3     5
+CONECT     1     2     3     5
+ORDER      1     2     1     1
+CONECT     2     1     4     6
+ORDER      2     2     1     1
+CONECT     3     1
 ORDER      3     1
-CONECT     4     5
+CONECT     4     2
 ORDER      4     1
-CONECT     5     1     2     3     4
-ORDER      5     1     1     1     1
+CONECT     5     1
+ORDER      5     1
+CONECT     6     2
+ORDER      6     1
 END
