@@ -12,7 +12,7 @@ DATA = xlsread('benzene_data.xlsx',name);
 vol = DATA(:, 1);
 QM = DATA(:, 3);
 QMph =DATA(:, 5);
-
+EXPfull_optimized= DATA(:,6);
 
 if true == RMdata
     LatticeC=LatticeC([1:RMidx-1,RMidx+1:end]);
@@ -22,23 +22,23 @@ if true == RMdata
 %     X6_original=X6_original([1:RMidx-1,RMidx+1:end]);X6_optimized=X6_optimized([1:RMidx-1,RMidx+1:end]);
 %     EXP1_optimized=EXP1_optimized([1:RMidx-1,RMidx+1:end]);
 %     EXP2_optimized=EXP2_optimized([1:RMidx-1,RMidx+1:end]);
-%     EXPfull_optimized=EXPfull_optimized([1:RMidx-1,RMidx+1:end]);
+     EXPfull_optimized=EXPfull_optimized([1:RMidx-1,RMidx+1:end]);
 end
 % 
-xx = 313: 0.01: 490; %intrapolation range
+xx = 387: 0.01: 490; %intrapolation range
 % 
 figure; hold on;
-x_search= xx
+x_search= xx;
 % 
 plotQM= plot (vol, QM, 'sk','MarkerSize',10);
 yy= spline(vol,QM,xx); plot(xx, yy, '--k');
 y_search=  spline(vol, QM, x_search);
-x_min_QM= x_search(find(y_search == min(y_search)))
+x_min_QM= x_search(find(y_search == min(y_search)));
 
 plotQMph= plot (vol, QMph, 'ok','MarkerSize',10);
 yy =spline(vol,QMph,xx); plot(xx, yy, '--k');
 y_search =  spline(vol, QMph, x_search);
-x_min_PN = x_search(find(y_search == min(y_search)))
+x_min_PN = x_search(find(y_search == min(y_search)));
 presupposed=plot([461.7888235, 461.7888235], ylim, 'r-.');
 plot([x_min_QM x_min_QM], ylim, 'k-.');
 % 
@@ -57,11 +57,11 @@ plot([x_min_QM x_min_QM], ylim, 'k-.');
 % plotEXP1_optimized = plot(LatticeC , EXP1_optimized, 'b*','MarkerSize',10);
 % yy = spline(LatticeC,EXP1_optimized,xx); plot(xx, yy, 'b-');
 % 
-% % plotEXP2_optimized = plot(LatticeC , EXP2_optimized, 'g*','MarkerSize',10);
-% % yy = spline(LatticeC,EXP2_optimized,xx); plot(xx, yy, 'g-');
+% plotEXP2_optimized = plot(vol , EXP2_optimized, 'g*','MarkerSize',10);
+% yy = spline(LatticeC,EXP2_optimized,xx); plot(xx, yy, 'g-');
 % 
-% plotEXPfull_optimized = plot(LatticeC , EXPfull_optimized, 'k*','MarkerSize',10);
-% yy = spline(LatticeC,EXPfull_optimized,xx); plot(xx, yy, 'k-.');
+plotEXPfull_optimized = plot(vol , EXPfull_optimized, 'k*','MarkerSize',10);
+ yy = spline(vol,EXPfull_optimized,xx); plot(xx, yy, 'k-.');
 % h = legend([plotQM, ... 
 %     plotQMph, ...
 %     plotX6_optimized, ... 
