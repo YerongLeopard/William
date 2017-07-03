@@ -2561,7 +2561,7 @@
 *      if (rr.lt.1.6) then ! DEBUG      
 *      if (rr.gt.1.6) then
       exp1 = p1 *exp(p2 * rr + p3)
-      exp2 = exp(-p4*rr**p5 + p6*rr) * p7
+      exp2 = exp(-p4*rr**p5 + p6*rr + p7)
       ewh = exp1 * exp2  
 *      ewh = - p1/(p3-6.)*(p3/(rho**6))
 *      write(*,*) 'ewh ', ewh 
@@ -2745,7 +2745,7 @@
 *      if (rr.lt.1.6) then ! DEBUG
 *      if (rr.gt.1.6) then
       exp1 = p1 *exp(p2 * rr + p3)
-      exp2 = exp(-p4*rr**p5 + p6*rr) * p7
+      exp2 = exp(-p4*rr**p5 + p6*rr+ p7)
       ewh = 0.5 *exp1*exp2
       dewdr = 0.0
 *      else
