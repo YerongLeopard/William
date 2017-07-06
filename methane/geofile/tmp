@@ -1,4 +1,5 @@
 for FILE in *.xyz
 do
+#/drives/c/Anaconda2/python Vcif2p1.py $FILE 
 jaguar babel -ixyz $FILE -obgf ${FILE%xyz}bgf
 done
