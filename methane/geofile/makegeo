@@ -6,11 +6,11 @@ var=$(head -2 ref.xyz | tail -1)
 printf "REMARK ref\n" >> geo
 #echo $var
 num="$(echo $var | tr -dc '.0-9')"
-num1=${num:0:7}
-num2=${num:8:7}
+num1=${num:0:8}
+num2=${num:8:8}
 num3=${num:16:8}
 num4=${num:24:8}
-printf "${var:1:6}      $num1   $num2    $num3   $num4   $num4   $num4\n" >> geo
+printf "${var:1:6}     $num1   $num2  $num3    $num4   $num4   $num4\n" >> geo
 echo "FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)" >> geo
 head -10 ref.bgf | tail -5 >> geo
 echo "FORMAT CONECT (a6,14i6)" >> geo
@@ -30,14 +30,13 @@ var="$(head -2 ${FILE%bgf}xyz | tail -1)"
 printf "REMARK ${FILE%.bgf}\n" >> geo
 #echo $var
 num="$(echo $var | tr -dc '.0-9')"
-num1=${num:0:7}
-num2=${num:8:8}
-num3=${num:15:8}
-num4=${num:22:8}
-printf "$num4\n"
-printf "${var:1:6}      $num1   $num2    $num3   $num4   $num4   $num4\n" >> geo
+num1=${num:0:8}
+num2=${num:8:7}
+num3=${num:15:7}
+num4=${num:30:8}
+printf "${var:1:6}     $num1    $num2   $num3    $num4   $num4   $num4\n" >> geo
 echo "FORMAT ATOM   (a6,1x,i5,1x,a5,1x,a3,1x,a1,1x,a5,3f10.5,1x,a5,i3,i2,1x,f8.5)" >> geo
-head -77 $FILE | tail -72 >> geo
+head -85 $FILE | tail -80 >> geo
 echo "FORMAT CONECT (a6,14i6)" >> geo
 echo "FORMAT ORDER (a6,i6,13f6.3)" >> geo
 echo "END" >> geo
