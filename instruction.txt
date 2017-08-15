@@ -1,0 +1,38 @@
+
+Hello everyone,
+
+We are moving forward to put together all the QM nonbond curves. I need to go through the optimizations one more time and pull out the universal nonbond curve again. You already have done it but in order to be organized and systematic, please provide your data with the following formats.
+
+1) geometry files:
+Please use VESTA to convert the CONTCAR files for all volumes ( for the crystal and also for the reference structure at each volume) to .cif files. Use understandable names for each .cif file. For example, if you want to name a crystal which is 5% compressed then call it 0.95V0.cif  and call the reference for this volume 0.95V0-ref.cif and so on. 
+
+2) energy table:
+Please provide me an excel file that contains the following columns for each case:
+
+V/V0, V, N, Total_Eng, Ref_Eng,Nb_Eng, Press
+
+where:
+
+V/V0 is the volume fraction, for example 0.95.  
+V is the volume of the cell in Angstrom^3.  
+N is the number of molecules or number of layers (e.g. graphite crystal has 2 layers, H crystal has 4 molecs).  
+Total_Eng is the total energy of the cell in kcal/mol. 
+Ref_Eng is the energy of the reference molecule or layer in kcal/mol.
+Nb_Eng is the nonbond energy in kcal/mol (Nb_Eng = Total_Eng/N - Ref_Eng).  
+Press is the total pressure in GPa 
+
+3) parameters 
+
+Tingting: Please send me your final optimized parameters for Nitrogen, Nitrogen (Phosphors-like) structure, and Phosphorous. Please put the parameters in the above excel file as well.
+Yerong:  I already have your optimized parameters, but would you please double check one more time and make sure you have sent all correct parameters!
+Hao and Jiangwei:  you do not need to do the parameter optimization. I try to fit them myself. 
+
+
+Please zip all of the above files together and send me a single file for each case. 
+Please double check all your geometries and energy table before sending them to me and make sure they are error free and correct. If you are not sure about any of the above steps please let me know. I'll be happy to elaborate more! 
+
+Thank you all for your help and nice work!
+
+Best,
+
+Saber  
