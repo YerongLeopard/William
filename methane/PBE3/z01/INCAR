@@ -1,16 +1,16 @@
-SYSTEM=diamond                 # Job description
+SYSTEM=methane                 # Job description
 NPAR=2                          # (# of CPUs)/(NPAR) node(s) work on one band require NPAR=#CPUs for HF
 GGA=PE                          #
 ISMEAR=-5                        # Tetrahedron method with Bloechl corrections
 NELM=200                        # Maximum number of SCF cycles
 EDIFF=1.0E-06                   # Convergence criteria for SCF Energy
 ENCUT=600
-#PREC=Accurate                   # Precision control
+PREC=Accurate                   # Precision control
 IBRION=2                        # CG Geom Opt
 ISIF=2                          # Relax all
 NSW=200                         # Maximum number of Geom Opt steps
 EDIFFG=1.0E-03                  # Convergence criteria for Geom Opt forces
 LWAVE=.FALSE.                   # !No wavefunction output file, too big
 LCHARG=.FALSE.                  # !No charge density output file, too big
-IVDW=12
+#IVDW=12
 

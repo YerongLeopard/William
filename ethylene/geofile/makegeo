@@ -1,7 +1,7 @@
 rm geo
 
 echo "XTLGRF 200" >> geo 
-printf "DESCRP mtn_ref\n" >> geo
+printf "DESCRP eth_ref\n" >> geo
 var=$(head -2 ref.xyz | tail -1)
 printf "REMARK ref\n" >> geo
 #echo $var
@@ -25,7 +25,7 @@ then
 continue
 fi
 echo "XTLGRF 200" >> geo 
-printf "DESCRP mtn_${FILE%.bgf}\n" >> geo
+printf "DESCRP eth_${FILE%.bgf}\n" >> geo
 var="$(head -2 ${FILE%bgf}xyz | tail -1)"
 printf "REMARK ${FILE%.bgf}\n" >> geo
 #echo $var
